@@ -1,0 +1,183 @@
+
+//	******************************************************************
+//	Compass Framework
+//	******************************************************************
+	
+@import
+	"compass/reset",
+	"compass/utilities",
+	"compass/css3",
+	"compass/typography/vertical_rhythm",
+	"compass/layout/grid-background";
+
+
+//	******************************************************************
+//	Global Variables
+//	******************************************************************
+	
+// Vertical Rhythm
+$base-font-size: 20px;
+$base-line-height: 28px;
+
+// Debug Vertical Grid
+$debug: 0;
+$grid-background-baseline-height: 1.44444444em;
+$grid-background-baseline-color: rgba(255, 0, 0, 0.4);
+
+
+// Base Styles
+$font-family: "Helvetica Neue", sans-serif;
+$heading-font-family: museo-sans-1, museo-sans-2, georgia, "Myriad Pro", sans-serif;;
+$text-color: #6e6357;
+
+$gutter: 2.4em;
+$max-width: 1180px;
+
+//	******************************************************************
+//	Base Styles
+//	******************************************************************
+
+// Sets body font size based on vertical rhythm
+@include establish-baseline($base-font-size);
+
+html, body {
+	min-height: 100%;	
+}
+
+body {
+	font-family: $font-family;
+	color: $text-color;
+	background: #eee;
+
+	@if $debug == 1 {
+		@include baseline-grid-background();
+		background-color: #fff;
+	}
+
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+//	******************************************************************
+//	Imports
+//	******************************************************************
+@import
+	"tools",
+	"typography",
+	"forms";
+
+
+//	******************************************************************
+//	Main Layout
+//	******************************************************************
+
+#wrapper {
+	max-width: $max-width;
+	float: right;
+	background: #fff;
+	border-left: $gutter solid rgba(0, 0, 0, 0.05);
+	@include background-clip(padding-box);
+
+	min-height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+#stripe {
+	display: block;
+	height: rhythm(2.25);
+	width: 50%;
+	position: absolute;
+	top: $gutter;
+	left: 0;
+	background: #de7719;
+}
+
+#page {
+	padding: 0 $gutter $gutter $gutter;
+	@include clearfix;
+}
+
+//	******************************************************************
+//	Header
+//	******************************************************************
+
+#top {
+
+	padding: $gutter;
+	@include clearfix;
+	@include box-sizing(border-box);
+	overflow: auto;
+	h1 {
+		margin: 0;
+		padding: 0;
+
+		a {
+			@include box-sizing(border-box);
+			display: block;
+			padding: 0 rhythm(1) 0 1.56em;
+			position: relative;
+			font-size: 48px;
+			height: 1.32em;
+			color: #888;
+			font-weight: 100;
+			letter-spacing: 0.5px;
+			text-decoration: none;
+			line-height: 1.344em;
+			width: 35%;
+			float: left;
+			text-align: left;
+			border: none;
+			svg { width: 1.296em; height: 1.296em; position: absolute; top: 0px; left: 0px; background: #de7719; }
+
+			&.active {
+				color: #F08B39;
+			}
+		}
+	}
+
+	nav {
+		width: 65%;
+		float: left;
+
+		ul {
+			list-style: none;
+			font-family: $heading-font-family;
+			margin: 0;
+			padding: 0;
+			li {
+				float: left;
+				width: 25%;
+
+				a {
+					display: block;
+					line-height: $gutter;
+					padding-top: 0.889em;
+					color: #666;
+					text-align: center;
+					border-bottom: 1px solid #ddd;
+					font-weight: 400;
+					text-decoration: none;
+
+					&:hover {
+						color: #000;
+						border-color: #333;
+					}
+
+					&.active {
+						color: #F08B39;
+						border-color: #FF9003;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+//	******************************************************************
+//	Footer
+//	******************************************************************
+#bottom {
+
+}

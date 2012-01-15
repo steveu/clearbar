@@ -1,84 +1,73 @@
-<?php
+<?php 
 
-$bclass = 'home';
+/*
 
-require('incs/template/header.php');
+---------------------------------------
+Document root of your site
+---------------------------------------
+normaller this should be identical with 
+the directory in which your index.php is located
+
+*/
+
+$root = dirname(__FILE__);
+
+
+
+/*
+
+---------------------------------------
+Kirby system folder
+---------------------------------------
+
+by default this is located inside the root directory
+but if you want to share one system folder for 
+multiple sites, you can easily change that here
+and link to a shared kirby folder somewhere on your
+server
+
+*/
+
+$rootKirby = $root . '/kirby';
+
+
+
+/*
+
+---------------------------------------
+Your site folder
+---------------------------------------
+
+Your site folder contains all the site specific files
+like templates and snippets. It is located in the root
+directory by default, but you can move it if you want.
+
+*/
+
+$rootSite = $root . '/site';
+
+
+
+/*
+
+---------------------------------------
+Your content folder
+---------------------------------------
+
+Your content folder is also located in the root 
+directory by default. You can change this here.
+It can also be changed later in your site/config.php
+
+*/
+
+$rootContent = $root . '/content';
+
+
+// Try to load Kirby
+if(!file_exists($rootKirby . '/system.php')) {
+  die('The Kirby system could not be loaded');  
+} 
+
+require_once($rootKirby . '/system.php');
 
 ?>
-
-<section class="intro">
-	<h1>
-		Hello. I&rsquo;m <a href="">Steve Urmston</a>. I make websites, good ones.
-	</h1>
-</section>
-
-<div id="page">
-	<!--
-	<h1 class="hello">
-		<strong>Hello.</strong>
-		I&rsquo;m <a href="">Steve Urmston</a>. I make kick-ass websites. We should talk
-	</h1>
-	-->
-
-	
-
-	
-	<section class="work_thumbs">
-		<h1>I made these ones &hellip; <i>okay, so I had help from my <a href="">friends</a></i></h1>
-		<article>
-			<figure>
-				<img src="/img/glassescomplete.jpg" />
-				<figcaption>
-					Glasses Complete
-				</figcaption>
-			</figure>
-		</article>
-
-		<article>
-			<figure>
-				<img src="/img/glassescomplete.jpg" />
-				<figcaption>
-					Glasses Complete
-				</figcaption>
-			</figure>
-		</article>
-
-		<article>
-			<figure>
-				<img src="/img/glassescomplete.jpg" />
-				<figcaption>
-					Glasses Complete
-				</figcaption>
-			</figure>
-		</article>
-		
-	</section>
-	
-	<div id="stream_graph">
-		
-		
-		</div>
-		
-	<!--
-	<section class="home_journal">
-		<h1>I wrote these posts&hellip; <i>okay it's mostly links which I&rsquo;m shamelessly passing off as my own (I did write some)</i></h1>
-	</section>
-	-->
-	
-	<section class="social">
-		<h1>You can <del>follow</del> <ins>stalk</ins> me on &hellip;</h1>
-		
-		<ul class="social">
-			<li class="twitter"><a href="">Twitter</a></li>
-			<li class="quora"><a href="">Quora</a></li>
-			<li class="twitter"><a href="">Pinboard</a></li>
-			<li class="facebook"><a href="">Facebook</a></li>
-			<li class="google"><a href="">Google</a></li>
-			<li class="linkedin"><a href="">Linkedin</a></li>
-		</ul>
-		
-	</section>
-</div>
-<?php
-require('incs/template/footer.php');
-

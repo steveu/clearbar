@@ -1,0 +1,17 @@
+Title: About
+----
+Text:
+
+# About me
+
+I&rsquo;m Steve Urmston, a thirty-something, interactive designer and web developer from York, where I live in <a class="map">Acomb</a> with my beautiful fiancé Sarah. I've been making websites and applications professionally for 7 years.
+		
+I&rsquo;ve got two degrees, an entertaining but mostly irrelevant Political Science Masters from Glasgow, and a second altogether more relevant and equally entertaining MSc in <a href="">Human-Centred Interactive Technologies</a> from York.
+
+I currently work as an <em>Interaction Designer</em> at <a href="">Designition</a>, where I&rsquo;m involved in many areas, from meetings though design, all the way to production code. But my passion is creating delightful interfaces and interactions.
+
+## About this site
+
+Formally my web  design business, Clearbar is now my personal website where I keep my <a href="/portfolio/">portfolio</a> of work, and post random thoughts and links in my <a href="/journal/">journal</a>.
+
+The name actually comes from a random business idea I had for a hyper connected bar (go figure) for which  registered the domain. Needless to say the bar idea never got off the ground, but I always liked the name so it stuck!
