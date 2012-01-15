@@ -1,0 +1,13 @@
+DirectoryIndex index.php
+RewriteEngine on
+Options +FollowSymlinks
+
+
+# 404 Error
+# -------------------------------------------
+ErrorDocument 404 /404-error/
+
+RewriteRule ^about/? about.php
+RewriteRule ^journal/? journal.php
+RewriteRule ^contact/? contact.php
+RewriteRule ^portfolio/? portfolio.php
