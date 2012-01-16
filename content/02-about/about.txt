@@ -12,6 +12,4 @@ I currently work as an <em>Interaction Designer</em> at <a href="">Designition</
 
 ## About this site
 
-Formally my web  design business, Clearbar is now my personal website where I keep my <a href="/portfolio/">portfolio</a> of work, and post random thoughts and links in my <a href="/journal/">journal</a>.
-
-The name actually comes from a random business idea I had for a hyper connected bar (go figure) for which  registered the domain. Needless to say the bar idea never got off the ground, but I always liked the name so it stuck!
+Formally my web design business, Clearbar is now my personal website where I keep my <a href="/portfolio/">portfolio</a> of work, and post random <a href="/notes">notes</a>.

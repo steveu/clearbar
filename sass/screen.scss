@@ -24,14 +24,23 @@ $debug: 0;
 $grid-background-baseline-height: 1.44444444em;
 $grid-background-baseline-color: rgba(255, 0, 0, 0.4);
 
-
-// Base Styles
+// Typefaces
 $font-family: "Helvetica Neue", sans-serif;
-$heading-font-family: museo-sans-1, museo-sans-2, georgia, "Myriad Pro", sans-serif;;
-$text-color: #6e6357;
+$heading-font-family: museo-sans-1, museo-sans-2, georgia, "Myriad Pro", sans-serif;
 
+// Text Colors
+$text-color: #6e6357;
+$heading-color: #6c635f;
+
+// Colors
+$orange: #DE7719;
+$light-blue: #E7F3FF;
+
+// Grid
 $gutter: 2.4em;
 $max-width: 1180px;
+$content-column: 65%;
+$sidebar-column: 35%;
 
 //	******************************************************************
 //	Base Styles
@@ -75,7 +84,7 @@ body {
 	max-width: $max-width;
 	float: right;
 	background: #fff;
-	border-left: $gutter solid rgba(0, 0, 0, 0.05);
+	border-left: $gutter solid rgba(0, 0, 0, 0.04);
 	@include background-clip(padding-box);
 
 	min-height: 100%;
@@ -85,12 +94,12 @@ body {
 
 #stripe {
 	display: block;
-	height: rhythm(2.25);
+	height: ($gutter * 1.35);
 	width: 50%;
 	position: absolute;
 	top: $gutter;
 	left: 0;
-	background: #de7719;
+	background: $orange;
 }
 
 #page {
@@ -115,20 +124,28 @@ body {
 		a {
 			@include box-sizing(border-box);
 			display: block;
-			padding: 0 rhythm(1) 0 1.56em;
+			padding: 0px $gutter 0 ($gutter * 0.65);
 			position: relative;
-			font-size: 48px;
-			height: 1.32em;
+			font-size: ($base-font-size * 2.5);
+			height: ($gutter * 0.55);
 			color: #888;
 			font-weight: 100;
 			letter-spacing: 0.5px;
 			text-decoration: none;
-			line-height: 1.344em;
+			line-height: ($gutter * 0.56);
 			width: 35%;
 			float: left;
 			text-align: left;
 			border: none;
-			svg { width: 1.296em; height: 1.296em; position: absolute; top: 0px; left: 0px; background: #de7719; }
+
+			svg {
+				width: ($gutter * 0.54);
+				height: ($gutter * 0.54);
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				background: $orange;
+			}
 
 			&.active {
 				color: #F08B39;
@@ -143,27 +160,27 @@ body {
 		ul {
 			list-style: none;
 			font-family: $heading-font-family;
-			margin: 0;
-			padding: 0;
+
 			li {
 				float: left;
 				width: 25%;
-
+			
 				a {
 					display: block;
 					line-height: $gutter;
-					padding-top: 0.889em;
+					padding-top: ($gutter / 2.7);
 					color: #666;
 					text-align: center;
 					border-bottom: 1px solid #ddd;
 					font-weight: 400;
 					text-decoration: none;
+					font-size: $base-font-size;
+					text-transform: none;
 
 					&:hover {
 						color: #000;
 						border-color: #333;
 					}
-
 					&.active {
 						color: #F08B39;
 						border-color: #FF9003;
@@ -174,6 +191,142 @@ body {
 	}
 }
 
+.intro {
+	background: $orange;
+	padding: $gutter;
+	color: #fff;
+	font-weight: 500;
+	margin: 0 ($gutter * 1) $gutter 0;
+	border-bottom: 1px solid adjust-lightness($orange, -10);
+	box-shadow: -8px 2px 4px rgba(0,0,0,0.1);
+	position: relative;
+	left: 0px;
+	letter-spacing: 0.5px;
+	word-spacing: -1px;
+	&:before {
+		
+		
+		display: block;
+		content: "";
+		width: 0px;
+		height: 0px;
+		border: 10px solid;
+		border-width: 12px 15px;
+		border-color: transparent adjust-lightness($orange, -15) transparent transparent;
+		position: absolute;
+		bottom: -12px;
+		left: -30px;
+		z-index: 2;
+	}
+	 //-webkit-transition: all .9s ease;
+	
+	h1 {
+		@include adjust-font-size-to(($base-font-size * 1.85), 1);
+		text-shadow: -1px -1px 1px rgba(0,0,0,0.25);
+		color: #fff;
+		margin: 0;
+		padding: 0;
+		margin-right: $gutter;
+		
+		a {
+			color: #fff;
+			text-decoration: none;
+			border: 1px dotted rgba(255,255,255,0.6);
+			padding: 7px 7px 2px 7px;
+			background: rgba(255,255,255,0.075);
+		}
+		
+		&:after {
+			display: block;
+			content: "";
+			width: 14px;
+			height: ($gutter * 1.4);
+			background: $orange;
+			border-left: 1px solid adjust-lightness($orange, -8);
+			position: absolute;
+			top: 0px;
+			left: -15px;
+			z-index: 101;
+		}
+	}
+
+	
+	&:after {
+		content: "";
+		display: block;
+		width: 0px;
+		border: 76px solid;
+		border-width: ($gutter * 1.3) ($gutter * 0.75);
+		border-color: transparent #fff transparent transparent;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		-webkit-background-clip: padding-box;
+		
+		//display: none;
+	}
+
+
+}
+
+
+//	******************************************************************
+//	Portfolio
+//	******************************************************************
+
+section.work {
+	
+	article {
+		@include clearfix;
+		padding-bottom: $gutter;
+		div.meta {
+			width: $sidebar-column;
+			float: left;
+			@include box-sizing('border-box');
+			padding: 0px $gutter 0 0px;
+
+			h1 {
+				font-size: $base-font-size * 1.3;
+			}
+			p {
+				@include adjust-font-size-to(($base-font-size * .9), 1);
+			}
+		}
+
+		figure {
+			width: $content-column;
+			@include box-sizing('border-box');
+			float: right;
+
+			padding: 7px 0 0 0;
+			box-shadow: -5px 8px 12px rgba(0,0,0,0.15);
+			background: #eee;
+			border: 1px solid #999;
+			border-radius: 5px;
+			background: -webkit-linear-gradient(top, #efefef 0%,#999 15%);
+
+			img {
+				width: 100%;
+				border-top: 1px solid #666;
+				clear: left;
+			}
+
+			p.url {
+				background: #fff;
+				font-size: 12px;
+				width: 60%;
+				float: left;
+				padding: 0px 4px;
+				line-height: 22px;
+				border-top: 1px solid #aaa;
+				border-right: 1px solid #aaa;
+				border-left: 1px solid #ccc;
+				border: 1px solid #aaa;
+				margin: 0 0 6px 12px;
+			}
+		}
+	}
+}
 
 //	******************************************************************
 //	Footer

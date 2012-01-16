@@ -15,7 +15,7 @@
 
 			<figure class="">
 				<div class="chrome">
-					<a class="fullscreen" href="">open</a>
+					<a class="visit" href="http://">visit</a>
 					<p class="url"><?php echo $item->link() ?></p>
 
 					<?php $image = $item->images()->find('screenshot.png') ?>
