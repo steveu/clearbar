@@ -6,7 +6,7 @@
 
     <title><?php echo html($site->title()) ?> - <?php echo html($page->title()) ?></title>
 
-    <?php echo css('assets/scripts/libs/modernizr-2.0.6.min.js') ?>
+    <?php echo js('assets/scripts/libs/modernizr-2.0.6.min.js') ?>
 
     <script type="text/javascript" src="http://use.typekit.com/fbd2arb.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
