@@ -243,7 +243,7 @@ Please read more about it at: http://php.net/manual/en/function.date-default-tim
 
 */ 
 
-c::set('timezone', 'UTC');
+c::set('timezone', 'GMT');
 
 
 /*
@@ -277,7 +277,7 @@ php errors there.
 
 */
 
-c::set('debug', false);
+c::set('debug', true);
 
 
 /* 
@@ -304,6 +304,16 @@ c::set('yourproject.yourvar', 'yourvalue');
 
 */
 
+$breakdowns = array(
+    'wireframes' => 'Wireframes / <abbr title="User Experience">UX</abbr>',
+    'graphics' => 'Graphic Design',
+    'html' => 'HTML / CSS',
+    'script' => 'JavaScript',
+    'php' => 'PHP',
+    'ecom' => 'E-Commerce',
+);
+
+c::set('breakdowns', $breakdowns);
 
 /*
 

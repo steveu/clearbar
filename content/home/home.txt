@@ -6,4 +6,4 @@ Text:
 
 
 ----
-Intro: Hello. I&rsquo;m <a title="Download Vcard" href="/vcard/">Steve Urmston</a>. I make websites, good ones.
+Intro: Hello. I&rsquo;m <a title="Download Vcard" href="/vcard/">Steve Urmston</a>, web designer &amp; developer.
