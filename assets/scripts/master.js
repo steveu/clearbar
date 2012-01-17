@@ -129,15 +129,16 @@
 				
 				segment.hover(
 					function(){ 
-						//this.attr("cursor", "pointer");
 						
+						/*
+						// Transformation not recording properly, hover continuously firing
 						tstr = triangle.transform();// record transformation string 
-						//alert(tstr);
-						
+
 						triangle.stop().animate({ 
 							transform: tstr+"s1.03 1.03 200 200"
 						}, 350, "elastic");
-						
+						*/
+
 						//triangle.transform(triangle.transform()+"s1.2 1.2 200 200");
 						
 						//alert(triangle.transform());
@@ -151,10 +152,11 @@
 						
 						//triangle.transform(tstr);
 						
+						/*
  						triangle.stop().animate({ 
 							transform: tstr
 						}, 350, "elastic");
-						
+						*/
 						
 						middle_text.attr({"text" : '%', "fill" : '#555'});
 						
