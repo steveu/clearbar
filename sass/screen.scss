@@ -409,6 +409,8 @@ section.notes {
 	article {
 		@include clearfix;
 		padding-bottom: $gutter;
+		margin-bottom: $gutter;
+		border-bottom: 1px solid #ccc;
 		aside.meta {
 			width: $sidebar-column;
 			float: left;
@@ -429,6 +431,13 @@ section.notes {
 			width: $content-column;
 			@include box-sizing('border-box');
 			float: right;
+			padding-right: 20px;
+			h1 {
+				a {
+					color: $text-color;
+					border: none;
+				}
+			}
 		}
 	}
 }
