@@ -365,6 +365,12 @@ section.work {
 	margin: rhythm(1) 0 1em 0;
 	width: 100%;
 
+	caption {
+		padding-bottom: rhythm(0.25);
+		margin-bottom: rhythm(0.25);
+		border-bottom: 1px solid #ccc;
+	}
+
 	th {
 		font-weight: normal;
 		font-size: $base-font-size * 0.8;

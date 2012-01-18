@@ -14,6 +14,7 @@
 
 
 				<table class="breakdown">
+					<caption>My involvement</caption>
 				<?php
 				foreach(c::get('breakdowns') AS $key => $title)  {
 					if ($item->$key() != '') {
