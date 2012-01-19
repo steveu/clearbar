@@ -16,8 +16,8 @@
 //	******************************************************************
 	
 // Vertical Rhythm
-$base-font-size: 20px;
-$base-line-height: 28px;
+$base-font-size: 16px;
+$base-line-height: 23px;
 
 // Debug Vertical Grid
 $debug: 0;
@@ -42,12 +42,31 @@ $max-width: 1180px;
 $content-column: 65%;
 $sidebar-column: 35%;
 
+// Media Query Font Sizes
+$font-size: 16px;
+$tablet-font-size: 18px;
+$desktop-font-size: 20px;
+
+
 //	******************************************************************
 //	Base Styles
 //	******************************************************************
 
 // Sets body font size based on vertical rhythm
 @include establish-baseline($base-font-size);
+
+@media screen and (min-width: 768px) {
+	$base-line-height:26px;
+	@include establish-baseline(18px);
+}
+@media screen and (min-width: 1024px) {
+	$base-line-height: 28px;
+	@include establish-baseline(20px);
+}
+
+$base-font-size: 16px;
+$base-line-height: 23px;
+
 
 html, body {
 	min-height: 100%;	
@@ -139,7 +158,15 @@ aside.blank {
 			display: block;
 			padding: 0px $gutter 0 ($gutter * 0.65);
 			position: relative;
-			font-size: ($base-font-size * 2.5);
+			font-size: $font-size * 2.5;
+
+			@media screen and (min-width: 768px) {
+				font-size: $tablet-font-size * 2.5;
+			}
+			@media screen and (min-width: 1024px) {
+				font-size: $desktop-font-size * 2.5;
+			}
+
 			height: ($gutter * 0.55);
 			color: #888;
 			font-weight: 100;
@@ -187,7 +214,15 @@ aside.blank {
 					border-bottom: 1px solid #ddd;
 					font-weight: 400;
 					text-decoration: none;
-					font-size: $base-font-size;
+					
+					font-size: $font-size;
+					@media screen and (min-width: 768px) {
+						font-size: $tablet-font-size;
+					}
+					@media screen and (min-width: 1024px) {
+						font-size: $desktop-font-size;
+					}
+
 					text-transform: none;
 
 					&:hover {
