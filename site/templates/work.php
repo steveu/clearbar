@@ -37,6 +37,9 @@
 
 			<figure class="">
 				<a class="chrome" href="http://<?php echo $item->link() ?>/">
+					
+					<em>Vist Site</em>
+					
 					<figcaption>
 						<img src="http://<?php echo $item->link() ?>/favicon.ico" width="16" height="16" />
 						<?php echo $item->link() ?>
@@ -45,6 +48,8 @@
 					<?php $image = $item->images()->find('screenshot.png') ?>
 
 					<img src="<?php echo $image->url() ?>" />
+
+
 				</a>
 			</figure>
 

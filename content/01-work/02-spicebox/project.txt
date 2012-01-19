@@ -1,0 +1,25 @@
+Title: Rafi's Spicebox
+----
+id: spicebox
+----
+Date: August, 2010
+----
+Link: spicebox.co.uk
+----
+Text:
+
+As well as initial UX work, I designed and developed the e-commerce system and trade only site for this curry mix producer. Sales have been fantastic!
+
+----
+wireframes: 70
+----
+graphics: 10
+----
+html: 30
+----
+script: 30
+----
+php: 50
+----
+ecom: 100
+----
