@@ -13,13 +13,13 @@ I was involved throughout this custom E-commerce project; from initial meetings 
 I&#39;m personally very proud of making a complicated buying process as smooth and error free as possible.
 
 ----
-wireframes: 60
+wireframes: 70
 ----
 graphics: 10
 ----
-html: 80
+html: 70
 ----
-script: 80
+script: 70
 ----
 php: 100
 ----
