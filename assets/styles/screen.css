@@ -190,7 +190,11 @@ fieldset#terms { border-bottom: none; }
 
 section.content { width: 65%; padding-right: 2.4em; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; float: left; }
 
-aside.blank { width: 35%; float: right; border-top: 1px solid #ccc; padding-bottom: 1.2em; }
+aside.blank { width: 35%; float: right; padding-bottom: 1.2em; }
+aside.blank h3 { padding-top: 0.288em; }
+aside.blank h3 i { font-size: 13px; }
+aside.blank table { width: 100%; }
+aside.blank table th { width: 50%; }
 
 #top { padding: 2.4em; overflow: hidden; *zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; overflow: auto; }
 #top h1 { margin: 0; padding: 0; }

@@ -2,9 +2,9 @@ Title: About
 ----
 Text:
 
-# About me
+# Hello there, I'm Steve Urmston.
 
-I&rsquo;m Steve Urmston, a thirty-something, interactive designer and web developer from York, where I live in <a class="map">Acomb</a> with my beautiful <del>fiancé</del> <ins>wife</ins> Sarah. I've been making websites and applications professionally for 7 years.
+I&rsquo;m a thirty-something, interactive designer and web developer from York, where I live in <a class="map">Acomb</a> with my beautiful <del>fiancé</del> <ins>wife</ins> Sarah. I've been making websites and applications professionally for 7 years.
 		
 I&rsquo;ve got two degrees, an entertaining but mostly irrelevant Political Science Masters from Glasgow, and a second altogether more relevant and equally entertaining MSc in <a href="">Human-Centred Interactive Technologies</a> from York.
 
