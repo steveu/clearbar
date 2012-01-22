@@ -212,18 +212,18 @@ aside.blank table th { width: 50%; }
 #top nav ul li a:hover { color: #000; border-color: #333; }
 #top nav ul li a.active { color: #F08B39; border-color: #FF9003; }
 
-.intro { background: #de7719; padding: 1.2em 0 1.2em 2.4em; color: #fff; font-weight: 500; margin: 0 2.4em 2.4em 0; box-shadow: -8px 2px 4px rgba(0, 0, 0, 0.1); position: relative; left: 0px; letter-spacing: 0.5px; word-spacing: -1px; }
+.intro { background: #de7719; padding: 0.96em 0 0.96em 2.4em; color: #fff; font-weight: 500; margin: 0 2.4em 2.4em 0; box-shadow: -8px 2px 4px rgba(0, 0, 0, 0.1); position: relative; left: 0px; letter-spacing: 0.5px; word-spacing: -1px; }
 .intro:before { display: block; content: ""; width: 0px; height: 0px; border: 10px solid; border-width: 12px 15px; border-color: transparent #995211 transparent transparent; position: absolute; bottom: -11px; left: -30px; z-index: 2; }
 .intro h1 { line-height: 2.4em; height: 2.4em; font-size: 24px; text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.25); color: #fff; margin: 0; padding: 0; }
 @media screen and (min-width: 768px) { .intro h1 { font-size: 28.8px; } }
 @media screen and (min-width: 896px) { .intro h1 { font-size: 32.4px; } }
 @media screen and (min-width: 1024px) { .intro h1 { font-size: 36.4px; } }
 .intro h1 a { color: #fff; text-decoration: none; border: 1px dotted rgba(255, 255, 255, 0.6); padding: 7px 7px 2px 7px; background: rgba(255, 255, 255, 0.075); }
-.intro h1:after { display: block; content: ""; width: 14px; height: 3.696em; background: #de7719; border-left: 1px solid #b96315; position: absolute; top: 0px; left: -15px; z-index: 101; }
+.intro h1:after { display: block; content: ""; width: 14px; height: 3.432em; background: #de7719; border-left: 1px solid #b96315; position: absolute; top: 0px; left: -15px; z-index: 101; }
 .intro:after { content: ""; display: block; width: 0px; border: 76px solid; border-color: transparent #fff transparent transparent; position: absolute; top: 0px; right: 0px; -webkit-background-clip: padding-box; }
 @media screen and (min-width: 768px) { .intro:after { border-width: 3.216em 1.56em; } }
 @media screen and (min-width: 896px) { .intro:after { border-width: 3.432em 1.68em; } }
-@media screen and (min-width: 1024px) { .intro:after { border-width: 3.432em 1.8em; } }
+@media screen and (min-width: 1024px) { .intro:after { border-width: 3.192em 2.04em; } }
 
 section.work article { overflow: hidden; *zoom: 1; padding-bottom: 2.4em; }
 section.work article div.meta { width: 35%; float: left; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; padding: 5px 2.4em 0 0px; }
@@ -274,6 +274,19 @@ section.notes article aside.meta p { font-size: 1.1em; line-height: 1.307em; }
 section.notes article aside.meta p + p { padding-top: 5px; }
 section.notes article div.post { width: 65%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; float: right; padding-right: 20px; }
 section.notes article div.post h1 a { color: #6e6357; border: none; }
+
+section.hresume article { width: 33.33333333%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; padding-right: 2.4em; float: left; }
+section.hresume article p, section.hresume article ul, section.hresume article ol { font-size: 18px; line-height: 26px; }
+section.hresume article h2 { font-size: 1.25em; line-height: 1.15em; padding-top: 1.438em; padding-bottom: 0.863em; padding-top: 0; padding-bottom: 1.078em; }
+section.hresume article hr + h2 { padding-top: 0.719em; }
+section.hresume article h3 { padding-top: 0; padding: 0; padding-bottom: 0.288em; font-weight: 500; }
+section.hresume article ol { list-style: none; padding-bottom: 0; }
+section.hresume article ol li { padding-bottom: 1.581em; }
+section.hresume article ol li:last-child { padding-bottom: 0; }
+section.hresume article p.date_duration { padding-bottom: 0.431em; font-style: italic; }
+section.hresume article p.date_duration + p { padding-top: 0; }
+section.hresume article ul { list-style: none; }
+section.hresume article ul li + li { padding-top: 1.438em; }
 
 aside.vcard { width: 35%; float: left; padding-right: 2.4em; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
 aside.vcard div.hcard { border-right: 1px solid #ccc; }

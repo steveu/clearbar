@@ -256,7 +256,7 @@ aside.blank {
 
 .intro {
 	background: $orange;
-	padding: ($gutter / 2) 0 ($gutter / 2) $gutter;
+	padding: ($gutter / 2.5) 0 ($gutter / 2.5) $gutter;
 	color: #fff;
 	font-weight: 500;
 	margin: 0 $gutter $gutter 0;
@@ -321,7 +321,7 @@ aside.blank {
 			display: block;
 			content: "";
 			width: 14px;
-			height: $gutter * 1.54;
+			height: $gutter * 1.43;
 			background: $orange;
 			border-left: 1px solid adjust-lightness($orange, -8);
 			position: absolute;
@@ -345,7 +345,7 @@ aside.blank {
 			border-width: ($gutter * 1.43) ($gutter * 0.7);
 		}
 		@media screen and (min-width: 1024px) {
-			border-width: ($gutter * 1.43) ($gutter * 0.75);
+			border-width: ($gutter * 1.33) ($gutter * 0.85);
 		}
 
 		border-color: transparent #fff transparent transparent;
@@ -582,6 +582,74 @@ section.notes {
 				}
 			}
 		}
+	}
+}
+
+
+//	******************************************************************
+//	CV
+//	******************************************************************
+section.hresume {
+	
+	article {
+		width: 33.33333333%;
+		@include box-sizing(border-box);
+		padding-right: $gutter;
+		float: left;
+
+		p, ul, ol {
+			font-size: 18px;
+			line-height: 26px;
+		}
+
+		h2 {
+			@include heading(($desktop-font-size * 1));
+			padding-top: 0;
+			padding-bottom: rhythm(.75);
+		}
+
+		hr + h2 {
+			padding-top: rhythm(0.5);
+		}
+
+		h3 {
+			padding-top: 0;
+			padding: 0;
+			padding-bottom: rhythm(0.2);
+			font-weight: 500;
+			//font-size: $tablet-font-size;
+			//font-family: $font-family;
+			//font-weight: bold;
+		}
+
+		ol {
+			list-style: none;
+			padding-bottom: 0;
+
+			li {
+				@include padding-trailer(1.1);
+
+				&:last-child {
+					padding-bottom: 0;
+				}
+			}
+		}
+
+		p.date_duration {
+			padding-bottom: rhythm(0.3);
+			font-style: italic;
+		}
+		p.date_duration + p {
+			padding-top: 0;
+		}
+
+		ul {
+			list-style: none;
+			li + li {
+				@include padding-leader(1);
+			}
+		}
+
 	}
 }
 
