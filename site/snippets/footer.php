@@ -1,5 +1,16 @@
         	<footer id="bottom">
-      
+                
+                <p class="copyright">
+                    
+                    <a class="cc" rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a>
+                </p>
+
+                <p class="contact">
+                    Contact me at <a href="steve@clearbar.org">steve@clearbar.org</a>.
+                    Follow me on Twitter <a href="">@steveu</a>.
+                    
+                </p>
+
 			</footer>
 
 		</div>

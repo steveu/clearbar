@@ -16,7 +16,7 @@
 
     		<h2>Personal Statement</h2>
 			<p>
-				I'm a passionate designer &amp; developer with 8 years experience creating quality websites
+				I'm a passionate designer and developer with over 8 years experience creating quality websites
 				and applications for businesses large and small.
 			</p>
 			<p>

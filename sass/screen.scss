@@ -26,7 +26,7 @@ $grid-background-baseline-color: rgba(255, 0, 0, 0.4);
 
 // Typefaces
 $font-family: "Helvetica Neue", sans-serif;
-$heading-font-family: museo-sans-1, museo-sans-2, georgia, "Myriad Pro", sans-serif;
+$heading-font-family: Gotham, museo-sans-1, museo-sans-2, georgia, "Myriad Pro", sans-serif;
 
 // Text Colors
 $text-color: #6e6357;
@@ -104,6 +104,7 @@ body {
 	float: right;
 	background: #fff;
 	border-left: $gutter solid rgba(0, 0, 0, 0.04);
+	//border-bottom: $gutter solid rgba(0, 0, 0, 0.04);
 	@include background-clip(padding-box);
 
 	min-height: 100%;
@@ -671,9 +672,48 @@ aside.vcard {
 	}
 }
 
+
+div.home_wings {
+	width: $content-column;
+	background: #fff;
+
+}
+
 //	******************************************************************
 //	Footer
 //	******************************************************************
 #bottom {
 
+	 padding: $gutter 0 ;
+	 border-top: 1px solid #ccc;
+	 margin: 0 $gutter;
+	 @include clearfix;
+	 p.copyright {
+	 	width: $sidebar-column;
+
+	 	float: left;
+	 	font-size: 13px;
+	 	line-height: 19px;
+
+	 	a {
+	 
+	 		text-decoration: none;
+	 		border: none;
+	 	}
+	 	a.cc {
+			
+	 	}
+	 }
+
+	 a {
+	 	//color: #ccc;
+	 	//border-color: #ccc;
+	 }
+	 p.contact {
+	 	padding: 0;
+	 	width: $content-column;
+	 	@include box-sizing(border-box);
+	 	float: left;
+	 	font-size: $font-size;
+	 }
 }
