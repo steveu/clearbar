@@ -19,7 +19,7 @@
 
 	<aside class="blank">
 
-		<h3>I have skills in&hellip; <i>(Sadly no sweet bike or mustache)</i><!--<a href="/about/skills" class="btn grey">Full version</a>--></h3>
+		<h3>I got skills in&hellip; <i>(Sadly no sweet bike or mustache)</i><!--<a href="/about/skills" class="btn grey">Full version</a>--></h3>
 		<div id="skills_matrix">
 			<table>
 				<thead>

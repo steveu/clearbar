@@ -532,6 +532,7 @@ section.work {
 			    position: absolute;
 			    top: 0px;
 			    left: 0px;
+			    margin-top: 0;
 			    background: #555;
 			    text-indent: -99999px;
 
@@ -581,6 +582,24 @@ section.notes {
 				}
 			}
 		}
+	}
+}
+
+
+//	******************************************************************
+//	Contact
+//	******************************************************************
+aside.vcard {
+	width: $sidebar-column;
+	float: left;
+	padding-right: $gutter;
+	@include box-sizing(border-box);
+	div.hcard {
+		
+		h2 {
+			padding-top: 0;
+		}
+		border-right: 1px solid #ccc;
 	}
 }
 
