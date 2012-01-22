@@ -4,21 +4,16 @@ Text:
 
 # Hello there, I'm Steve Urmston.
 
-I&rsquo;m a thirty-something, interactive designer and web developer from York, where I live in Acomb with my beautiful <del>fiancé</del> <ins>wife</ins> Sarah. I've been making websites and applications professionally for 7 years.
-		
-I&rsquo;ve got two degrees, an entertaining but slightly irrelevant Political Science Masters from Glasgow, and a second altogether more relevant and equally entertaining MSc in (link: http://www.cs.york.ac.uk/postgraduate/taught-courses/msc-hcit/ text: Human-Centred Interactive Technologies) from York University.
+I&rsquo;m a thirty-something, interactive designer and web developer from York, where I live in Acomb with my beautiful <del>fiancé</del> <ins>wife</ins> Sarah.
 
-I work at (link: http://designition.co.uk/ text: Designition), where I&rsquo;m involved in many areas, from meetings though design, all the way to production code. But my passion is creating delightful interfaces and interactions.
+I've been making websites and applications professionally for 7 years.
+		
+I&rsquo;ve got two degrees, an entertaining but irrelevant Political Science Masters from Glasgow, and a second altogether more relevant and equally entertaining MSc in (link: http://www.cs.york.ac.uk/postgraduate/taught-courses/msc-hcit/ text: Human-Centred Interactive Technologies) from York University.
+
+I work at (link: http://designition.co.uk/ text: Designition), where I&rsquo;m involved throughout; from meetings though design, to production code. But my expertise is in interaction design and front-end development, and I'm passionate about delightful interfaces and interactions.
 
 ## About this site
 
 Formally my web design business, Clearbar is now my personal website where I keep my portfolio of (link: work text: work), and sporadically post (link: notes text: notes).
 
-The website was helped along by;
-
-* (link: http://getkirby.com/ text: Kirby)
-* (link: http://sass-lang.com/ text: Sass)
-* (link: http://jquery.com/ text: jQuery)
-* (link: http://raphaeljs.com/ text: Raphaël)
-
-and a whole lotta love.
+The website was helped by; (link: http://getkirby.com/ text: Kirby), (link: http://sass-lang.com/ text: Sass), (link: http://jquery.com/ text: jQuery), (link: http://compass-style.org/ text: Compass), (link: http://raphaeljs.com/ text: Raphaël), and was made with love.
