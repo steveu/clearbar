@@ -16,8 +16,8 @@
 
     		<h2>Personal Statement</h2>
 			<p>
-				I'm a passionate designer and developer with over 8 years experience creating quality websites
-				and applications for businesses large and small.
+				I'm a passionate designer and developer with over 8 years experience creating websites
+				and applications for businesses both large and small.
 			</p>
 			<p>
 				Comfortable in user research, visual design &amp; technical development,
@@ -56,7 +56,7 @@
 					</p>
   					<p class="description">
 	  					I generally take a broader role in many projects,
-	  					as well as taking several unusual projects from start to finish.
+	  					as well as taking unusual projects from start to finish.
 					</p>
 				</li>
   				<li class="experience vevent">
