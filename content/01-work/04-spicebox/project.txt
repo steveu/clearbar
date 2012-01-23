@@ -1,0 +1,27 @@
+Title: Rafi's Spicebox
+----
+id: spicebox
+----
+Date: August, 2010
+----
+Link: spicebox.co.uk
+----
+Text:
+
+As well as initial wireframes and analysis, I designed and developed the checkout processes for this e-commerce site.
+
+I also developed a trade only version that features a optimised ordering process for repeat clients. I know sales have been fantastic on this one.
+
+----
+wireframes: 70
+----
+graphics: 10
+----
+html: 20
+----
+script: 20
+----
+php: 50
+----
+ecom: 100
+----
