@@ -14,8 +14,8 @@
 			</aside>
 
 			<div class="post">
-				<h1> <a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></a></h1>
-				<?php echo markdown($item->text()) ?>
+				<h1><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></a></h1>
+				<?php echo kirbytext($item->text()) ?>
 			</div>
 			
 		</article>

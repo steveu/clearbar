@@ -29,8 +29,8 @@ $font-family: "Helvetica Neue", sans-serif;
 $heading-font-family: Gotham, museo-sans-1, museo-sans-2, georgia, "Myriad Pro", sans-serif;
 
 // Text Colors
-$text-color: #6e6357;
-$heading-color: #6c635f;
+$text-color: #4F4F4F;
+$heading-color: #4F4F4F;
 
 // Colors
 $orange: #DE7719;
@@ -60,7 +60,7 @@ $desktop-font-size: 20px;
 	@include establish-baseline(18px);
 }
 @media screen and (min-width: 1024px) {
-	$base-line-height: 28px;
+	$base-line-height: 30px;
 	@include establish-baseline(20px);
 }
 
@@ -184,7 +184,7 @@ aside.blank {
 			}
 
 			height: ($gutter * 0.55);
-			color: #888;
+			color: $heading-color;
 			font-weight: 100;
 			letter-spacing: 0.5px;
 			text-decoration: none;
@@ -225,7 +225,7 @@ aside.blank {
 					display: block;
 					line-height: $gutter;
 					padding-top: ($gutter / 2.7);
-					color: #666;
+					color: $heading-color;
 					text-align: center;
 					border-bottom: 1px solid #ddd;
 					font-weight: 400;

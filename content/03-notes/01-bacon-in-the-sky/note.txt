@@ -1,11 +1,25 @@
-Title: Bacon in the sky with diamonds.
+Title: Bacon In The Sky ... With Diamonds.
 ----
 Date: 01/02/12
 ----
 Text:
 
-Hot damn! I&#039;ve only gone and launched a personal website. Seriously, making websites for other people is far easier than doing so for yourself.
+Hot damn I&apos;ve only launched a personal website! As something of a serial scrapper, I&apos;ve burnt through my fair share of designs, all preferable to the fat nothing my domain has sported for the last 5 years.
 
-I've worked on the current incarnation for a year or so (<em>and by working I mean endlesly moving things around by 1 pixel</em>), but it&#039;s been about 5 since I had a website, and I must have started different designs 10 times over.
+Recently I&apos;ve begun to consider why I even want a website, and I believe this has tipped me over the edge. Thus as an eternal reminder of the solution to scrapping, I shall now <em>scratch my reasons into this HTML</em>.
+
+## Learning by doing
+
+I want to experiment with the bleeding edge techniques which make my profession fantastic. I shall also improve something more important, my writing, which whilst not a disaster, needs the polish which only consistently doing can bring.
+
+## Making waves
+
+No, not (link: https://wave.google.com/wave/?pli=1 text: that kind). The Web is constantly shifting. I will use Clearbar to document the work I am proud of, before it's inevitable demise.
+
+## Giving something back
+
+I&apos;ve been making websites professionally for 8 years, during which time I've consumed vast quantities of content, created by supremely talented people. Yet I never contribute, I don't even leave comments.
+
+This will change. Hold me to it.
 
 ----
