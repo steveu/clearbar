@@ -6,8 +6,8 @@
                 </p>
 
                 <p class="contact">
-                    <a href="steve@clearbar.org">steve@clearbar.org</a>.
-                    <a href="">I am on Twitter</a>.
+                    <a href="steve@clearbar.org">steve@clearbar.org</a> |
+                    <a href="">I am Twitter</a>.
                     
                 </p>
 

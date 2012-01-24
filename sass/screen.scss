@@ -25,8 +25,8 @@ $grid-background-baseline-height: 1.44444444em;
 $grid-background-baseline-color: rgba(255, 0, 0, 0.4);
 
 // Typefaces
-$font-family: "Helvetica Neue", sans-serif;
-$heading-font-family: Gotham, museo-sans-1, museo-sans-2, georgia, "Myriad Pro", sans-serif;
+$font-family: "dejarip-1", "dejarip-2", georgia, serif;
+$heading-font-family: museo-sans-1, museo-sans-2, "Myriad Pro", sans-serif;
 
 // Text Colors
 $text-color: #4F4F4F;
@@ -125,6 +125,10 @@ body {
 #page {
 	padding: 0 $gutter $gutter $gutter;
 	@include clearfix;
+
+	.home & {
+		//padding-bottom: 0;
+	}
 }
 
 section.content {
@@ -184,7 +188,7 @@ aside.blank {
 			}
 
 			height: ($gutter * 0.55);
-			color: $heading-color;
+			color: #5E5D5B;
 			font-weight: 100;
 			letter-spacing: 0.5px;
 			text-decoration: none;
@@ -614,9 +618,9 @@ section.hresume {
 			padding: 0;
 			padding-bottom: rhythm(0.2);
 			font-weight: 500;
-			//font-size: $tablet-font-size;
-			//font-family: $font-family;
-			//font-weight: bold;
+			font-size: $tablet-font-size;
+			font-family: $font-family;
+			font-weight: 600;
 		}
 
 		ol {
@@ -669,10 +673,18 @@ aside.vcard {
 }
 
 
-div.home_wings {
-	width: $content-column;
-	background: #fff;
-
+div.wings {
+	
+	background: url('/assets/images/wings.svg') -10px -50px no-repeat;
+	background-size: auto 110%;
+	height: 360px;
+	padding-left: $sidebar-column;
+	padding-right: $gutter;
+	h1 {
+		padding-top: 60px;
+		line-height: 1.4em;
+		padding-left: $gutter;
+	}
 }
 
 //	******************************************************************
@@ -710,6 +722,7 @@ div.home_wings {
 	 	width: $content-column;
 	 	@include box-sizing(border-box);
 	 	float: left;
+	 	text-align: right;
 	 	font-size: $font-size;
 	 }
 }
