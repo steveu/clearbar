@@ -19,7 +19,7 @@ body { font-size: 100%; line-height: 1.375em; }
 
 html > body { font-size: 16px; }
 
-@media screen and (min-width: 768px) { body { font-size: 112.5%; line-height: 1.444em; }
+@media screen and (min-width: 768px) { body { font-size: 112.5%; line-height: 1.5em; }
   html > body { font-size: 18px; } }
 @media screen and (min-width: 1024px) { body { font-size: 125%; line-height: 1.5em; }
   html > body { font-size: 20px; } }
@@ -292,7 +292,7 @@ aside.vcard { width: 35%; float: left; padding-right: 2.4em; -moz-box-sizing: bo
 aside.vcard div.hcard { border-right: 1px solid #ccc; }
 aside.vcard div.hcard h2 { padding-top: 0; }
 
-div.wings { background: url("/assets/images/wings.svg") -10px -50px no-repeat; background-size: auto 110%; height: 360px; padding-left: 35%; padding-right: 2.4em; }
+div.wings { background: url("/assets/images/wings.svg") 0px -40px no-repeat; background-size: auto 100%; height: 360px; padding-left: 35%; padding-right: 2.4em; }
 div.wings h1 { padding-top: 60px; line-height: 1.4em; padding-left: 2.4em; }
 
 #bottom { padding: 2.4em 0; border-top: 1px solid #ccc; margin: 0 2.4em; overflow: hidden; *zoom: 1; }

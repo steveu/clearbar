@@ -56,7 +56,7 @@ $desktop-font-size: 20px;
 @include establish-baseline($base-font-size);
 
 @media screen and (min-width: 768px) {
-	$base-line-height:26px;
+	$base-line-height:27px;
 	@include establish-baseline(18px);
 }
 @media screen and (min-width: 1024px) {
@@ -675,8 +675,8 @@ aside.vcard {
 
 div.wings {
 	
-	background: url('/assets/images/wings.svg') -10px -50px no-repeat;
-	background-size: auto 110%;
+	background: url('/assets/images/wings.svg') 0px -40px no-repeat;
+	background-size: auto 100%;
 	height: 360px;
 	padding-left: $sidebar-column;
 	padding-right: $gutter;
