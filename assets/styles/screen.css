@@ -31,7 +31,7 @@ body { font-family: "Helvetica Neue", sans-serif; color: #4f4f4f; background: #e
 
 .visuallyhidden { visibility: hidden; height: 0px; width: 0px; }
 
-h1, h2, h3, h4, h5, h6 { font-weight: normal; color: #4f4f4f; font-family: Gotham, museo-sans-1, museo-sans-2, georgia, "Myriad Pro", sans-serif; font-weight: 300; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; color: #54524e; font-family: Gotham, museo-sans-1, museo-sans-2, georgia, "Myriad Pro", sans-serif; font-weight: 300; }
 
 h1 { font-size: 1.6em; line-height: 0.898em; padding-top: 0em; padding-bottom: 0.898em; }
 h1 i { font-style: normal; color: #4f4f4f; font-size: 17.6px; }
@@ -198,7 +198,7 @@ aside.blank table th { width: 50%; }
 
 #top { padding: 2.4em; overflow: hidden; *zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; overflow: auto; }
 #top h1 { margin: 0; padding: 0; }
-#top h1 a { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; display: block; padding: 0px 2.4em 0 1.56em; position: relative; font-size: 40px; height: 1.32em; color: #4f4f4f; font-weight: 100; letter-spacing: 0.5px; text-decoration: none; line-height: 1.344em; width: 35%; float: left; text-align: left; border: none; }
+#top h1 a { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; display: block; padding: 0px 2.4em 0 1.56em; position: relative; font-size: 40px; height: 1.32em; color: #54524e; font-weight: 100; letter-spacing: 0.5px; text-decoration: none; line-height: 1.344em; width: 35%; float: left; text-align: left; border: none; }
 @media screen and (min-width: 768px) { #top h1 a { font-size: 45px; } }
 @media screen and (min-width: 1024px) { #top h1 a { font-size: 50px; } }
 #top h1 a svg { width: 1.296em; height: 1.296em; position: absolute; top: 0px; left: 0px; background: #de7719; }
@@ -206,7 +206,7 @@ aside.blank table th { width: 50%; }
 #top nav { width: 65%; float: left; }
 #top nav ul { list-style: none; font-family: Gotham, museo-sans-1, museo-sans-2, georgia, "Myriad Pro", sans-serif; }
 #top nav ul li { float: left; width: 25%; }
-#top nav ul li a { display: block; line-height: 2.4em; padding-top: 0.889em; color: #4f4f4f; text-align: center; border-bottom: 1px solid #ddd; font-weight: 400; text-decoration: none; font-size: 16px; text-transform: none; }
+#top nav ul li a { display: block; line-height: 2.4em; padding-top: 0.889em; color: #54524e; text-align: center; border-bottom: 1px solid #ddd; font-weight: 400; text-decoration: none; font-size: 16px; text-transform: none; }
 @media screen and (min-width: 768px) { #top nav ul li a { font-size: 18px; } }
 @media screen and (min-width: 1024px) { #top nav ul li a { font-size: 20px; } }
 #top nav ul li a:hover { color: #000; border-color: #333; }
