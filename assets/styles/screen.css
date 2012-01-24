@@ -268,7 +268,8 @@ section.work article figure a figcaption img { *display: inline; }
 .breakdown td span span.percent90 { width: 90%; }
 .breakdown td span span.percent100 { width: 100%; }
 
-section.notes article { overflow: hidden; *zoom: 1; padding-bottom: 2.4em; margin-bottom: 2.4em; border-bottom: 1px solid #ccc; }
+section.notes { padding-top: 1.2em; }
+section.notes article { overflow: hidden; *zoom: 1; padding-bottom: 3.6em; margin-bottom: 3.6em; border-bottom: 1px solid #ccc; }
 section.notes article aside.meta { width: 35%; float: left; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; padding: 1px 2.4em 0 0px; }
 section.notes article aside.meta p { font-size: 1.1em; line-height: 1.307em; }
 section.notes article aside.meta p + p { padding-top: 5px; }

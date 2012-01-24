@@ -548,12 +548,13 @@ section.work {
 //	******************************************************************
 //	Blog
 //	******************************************************************
+
 section.notes {
-	
+	padding-top: $gutter / 2;
 	article {
 		@include clearfix;
-		padding-bottom: $gutter;
-		margin-bottom: $gutter;
+		padding-bottom: $gutter * 1.5;
+		margin-bottom: $gutter * 1.5;
 		border-bottom: 1px solid #ccc;
 		aside.meta {
 			width: $sidebar-column;
