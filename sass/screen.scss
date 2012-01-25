@@ -33,7 +33,9 @@ $text-color: #4F4F4F;
 $heading-color: #54524E;
 
 // Colors
+
 $orange: #DE7719;
+//$orange: #E0523C; // redy
 $light-blue: #E7F3FF;
 
 // Grid
@@ -104,12 +106,13 @@ body {
 	float: right;
 	background: #fff;
 	border-left: $gutter solid rgba(0, 0, 0, 0.04);
-	//border-bottom: $gutter solid rgba(0, 0, 0, 0.04);
+	border-bottom: $gutter solid rgba(0, 0, 0, 0.04);
 	@include background-clip(padding-box);
 
 	min-height: 100%;
 	width: 100%;
 	position: relative;
+	margin-bottom: $gutter;
 }
 
 #stripe {
@@ -184,13 +187,13 @@ aside.blank {
 				font-size: $tablet-font-size * 2.5;
 			}
 			@media screen and (min-width: 1024px) {
-				font-size: $desktop-font-size * 2.5;
+				font-size: $desktop-font-size * 2.4;
 			}
 
 			height: ($gutter * 0.55);
-			color: #787776;
+			color: #737373;
 			font-weight: 100;
-			//letter-spacing: 0.5px;
+			letter-spacing: 1px;
 			text-decoration: none;
 			line-height: ($gutter * 0.56);
 			width: 35%;
@@ -203,7 +206,7 @@ aside.blank {
 			background-size: auto 100%;
 
 			&.active {
-				color: #F08B39;
+				color: $orange;
 			}
 		}
 	}
@@ -245,8 +248,8 @@ aside.blank {
 						border-color: #333;
 					}
 					&.active {
-						color: #F08B39;
-						border-color: #FF9003;
+						color: $orange;
+						border-color: $orange;
 					}
 				}
 			}
