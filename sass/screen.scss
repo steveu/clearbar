@@ -26,7 +26,7 @@ $grid-background-baseline-color: rgba(255, 0, 0, 0.4);
 
 // Typefaces
 $font-family: "dejarip-1", "dejarip-2", georgia, serif;
-$heading-font-family: museo-sans-1, museo-sans-2, "Myriad Pro", sans-serif;
+$heading-font-family:"dejarip-1", "dejarip-2", museo-sans-1, museo-sans-2, "Myriad Pro", sans-serif;
 
 // Text Colors
 $text-color: #4F4F4F;
@@ -188,8 +188,8 @@ aside.blank {
 			}
 
 			height: ($gutter * 0.55);
-			color: #5E5D5B;
-			font-weight: 100;
+			color: #8A8987;
+			font-weight: 0;
 			letter-spacing: 0.5px;
 			text-decoration: none;
 			line-height: ($gutter * 0.56);

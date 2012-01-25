@@ -31,7 +31,7 @@ body { font-family: "dejarip-1", "dejarip-2", georgia, serif; color: #4f4f4f; ba
 
 .visuallyhidden { visibility: hidden; height: 0px; width: 0px; }
 
-h1, h2, h3, h4, h5, h6 { font-weight: normal; color: #54524e; font-family: museo-sans-1, museo-sans-2, "Myriad Pro", sans-serif; font-weight: 300; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; color: #54524e; font-family: "dejarip-1", "dejarip-2", museo-sans-1, museo-sans-2, "Myriad Pro", sans-serif; font-weight: 300; }
 
 h1 { font-size: 1.6em; line-height: 0.898em; padding-top: 0em; padding-bottom: 0.898em; }
 h1 i { font-style: normal; color: #4f4f4f; font-size: 17.6px; }
@@ -198,12 +198,12 @@ aside.blank table th { width: 50%; }
 
 #top { padding: 2.4em; overflow: hidden; *zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; overflow: auto; }
 #top h1 { margin: 0; padding: 0; }
-#top h1 a { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; display: block; padding: 0px 2.4em 0 1.56em; position: relative; font-size: 40px; height: 1.32em; color: #5E5D5B; font-weight: 100; letter-spacing: 0.5px; text-decoration: none; line-height: 1.344em; width: 35%; float: left; text-align: left; border: none; padding-left: 1.56em; background: url("/assets/images/clearbar.svg") 0px 0px no-repeat; background-size: auto 100%; }
+#top h1 a { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; display: block; padding: 0px 2.4em 0 1.56em; position: relative; font-size: 40px; height: 1.32em; color: #8A8987; font-weight: 0; letter-spacing: 0.5px; text-decoration: none; line-height: 1.344em; width: 35%; float: left; text-align: left; border: none; padding-left: 1.56em; background: url("/assets/images/clearbar.svg") 0px 0px no-repeat; background-size: auto 100%; }
 @media screen and (min-width: 768px) { #top h1 a { font-size: 45px; } }
 @media screen and (min-width: 1024px) { #top h1 a { font-size: 50px; } }
 #top h1 a.active { color: #F08B39; }
 #top nav { width: 65%; float: left; }
-#top nav ul { list-style: none; font-family: museo-sans-1, museo-sans-2, "Myriad Pro", sans-serif; }
+#top nav ul { list-style: none; font-family: "dejarip-1", "dejarip-2", museo-sans-1, museo-sans-2, "Myriad Pro", sans-serif; }
 #top nav ul li { float: left; width: 25%; }
 #top nav ul li a { display: block; line-height: 2.4em; padding-top: 0.889em; color: #54524e; text-align: center; border-bottom: 1px solid #ddd; font-weight: 400; text-decoration: none; font-size: 16px; text-transform: none; }
 @media screen and (min-width: 768px) { #top nav ul li a { font-size: 18px; } }
