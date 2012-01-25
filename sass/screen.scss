@@ -188,9 +188,9 @@ aside.blank {
 			}
 
 			height: ($gutter * 0.55);
-			color: #8A8987;
-			font-weight: 0;
-			letter-spacing: 0.5px;
+			color: #787776;
+			font-weight: 100;
+			//letter-spacing: 0.5px;
 			text-decoration: none;
 			line-height: ($gutter * 0.56);
 			width: 35%;
@@ -724,5 +724,10 @@ div.wings {
 	 	float: left;
 	 	text-align: right;
 	 	font-size: $font-size;
+	 	color: #aaa;
+
+	 	a {
+	 		padding: 0 3px;
+	 	}
 	 }
 }
