@@ -6,9 +6,9 @@
 <div class="wings">
 	<h1>
 		This is <a href="">my</a> website.
-		It's not perfect, but <em>I'm happy</em>.
+		It is not finished, but it deserves a life.
 		I make <a href="">others</a>, and have for a <a href="">while</a>.
-		I sometimes <a href="">write</a>. We can <a href="">talk</a>, if you want.
+		I <del>sometimes</del> <ins>rarely</ins> <a href="">write</a>. We can <a href="">talk</a> &hellip; if you want.
 	</h1>
 </div>
 
