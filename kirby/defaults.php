@@ -1,7 +1,10 @@
 <?php
 
-c::set('version.string', '1.0.2');
-c::set('version.number', 1.02);
+// direct access protection
+if(!defined('KIRBY')) die('Direct access is not allowed');
+
+c::set('version.string', '1.0.3');
+c::set('version.number', 1.03);
 
 // define all directories
 c::set('root.templates', c::get('root.site') . '/templates');

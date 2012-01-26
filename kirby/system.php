@@ -1,5 +1,11 @@
 <?php
 
+// direct access protection
+if(!isset($root)) die('Direct access is not allowed');
+
+// used for direct access protection
+define('KIRBY', true);
+
 // check for a proper phpversion
 if(floatval(phpversion()) < 5.2) {
   die('Please upgrade to PHP 5.2 or higher');
@@ -14,20 +20,10 @@ c::set('root.kirby',   $rootKirby);
 c::set('root.site',    $rootSite);
 c::set('root.content', $rootContent);
 
-require_once($rootKirby . '/defaults.php');
-require_once($rootKirby . '/lib/cache.php');
-require_once($rootKirby . '/lib/obj.php');
-require_once($rootKirby . '/lib/pagination.php');
-require_once($rootKirby . '/lib/files.php');
-require_once($rootKirby . '/lib/variables.php');
-require_once($rootKirby . '/lib/pages.php');
-require_once($rootKirby . '/lib/site.php');
 require_once($rootKirby . '/lib/load.php');
-require_once($rootKirby . '/lib/uri.php');
-require_once($rootKirby . '/lib/helpers.php');
-require_once($rootKirby . '/lib/template.php');
 
-// autoload additional configs, parsers and plugins
+// load the rest of the system
+load::lib();
 load::config();
 load::parsers();
 load::plugins();

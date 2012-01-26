@@ -1,5 +1,8 @@
 <?php
 
+// direct access protection
+if(!defined('KIRBY')) die('Direct access is not allowed');
+
 class page extends obj {
 
   function __construct() {
@@ -132,7 +135,11 @@ class page extends obj {
   }
   
   function url() {
-    return ($this->isHomePage()) ? u() : u($this->uri);
+    if($this->isHomePage() && !c::get('home.keepurl')) {
+      return u();
+    } else {
+      return u($this->uri);
+    }
   }
 
   function tinyurl() {
@@ -330,6 +337,7 @@ class pages extends obj {
   
   var $index = array();
   var $pagination = null;
+  var $active = false;
   
   function __toString() {
     $output = array();
@@ -384,19 +392,22 @@ class pages extends obj {
   }
     
   function active() {
-    
-    if($this->active) return $this->active;
-    
+        
     global $site;
 
-    $uri = $site->uri->path()->toString();
+    if($this->active) return $this->active;
+
+    $uri = (string)$site->uri->path();
 
     if(empty($uri)) $uri = c::get('home');
-            
+
     $page = $this->find($uri);
-    $page = (!$page) ? $site->pages->find(c::get('404')) : $page;
-        
-    return $page;
+
+    if(!$page || $page->uri() != $uri) {
+      $page = $site->pages->find(c::get('404'));
+    }
+           
+    return $this->active = $page;
                     
   }
   
@@ -441,13 +452,22 @@ class pages extends obj {
     $args = func_get_args();
     return $this->findBy('hash', $args);  
   }
-    
-  function visible() {
+  
+  function filterBy($field, $value, $split=false) {
     $pages = array();
     foreach($this->_ as $key => $page) {
-      if($page->visible) $pages[$key] = $page;
-    }   
+      if($split) {
+        $values = str::split((string)$page->$field(), $split);
+        if(in_array($value, $values)) $pages[$key] = $page;
+      } else if($page->$field() == $value) {
+        $pages[$key] = $page;
+      }
+    }
     return new pages($pages);    
+  }
+    
+  function visible() {
+    return $this->filterBy('visible', true);
   }
   
   function countVisible() {
@@ -455,41 +475,13 @@ class pages extends obj {
   }
 
   function invisible() {
-    $pages = array();
-    foreach($this->_ as $key => $page) {
-      if(!$page->visible) $pages[$key] = $page;
-    }   
-    return new pages($pages);      
+    return $this->filterBy('visible', false);
   }
     
   function countInvisible() {
     return $this->invisible()->count();  
   }
-  
-  function online() {
-    $pages = array();
-    foreach($this->_ as $key => $page) {
-      if($page->online) $pages[$key] = $page;
-    }   
-    return new pages($pages);        
-  }
-
-  function countOnline() {
-    return $this->online()->count();    
-  }
-  
-  function offline() {
-    $pages = array();
-    foreach($this->_ as $key => $page) {
-      if($page->offline) $pages[$key] = $page;
-    }   
-    return new pages($pages);          
-  }
-  
-  function countOffline() {
-    return $this->offline()->count();      
-  }
-
+    
   function without($uid) {
     $pages = $this->_;
     unset($pages[$uid]);

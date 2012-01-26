@@ -1,18 +1,21 @@
 <?php
 
+// direct access protection
+if(!defined('KIRBY')) die('Direct access is not allowed');
+
 function kirbytext($text, $markdown=true) {
-  $text = kirbytext::get($text); 
-  if($markdown) $text = markdown($text);
-  return $text;  
+  return kirbytext::init($text, $markdown);
 }
 
 // create an excerpt without html and kirbytext
-function excerpt($text, $length=140) {
-  return str::excerpt(kirbytext($text), $length);
+function excerpt($text, $length=140, $markdown=true) {
+  return str::excerpt(kirbytext::init($text, $markdown), $length);
 }
 
 function youtube($url, $width=false, $height=false, $class=false) {
-  return kirbytext::youtube(array(
+  $name  = kirbytext::classname();
+  $class = new $name;
+  return $class->youtube(array(
     'youtube' => $url,
     'width'   => $width,
     'height'  => $height,
@@ -21,7 +24,9 @@ function youtube($url, $width=false, $height=false, $class=false) {
 }
 
 function vimeo($url, $width=false, $height=false, $class=false) {
-  return kirbytext::vimeo(array(
+  $name  = kirbytext::classname();
+  $class = new $name;
+  return $class->vimeo(array(
     'vimeo'  => $url,
     'width'  => $width,
     'height' => $height,
@@ -30,11 +35,15 @@ function vimeo($url, $width=false, $height=false, $class=false) {
 }
 
 function flash($url, $width=false, $height=false) {
-  return kirbytext::flash($url, $width, $height);
+  $name  = kirbytext::classname();
+  $class = new $name;
+  return $class->flash($url, $width, $height);
 }
 
 function twitter($username, $text=false, $title=false, $class=false) {
-  return kirbytext::twitter(array(
+  $name  = kirbytext::classname();
+  $class = new $name;
+  return $class->twitter(array(
     'twitter' => $username,
     'text'    => $text,
     'title'   => $title,
@@ -43,7 +52,9 @@ function twitter($username, $text=false, $title=false, $class=false) {
 }
 
 function gist($url, $file=false) {
-  return kirbytext::gist(array(
+  $name  = kirbytext::classname();
+  $class = new $name;
+  return $class->gist(array(
     'gist' => $url,
     'file' => $file
   ));
@@ -52,19 +63,40 @@ function gist($url, $file=false) {
 
 class kirbytext {
   
-  static public $obj  = false;
-  static public $tags = array('gist', 'twitter', 'date', 'image', 'file', 'link', 'email', 'youtube', 'vimeo');
-  static public $attr = array('text', 'file', 'width', 'height', 'link', 'popup', 'class', 'title', 'alt');
-  
-  static function get($text) {
-    // pass the parent page if available
-    if(is_object($text)) self::$obj = $text->parent;
-    $text = preg_replace_callback('!(?=[^\]])\((' . implode('|', self::$tags) . '):(.*?)\)!i', 'kirbytext::parse', $text);
-    $text = preg_replace_callback('!```(.*?)```!is', 'kirbytext::code', $text);
-    return $text;       
+  var $obj   = null;
+  var $text  = null;
+  var $mdown = false;
+  var $tags  = array('gist', 'twitter', 'date', 'image', 'file', 'link', 'email', 'youtube', 'vimeo');
+  var $attr  = array('text', 'file', 'width', 'height', 'link', 'popup', 'class', 'title', 'alt');
+
+  function init($text, $mdown=true) {
+    
+    $classname = self::classname();            
+    $kirbytext = new $classname($text, $mdown);    
+    return $kirbytext->get();    
+              
   }
 
-  static function code($code) {
+  function __construct($text, $mdown=true) {
+      
+    $this->text  = $text;  
+    $this->mdown = $mdown;
+          
+    // pass the parent page if available
+    if(is_object($this->text)) $this->obj = $this->text->parent;
+
+  }
+  
+  function get() {
+
+    $text = preg_replace_callback('!(?=[^\]])\((' . implode('|', $this->tags) . '):(.*?)\)!i', array($this, 'parse'), (string)$this->text);
+    $text = preg_replace_callback('!```(.*?)```!is', array($this, 'code'), $text);
+    
+    return ($this->mdown) ? markdown($text) : $text;
+
+  }
+
+  function code($code) {
     
     $code = @$code[1];
     $lines = explode("\n", $code);
@@ -90,17 +122,17 @@ class kirbytext {
     
   }
 
-  static function parse($args) {
+  function parse($args) {
 
     $method = strtolower(@$args[1]);
     $string = @$args[0];    
     
     if(empty($string)) return false;
-    if(!method_exists('kirbytext', $method)) return $string;
+    if(!method_exists($this, $method)) return $string;
     
     $replace = array('(', ')');            
     $string  = str_replace($replace, '', $string);
-    $attr    = array_merge(self::$tags, self::$attr);
+    $attr    = array_merge($this->tags, $this->attr);
     $search  = preg_split('!(' . implode('|', $attr) . '):!i', $string, false, PREG_SPLIT_DELIM_CAPTURE|PREG_SPLIT_NO_EMPTY);
     $result  = array();
     $num     = 0;
@@ -117,32 +149,20 @@ class kirbytext {
 
     }
 
-    return self::$method($result);
+    return $this->$method($result);
         
   }
-  
-  static function date($params) {
-    
-    $format = @$params['date'];
-    
-    if(str::lower($format) == 'year') {
-      return date('Y');            
-    } else {
-      return date($format);        
-    }
-    
-  }
 
-  static function url($url) {
+  function url($url) {
     if(str::contains($url, 'http://') || str::contains($url, 'https://')) return $url;
 
-    if(!self::$obj) {
+    if(!$this->obj) {
       global $site;
       
       // search for a matching 
       $files = $site->pages()->active()->files();
     } else {
-      $files = self::$obj->files();
+      $files = $this->obj->files();
     }
             
     if($files) {
@@ -153,12 +173,7 @@ class kirbytext {
     return $url;
   }
 
-  static function target($params) {
-    if(empty($params['popup'])) return false;
-    return ' target="_blank"';
-  }
-
-  static function link($params) {
+  function link($params) {
 
     $url    = @$params['link'];
     $class  = @$params['class'];
@@ -170,46 +185,13 @@ class kirbytext {
     if(!empty($title)) $title = ' title="' . html($title) . '"';
         
     if(empty($url)) return false;
-    if(empty($params['text'])) return '<a' . $target . $class . $title . ' href="' . self::url($url) . '">' . h($url) . '</a>';
+    if(empty($params['text'])) return '<a' . $target . $class . $title . ' href="' . $this->url($url) . '">' . html($url) . '</a>';
 
-    return '<a' . $target . $class . $title . ' href="' . self::url($url) . '">' . h($params['text']) . '</a>';
-
-  }
-
-  static function email($params) {
-    
-    $url   = @$params['email'];
-    $class = @$params['class'];
-    $title = @$params['title'];
-    
-    if(empty($url)) return false;
-    return str::email($url, @$params['text'], $title, $class);
+    return '<a' . $target . $class . $title . ' href="' . $this->url($url) . '">' . html($params['text']) . '</a>';
 
   }
 
-  static function twitter($params) {
-    
-    $username = @$params['twitter'];
-    $class  = @$params['class'];
-    $title  = @$params['title'];
-    $target = self::target($params);
-    
-    if(empty($username)) return false;
-
-    $username = str_replace('@', '', $username);
-    $url = 'http://twitter.com/' . $username;
-
-    // add a css class if available
-    if(!empty($class)) $class = ' class="' . $class . '"';
-    if(!empty($title)) $title = ' title="' . html($title) . '"';
-    
-    if(empty($params['text'])) return '<a' . $target . $class . $title . ' href="' . self::url($url) . '">@' . h($username) . '</a>';
-
-    return '<a' . $target . $class . $title . ' href="' . self::url($url) . '">' . h($params['text']) . '</a>';
-
-  }
-  
-  static function image($params) {
+  function image($params) {
     
     global $site;
     
@@ -235,17 +217,17 @@ class kirbytext {
     if(!empty($title)) $title = ' title="' . html($title) . '"';
     if(empty($alt))    $alt   = $site->title();
             
-    $image = '<img src="' . self::url($url) . '"' . $w . $h . $class . $title . ' alt="' . h($alt) . '" />';
+    $image = '<img src="' . $this->url($url) . '"' . $w . $h . $class . $title . ' alt="' . html($alt) . '" />';
 
     if(!empty($params['link'])) {
-      return '<a' . $class . $target . $title . ' href="' . self::url($params['link']) . '">' . $image . '</a>';
+      return '<a' . $class . $target . $title . ' href="' . $this->url($params['link']) . '">' . $image . '</a>';
     }
     
     return $image;
     
   }
 
-  static function file($params) {
+  function file($params) {
 
     $url    = @$params['file'];
     $text   = @$params['text'];
@@ -253,15 +235,57 @@ class kirbytext {
     $title  = @$params['title'];
     $target = self::target($params);
 
-    if(empty($text)) $text = h($url);
-
+    if(empty($text))   $text  = $url;
     if(!empty($class)) $class = ' class="' . $class . '"';
     if(!empty($title)) $title = ' title="' . html($title) . '"';
 
-    return '<a' . $target . $title . $class . ' href="' . self::url($url) . '">' . h($text) . '</a>';
+    return '<a' . $target . $title . $class . ' href="' . $this->url($url) . '">' . html($text) . '</a>';
+
+  }
+  
+  static function date($params) {
+    $format = @$params['date'];
+    return (str::lower($format) == 'year') ? date('Y') : date($format);
+  }
+
+  static function target($params) {
+    if(empty($params['popup'])) return false;
+    return ' target="_blank"';
+  }
+
+  static function email($params) {
+    
+    $url   = @$params['email'];
+    $class = @$params['class'];
+    $title = @$params['title'];
+    
+    if(empty($url)) return false;
+    return str::email($url, @$params['text'], $title, $class);
 
   }
 
+  static function twitter($params) {
+    
+    $username = @$params['twitter'];
+    $class    = @$params['class'];
+    $title    = @$params['title'];
+    $target   = self::target($params);
+    
+    if(empty($username)) return false;
+
+    $username = str_replace('@', '', $username);
+    $url = 'http://twitter.com/' . $username;
+
+    // add a css class if available
+    if(!empty($class)) $class = ' class="' . $class . '"';
+    if(!empty($title)) $title = ' title="' . html($title) . '"';
+    
+    if(empty($params['text'])) return '<a' . $target . $class . $title . ' href="' . $url . '">@' . html($username) . '</a>';
+
+    return '<a' . $target . $class . $title . ' href="' . $url . '">' . html($params['text']) . '</a>';
+
+  }
+  
   static function youtube($params) {
 
     $url   = @$params['youtube'];
@@ -340,6 +364,18 @@ class kirbytext {
     return '<script src="' . $url . '"></script>';
   }
 
+  static function classname() {
+    return class_exists('kirbytextExtended') ? 'kirbytextExtended' : 'kirbytext';
+  }
+
+  function addTags() {
+    $this->tags = array_merge($this->tags, func_get_args());
+  }
+
+  function addAttributes($attr) {
+    $this->attr = array_merge($this->attr, func_get_args());      
+  }
+  
 }
 
 ?>

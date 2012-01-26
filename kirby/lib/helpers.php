@@ -1,5 +1,8 @@
 <?php
 
+// direct access protection
+if(!defined('KIRBY')) die('Direct access is not allowed');
+
 // easy url builder
 function url($uri=false) {
   if(c::get('rewrite')) {
@@ -54,6 +57,12 @@ function css($url, $media=false) {
 function js($url) {
   $url = (str::contains($url, 'http://') || str::contains($url, 'https://')) ? $url : url(ltrim($url, '/'));
   return '<script src="' . $url . '"></script>' . "\n";
+}
+
+// fetch a param from the URI
+function param($key, $default=false) {
+  global $site;
+  return $site->uri->params($key, $default);
 }
 
 ?>
