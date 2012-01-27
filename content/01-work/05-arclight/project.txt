@@ -8,7 +8,7 @@ Link: york-arclight.co.uk
 ----
 Text:
 
-I designed and developed an innovative JavaScript driven site for a homeless shelter in York.
+I designed and developed an innovative (it was innovative at the time yeah, I realise it's pretty obvious now) JavaScript driven site for a homeless shelter in York.
 
 ----
 wireframes: 100

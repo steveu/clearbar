@@ -1,4 +1,4 @@
-Title: Beatherder Traders
+Title: Beat-Herder Traders
 ----
 id: beatherder-traders
 ----
@@ -8,9 +8,9 @@ Link: traders.beatherder.co.uk
 ----
 Text:
 
-I designed and developed an application form for traders at The Beatherder festival.
+I designed and developed an application form for traders (and a copy for entertainers) at The Beat-Herder festival.
 
-Built using my PHP form classes, the mini site is clear and organised, and includes slick JavaScript file upload.
+Built using a set of PHP form classes I developed, the mini site is clear and organised, and includes slick JavaScript file upload.
 
 ----
 wireframes: 100

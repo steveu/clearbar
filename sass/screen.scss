@@ -86,6 +86,7 @@ body {
 
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
+
 }
 
 //	******************************************************************
@@ -128,7 +129,7 @@ body {
 
 #page {
 	padding: 0 $gutter $gutter $gutter;
-	@include clearfix;
+	@include pie-clearfix;
 
 	.home & {
 		//padding-bottom: 0;
@@ -188,13 +189,14 @@ aside.blank {
 				font-size: $tablet-font-size * 2.5;
 			}
 			@media screen and (min-width: 1024px) {
-				font-size: $desktop-font-size * 2.4;
+				font-size: $desktop-font-size * 2.5;
 			}
 
 			height: ($gutter * 0.55);
 			color: #737373;
 			font-weight: 100;
-			letter-spacing: 1px;
+			//letter-spacing: -1px;
+			text-shadow: -1px -1px 1px #fff;
 			text-decoration: none;
 			line-height: ($gutter * 0.56);
 			width: 35%;
@@ -679,15 +681,47 @@ aside.vcard {
 
 div.wings {
 	
-	background: url('/assets/images/wings.svg') 0px -40px no-repeat;
-	background-size: auto 100%;
+	background: url('/assets/images/wings.svg') 0px -60px no-repeat;
+	background-size: auto 110%;
 	height: 360px;
 	padding-left: $sidebar-column;
 	padding-right: $gutter;
+	position: relative;
 	h1 {
 		padding-top: 60px;
 		line-height: 1.4em;
-		padding-left: $gutter;
+		padding-left: 48px;
+		font-size: 32px;
+		line-height: 48px;
+	}
+
+	&:after, &:before {
+		content: "";
+		display: block;
+		width: 150px;
+		height: 150px;
+		background: url('/assets/images/wings.svg') 0px 0px no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		bottom: 60px;
+		left: -100px;
+		z-index: 999999999;
+
+	}
+
+	&:before {
+		width: 120px;
+		height: 120px;
+		bottom: -66px;
+		right: 40px;
+		left: auto;
+		-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+
 	}
 }
 

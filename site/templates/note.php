@@ -16,6 +16,7 @@
 				<h1><?php echo html($page->title()) ?></h1>
     			<?php echo kirbytext($page->text()) ?>
 
+    			<?php snippet('disqus', array('disqus_shortname' => 'clearbar', 'disqus_developer' => true)) ?>
 			</div>
 			
 		</article>

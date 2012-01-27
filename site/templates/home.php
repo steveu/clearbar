@@ -8,7 +8,7 @@
 		This is <a href="">my</a> website.
 		It is not finished, but it deserves a life.
 		I make <a href="">others</a>, and have for a <a href="">while</a>.
-		I <del>sometimes</del> <ins>rarely</ins> <a href="">write</a>. We can <a href="">talk</a> &hellip; if you want.
+		I sometimes <a href="">write</a>. We can <a href="">talk</a> &hellip; if you want.
 	</h1>
 </div>
 
