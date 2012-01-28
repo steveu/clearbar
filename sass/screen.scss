@@ -46,7 +46,7 @@ $sidebar-column: 35%;
 
 // Media Query Font Sizes
 $font-size: 16px;
-$tablet-font-size: 18px;
+$tablet-font-size: 16px;
 $desktop-font-size: 20px;
 
 
@@ -58,8 +58,8 @@ $desktop-font-size: 20px;
 @include establish-baseline($base-font-size);
 
 @media screen and (min-width: 768px) {
-	$base-line-height:27px;
-	@include establish-baseline(18px);
+	$base-line-height: $tablet-font-size * 1.5;
+	@include establish-baseline($tablet-font-size);
 }
 @media screen and (min-width: 1024px) {
 	$base-line-height: 30px;
@@ -117,7 +117,7 @@ body {
 
 #stripe {
 	display: block;
-	height: ($gutter * 1.35);
+	height: ($gutter * 1.4);
 	width: 50%;
 	position: absolute;
 	top: $gutter;
@@ -176,15 +176,22 @@ aside.blank {
 	h1 {
 		margin: 0;
 		padding: 0;
+		margin-bottom: ($gutter / 4);
+		font-size: 16px;
 
 		a {
 			@include box-sizing(border-box);
 			display: block;
 			padding: 0px $gutter 0 ($gutter * 0.65);
 			position: relative;
+
 			font-size: $font-size * 2.5;
-			@media screen and (min-width: 768px) {
+
+			@media screen and (min-width: 720px) {
 				font-size: $tablet-font-size * 2.5;
+				width: 35%;
+				float: left;
+				margin-bottom: 0;
 			}
 			@media screen and (min-width: 1024px) {
 				font-size: $desktop-font-size * 2.5;
@@ -197,16 +204,19 @@ aside.blank {
 			text-shadow: -1px -1px 1px #fff;
 			text-decoration: none;
 			line-height: ($gutter * 0.56);
-			width: 35%;
-			float: left;
+			
 			text-align: left;
 			border: none;
 
 			padding-left: ($gutter * 0.65);
+			@media screen and (min-width: 768px) {
+				padding-left: ($gutter * 0.65);
+			}
+
 			background: url('/assets/images/clearbar.svg') 0px 0px no-repeat;
 			background-size: auto 100%;
 
-			@include transition-property(color);
+			@include transition-property(all);
   			@include transition-duration(0.3s);
   			@include transition-timing-function(cubic-bezier(.10, .10, .25, .90));
 
@@ -221,8 +231,11 @@ aside.blank {
 	}
 
 	nav {
-		width: 65%;
-		float: left;
+
+		@media screen and (min-width: 720px) {
+			width: 65%;
+			float: left;
+		}
 
 		ul {
 			list-style: none;
@@ -285,8 +298,6 @@ aside.blank {
 
 	
 	&:before {
-		
-		
 		display: block;
 		content: "";
 		width: 0px;
@@ -317,7 +328,6 @@ aside.blank {
 		@media screen and (min-width: 1024px) {
 			font-size: $desktop-font-size * 1.82;
 		}
-
 		
 		//@include adjust-font-size-to(($base-font-size * 1.85), 1);
 		text-shadow: -1px -1px 1px rgba(0,0,0,0.25);
@@ -722,41 +732,75 @@ aside.vcard {
 }
 
 
-div.wings {
+div.home_slideshow {
 	
-	background: url('/assets/images/wings.svg') 0px -30px no-repeat;
-	background-size: $sidebar-column auto;
-	height: 360px;
+	background: url('/assets/images/wings.svg') 5% 0px no-repeat;
+	background-size: ($sidebar-column - 10%) auto;
+
+
 	padding-left: $sidebar-column;
-	padding-right: $gutter;
 	position: relative;
+
+	div {
+		padding: $gutter $gutter ($gutter * 1.5) $gutter;
+
+	}
 	h1 {
-		padding-top: 60px;
-		line-height: 1.4em;
-		padding-left: 48px;
-		font-size: 32px;
-		line-height: 48px;
+		padding: 0;
+		margin: 0;
+		line-height: 1.5em;
+		@media screen and (min-width: 768px) {
+			font-size: $tablet-font-size * 1.25;
+			//line-height: ($tablet-font-size * 1.4) * 1.5;
+		}
+		@media screen and (min-width: 896px) {
+			font-size: $desktop-font-size * 1.25;
+			//font-size: $tablet-font-size * 1.8;
+		}
+		@media screen and (min-width: 1025px) {
+			font-size: $desktop-font-size * 1.5;
+			//font-size: $desktop-font-size * 1.82;
+		}
 	}
 
 	&:after, &:before {
 		content: "";
-		display: block;
-		width: 150px;
-		height: 150px;
+		display: none;
+		
 		background: url('/assets/images/wings.svg') 0px 0px no-repeat;
 		background-size: 100% 100%;
 		position: absolute;
-		bottom: 60px;
-		left: -100px;
+		
+
+		width: 50px;
+		height: 50px;
+
 		z-index: 102;
 
+		left: $gutter;
+		bottom: -$gutter;
+	}
+
+	&:after {
+		@media screen and (min-width: 768px) {
+		}
+		@media screen and (min-width: 896px) {
+		}
+		@media screen and (min-width: 1024px) {
+			bottom: 60px;
+			left: -100px;
+			width: 100px;
+			height: 100px;
+			display: block;
+		}
 	}
 
 	&:before {
-		width: 120px;
-		height: 120px;
-		bottom: -66px;
-		right: 40px;
+		display: block;
+		width: ($gutter * 1.5);
+		height: ($gutter * 1.5);
+		bottom: -$gutter;
+		right: $gutter;
 		left: auto;
 		-moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);

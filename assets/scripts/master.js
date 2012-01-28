@@ -207,6 +207,7 @@
 		    'monochrome' : false
 		}).css('background-color', '#eee');
 
+		//body.find("div.home_slideshow h1").fitText(1.9);
 
 		body.find('a.email').attr('href','mailto:steve@clearbar.org');
 		/*

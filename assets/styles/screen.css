@@ -19,8 +19,8 @@ body { font-size: 100%; line-height: 1.375em; }
 
 html > body { font-size: 16px; }
 
-@media screen and (min-width: 768px) { body { font-size: 112.5%; line-height: 1.5em; }
-  html > body { font-size: 18px; } }
+@media screen and (min-width: 768px) { body { font-size: 100%; line-height: 1.5em; }
+  html > body { font-size: 16px; } }
 @media screen and (min-width: 1024px) { body { font-size: 125%; line-height: 1.5em; }
   html > body { font-size: 20px; } }
 html, body { min-height: 100%; }
@@ -88,7 +88,7 @@ figure.full div figcaption a { color: #aaa; border-color: #777; }
 
 #wrapper { max-width: 1180px; float: right; background: #fff; border-left: 2.4em solid rgba(0, 0, 0, 0.04); border-bottom: 2.4em solid rgba(0, 0, 0, 0.04); -moz-background-clip: padding; -webkit-background-clip: padding; -o-background-clip: padding-box; -ms-background-clip: padding-box; -khtml-background-clip: padding-box; background-clip: padding-box; min-height: 100%; width: 100%; position: relative; margin-bottom: 2.4em; }
 
-#stripe { display: block; height: 3.24em; width: 50%; position: absolute; top: 2.4em; left: 0; background: #de7719; }
+#stripe { display: block; height: 3.36em; width: 50%; position: absolute; top: 2.4em; left: 0; background: #de7719; }
 
 #page { padding: 0 2.4em 2.4em 2.4em; *zoom: 1; }
 #page:after { content: ""; display: table; clear: both; }
@@ -102,17 +102,18 @@ aside.blank table { width: 100%; }
 aside.blank table th { width: 50%; }
 
 #top { padding: 2.4em; overflow: hidden; *zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; overflow: auto; }
-#top h1 { margin: 0; padding: 0; }
-#top h1 a { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; display: block; padding: 0px 2.4em 0 1.56em; position: relative; font-size: 40px; height: 1.32em; color: #737373; font-weight: 100; text-shadow: -1px -1px 1px white; text-decoration: none; line-height: 1.344em; width: 35%; float: left; text-align: left; border: none; padding-left: 1.56em; background: url("/assets/images/clearbar.svg") 0px 0px no-repeat; background-size: auto 100%; -moz-transition-property: color; -webkit-transition-property: color; -o-transition-property: color; transition-property: color; -moz-transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; -moz-transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 0.9); -webkit-transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 0.9); -o-transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 0.9); transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 0.9); }
-@media screen and (min-width: 768px) { #top h1 a { font-size: 45px; } }
+#top h1 { margin: 0; padding: 0; margin-bottom: 0.6em; font-size: 16px; }
+#top h1 a { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; display: block; padding: 0px 2.4em 0 1.56em; position: relative; font-size: 40px; height: 1.32em; color: #737373; font-weight: 100; text-shadow: -1px -1px 1px white; text-decoration: none; line-height: 1.344em; text-align: left; border: none; padding-left: 1.56em; background: url("/assets/images/clearbar.svg") 0px 0px no-repeat; background-size: auto 100%; -moz-transition-property: all; -webkit-transition-property: all; -o-transition-property: all; transition-property: all; -moz-transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; -moz-transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 0.9); -webkit-transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 0.9); -o-transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 0.9); transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 0.9); }
+@media screen and (min-width: 720px) { #top h1 a { font-size: 40px; width: 35%; float: left; margin-bottom: 0; } }
 @media screen and (min-width: 1024px) { #top h1 a { font-size: 50px; } }
+@media screen and (min-width: 768px) { #top h1 a { padding-left: 1.56em; } }
 #top h1 a:hover { color: #000; }
 #top h1 a.active { color: #de7719; }
-#top nav { width: 65%; float: left; }
+@media screen and (min-width: 720px) { #top nav { width: 65%; float: left; } }
 #top nav ul { list-style: none; font-family: "dejarip-1", "dejarip-2", sans-serif; }
 #top nav ul li { float: left; width: 25%; }
 #top nav ul li a { display: block; line-height: 2.4em; padding-top: 0.889em; color: #54524e; text-align: center; border-bottom: 1px solid #ddd; font-weight: 400; text-decoration: none; font-size: 16px; -moz-transition-property: all; -webkit-transition-property: all; -o-transition-property: all; transition-property: all; -moz-transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; -moz-transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 0.9); -webkit-transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 0.9); -o-transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 0.9); transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 0.9); text-transform: none; }
-@media screen and (min-width: 768px) { #top nav ul li a { font-size: 18px; } }
+@media screen and (min-width: 768px) { #top nav ul li a { font-size: 16px; } }
 @media screen and (min-width: 1024px) { #top nav ul li a { font-size: 20px; } }
 #top nav ul li a:hover { border-color: #000; color: #000; }
 #top nav ul li a.active { color: #de7719; border-color: #de7719; }
@@ -120,8 +121,8 @@ aside.blank table th { width: 50%; }
 .intro { background: #de7719; padding: 0.96em 0 0.96em 2.4em; color: #fff; font-weight: 500; margin: 0 2.4em 2.4em 0; box-shadow: -8px 2px 4px rgba(0, 0, 0, 0.1); position: relative; left: 0px; letter-spacing: 0.5px; word-spacing: -1px; }
 .intro:before { display: block; content: ""; width: 0px; height: 0px; border: 10px solid; border-width: 12px 15px; border-color: transparent #995211 transparent transparent; position: absolute; bottom: -11px; left: -30px; z-index: 2; }
 .intro h1 { line-height: 2.4em; height: 2.4em; font-size: 24px; text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.25); color: #fff; margin: 0; padding: 0; }
-@media screen and (min-width: 768px) { .intro h1 { font-size: 28.8px; } }
-@media screen and (min-width: 896px) { .intro h1 { font-size: 32.4px; } }
+@media screen and (min-width: 768px) { .intro h1 { font-size: 25.6px; } }
+@media screen and (min-width: 896px) { .intro h1 { font-size: 28.8px; } }
 @media screen and (min-width: 1024px) { .intro h1 { font-size: 36.4px; } }
 .intro h1 a { color: #fff; text-decoration: none; border: 1px dotted rgba(255, 255, 255, 0.6); padding: 7px 7px 2px 7px; background: rgba(255, 255, 255, 0.075); }
 .intro h1:after { display: block; content: ""; width: 14px; height: 3.432em; background: #de7719; border-left: 1px solid #b96315; position: absolute; top: 0px; left: -15px; z-index: 101; }
@@ -133,8 +134,8 @@ aside.blank table th { width: 50%; }
 section.work article { overflow: hidden; *zoom: 1; padding-bottom: 2.4em; }
 section.work article div.meta { width: 35%; float: left; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; padding: 10px 2.4em 0 0px; }
 section.work article div.meta h1 { font-size: 20.8px; padding-bottom: 0.503em; }
-@media screen and (min-width: 768px) { section.work article div.meta h1 { font-size: 23.4px; } }
-@media screen and (min-width: 896px) { section.work article div.meta h1 { font-size: 27px; } }
+@media screen and (min-width: 768px) { section.work article div.meta h1 { font-size: 20.8px; } }
+@media screen and (min-width: 896px) { section.work article div.meta h1 { font-size: 24px; } }
 @media screen and (min-width: 1024px) { section.work article div.meta h1 { font-size: 26px; } }
 section.work article div.meta p, section.work article div.meta time { font-size: 0.9em; line-height: 1.597em; }
 section.work article div.meta time { color: #999; font-style: italic; }
@@ -146,13 +147,13 @@ section.work article figure a { display: block; padding: 7px 0 0 0; -moz-box-sha
 section.work article figure a:hover { border-color: #777; -moz-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.2); -webkit-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.2); -o-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.2); box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.2); }
 section.work article figure a img { width: 100%; border-top: 1px solid #666; clear: left; }
 section.work article figure a em { display: block; float: right; width: 84px; margin-right: 7px; font-size: 13px; line-height: 22px; border: 1px solid #888; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #cccccc)); background-image: -webkit-linear-gradient(#ffffff, #cccccc); background-image: -moz-linear-gradient(#ffffff, #cccccc); background-image: -o-linear-gradient(#ffffff, #cccccc); background-image: -ms-linear-gradient(#ffffff, #cccccc); background-image: linear-gradient(#ffffff, #cccccc); font-style: normal; text-align: center; padding: 1px 0; }
-@media screen and (min-width: 768px) { section.work article figure a em { font-size: 12.6px; } }
-@media screen and (min-width: 896px) { section.work article figure a em { font-size: 12.6px; } }
+@media screen and (min-width: 768px) { section.work article figure a em { font-size: 11.2px; } }
+@media screen and (min-width: 896px) { section.work article figure a em { font-size: 11.2px; } }
 @media screen and (min-width: 1024px) { section.work article figure a em { font-size: 14px; } }
 section.work article figure a em:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #dddddd)); background-image: -webkit-linear-gradient(#eeeeee, #dddddd); background-image: -moz-linear-gradient(#eeeeee, #dddddd); background-image: -o-linear-gradient(#eeeeee, #dddddd); background-image: -ms-linear-gradient(#eeeeee, #dddddd); background-image: linear-gradient(#eeeeee, #dddddd); border-color: #555; }
 section.work article figure a figcaption { background: #fff; font-size: 9.6px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; padding: 1px 4px; line-height: 22px; border-top: 1px solid #aaa; border-right: 1px solid #aaa; border-left: 1px solid #ccc; border: 1px solid #aaa; margin: 0 100px 7px 7px; }
-@media screen and (min-width: 768px) { section.work article figure a figcaption { font-size: 12.6px; } }
-@media screen and (min-width: 896px) { section.work article figure a figcaption { font-size: 12.6px; } }
+@media screen and (min-width: 768px) { section.work article figure a figcaption { font-size: 11.2px; } }
+@media screen and (min-width: 896px) { section.work article figure a figcaption { font-size: 11.2px; } }
 @media screen and (min-width: 1024px) { section.work article figure a figcaption { font-size: 14px; } }
 section.work article figure a figcaption img { width: 16px; height: 16px; display: -moz-inline-box; -moz-box-orient: vertical; display: inline-block; vertical-align: middle; *vertical-align: auto; border: none; margin-top: -3px; margin-right: 2px; }
 section.work article figure a figcaption img { *display: inline; }
@@ -160,8 +161,8 @@ section.work article figure a figcaption img { *display: inline; }
 .breakdown { text-align: left; margin: 1.438em 0 1em 0; width: 100%; }
 .breakdown caption { padding-bottom: 0.359em; margin-bottom: 0.359em; border-bottom: 1px solid #ccc; color: #999; font-style: italic; font-size: 0.9em; line-height: 1.597em; }
 .breakdown th { font-weight: normal; font-size: 12.8px; width: 50%; }
-@media screen and (min-width: 768px) { .breakdown th { font-size: 13.5px; } }
-@media screen and (min-width: 896px) { .breakdown th { font-size: 15.3px; } }
+@media screen and (min-width: 768px) { .breakdown th { font-size: 12px; } }
+@media screen and (min-width: 896px) { .breakdown th { font-size: 13.6px; } }
 @media screen and (min-width: 1024px) { .breakdown th { font-size: 16px; } }
 .breakdown td { width: 50%; }
 .breakdown td span { display: block; width: 100%; height: 10px; background: #ddd; position: relative; margin-top: 1px; }
@@ -189,7 +190,7 @@ section.hresume article { width: 33.33333333%; -moz-box-sizing: border-box; -web
 section.hresume article p, section.hresume article ul, section.hresume article ol { font-size: 18px; line-height: 26px; }
 section.hresume article h2 { font-size: 1.25em; line-height: 1.15em; padding-top: 1.438em; padding-bottom: 0.863em; padding-top: 0; padding-bottom: 1.078em; }
 section.hresume article hr + h2 { padding-top: 0.719em; }
-section.hresume article h3 { padding-top: 0; padding: 0; padding-bottom: 0.288em; font-weight: 500; font-size: 18px; font-family: "dejarip-1", "dejarip-2", georgia, serif; font-weight: 600; }
+section.hresume article h3 { padding-top: 0; padding: 0; padding-bottom: 0.288em; font-weight: 500; font-size: 16px; font-family: "dejarip-1", "dejarip-2", georgia, serif; font-weight: 600; }
 section.hresume article ol { list-style: none; padding-bottom: 0; }
 section.hresume article ol li { padding-bottom: 1.581em; }
 section.hresume article ol li:last-child { padding-bottom: 0; }
@@ -202,10 +203,15 @@ aside.vcard { width: 35%; float: left; padding-right: 2.4em; -moz-box-sizing: bo
 aside.vcard div.hcard { border-right: 1px solid #ccc; }
 aside.vcard div.hcard h2 { padding-top: 0; }
 
-div.wings { background: url("/assets/images/wings.svg") 0px -30px no-repeat; background-size: 35% auto; height: 360px; padding-left: 35%; padding-right: 2.4em; position: relative; }
-div.wings h1 { padding-top: 60px; line-height: 1.4em; padding-left: 48px; font-size: 32px; line-height: 48px; }
-div.wings:after, div.wings:before { content: ""; display: block; width: 150px; height: 150px; background: url("/assets/images/wings.svg") 0px 0px no-repeat; background-size: 100% 100%; position: absolute; bottom: 60px; left: -100px; z-index: 102; }
-div.wings:before { width: 120px; height: 120px; bottom: -66px; right: 40px; left: auto; -moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); filter: FlipH; -ms-filter: "FlipH"; }
+div.home_slideshow { background: url("/assets/images/wings.svg") 5% 0px no-repeat; background-size: 25% auto; padding-left: 35%; position: relative; }
+div.home_slideshow div { padding: 2.4em 2.4em 3.6em 2.4em; }
+div.home_slideshow h1 { padding: 0; margin: 0; line-height: 1.5em; }
+@media screen and (min-width: 768px) { div.home_slideshow h1 { font-size: 20px; } }
+@media screen and (min-width: 896px) { div.home_slideshow h1 { font-size: 25px; } }
+@media screen and (min-width: 1025px) { div.home_slideshow h1 { font-size: 30px; } }
+div.home_slideshow:after, div.home_slideshow:before { content: ""; display: none; background: url("/assets/images/wings.svg") 0px 0px no-repeat; background-size: 100% 100%; position: absolute; width: 50px; height: 50px; z-index: 102; left: 2.4em; bottom: -2.4em; }
+@media screen and (min-width: 1024px) { div.home_slideshow:after { bottom: 60px; left: -100px; width: 100px; height: 100px; display: block; } }
+div.home_slideshow:before { display: block; width: 3.6em; height: 3.6em; bottom: -2.4em; right: 2.4em; left: auto; -moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); filter: FlipH; -ms-filter: "FlipH"; }
 
 #bottom { padding: 2.4em 0; border-top: 1px solid #ccc; margin: 0 2.4em; overflow: hidden; *zoom: 1; }
 #bottom p.copyright { width: 35%; float: left; font-size: 13px; line-height: 19px; }
