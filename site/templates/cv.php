@@ -102,7 +102,7 @@
 
 			<h2>Technical Skills</h2>
 			<p>Expert skills in cross-platform web development using HTML/CSS, Object-oriented PHP, MySQL and JavaScript.</p>
-			<p>Developing skills in NodeJS, Ruby (Rails), and iOS development.</p>
+			<p>Developing skills in Node.js, Ruby (Rails), and iOS development.</p>
 			<p>Highly proficient in Photoshop, various text editors, and Omnigraffle. Comfortable using Mac OS, Windows <em>shudder</em>, GIT and Terminal.</p>
 			
 			<hr />

@@ -10,7 +10,7 @@
 			It's not finished, but is here anyway.
 			I make <a href="/work">others</a>, and have for a <a href="/cv">while</a>.
 			I sometimes <a href="/notes">write</a>.
-			Contact me via <a class="email">email</a> &hellip; if you want.
+			Send me an <a class="email">email</a> &hellip; if you want.
 		</h1>
 	</div>
 </div>

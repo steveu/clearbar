@@ -176,8 +176,11 @@ aside.blank {
 	h1 {
 		margin: 0;
 		padding: 0;
-		margin-bottom: ($gutter / 4);
 		font-size: 16px;
+		margin-bottom: ($gutter / 2.5);
+		@media screen and (min-width: 720px) {
+			margin-bottom: 0;
+		}
 
 		a {
 			@include box-sizing(border-box);
@@ -732,34 +735,42 @@ aside.vcard {
 }
 
 
+//	******************************************************************
+//	Homepage
+//	******************************************************************
 div.home_slideshow {
 	
-	background: url('/assets/images/wings.svg') 5% 0px no-repeat;
-	background-size: ($sidebar-column - 10%) auto;
-
-
-	padding-left: $sidebar-column;
+	
+	padding-left: 0;
 	position: relative;
 
+	@media screen and (min-width: 720px) {
+		padding-left: $sidebar-column;
+		background: url('/assets/images/wings.svg') 5% 0px no-repeat;
+		background-size: ($sidebar-column - 10%) auto;
+	}
+
 	div {
-		padding: $gutter $gutter ($gutter * 1.5) $gutter;
+		padding-bottom: $gutter / 3;
+
+		@media screen and (min-width: 720px) {
+			padding: $gutter $gutter ($gutter * 1.5) $gutter;
+		}
 
 	}
 	h1 {
 		padding: 0;
 		margin: 0;
 		line-height: 1.5em;
+		font-size: $font-size * 1.15;
 		@media screen and (min-width: 768px) {
 			font-size: $tablet-font-size * 1.25;
-			//line-height: ($tablet-font-size * 1.4) * 1.5;
 		}
 		@media screen and (min-width: 896px) {
 			font-size: $desktop-font-size * 1.25;
-			//font-size: $tablet-font-size * 1.8;
 		}
 		@media screen and (min-width: 1025px) {
 			font-size: $desktop-font-size * 1.5;
-			//font-size: $desktop-font-size * 1.82;
 		}
 	}
 
@@ -786,7 +797,7 @@ div.home_slideshow {
 		}
 		@media screen and (min-width: 896px) {
 		}
-		@media screen and (min-width: 1024px) {
+		@media screen and (min-width: 1200px) {
 			bottom: 60px;
 			left: -100px;
 			width: 100px;
@@ -797,11 +808,20 @@ div.home_slideshow {
 
 	&:before {
 		display: block;
-		width: ($gutter * 1.5);
-		height: ($gutter * 1.5);
+
 		bottom: -$gutter;
-		right: $gutter;
 		left: auto;
+
+		width: $gutter / 1.5;
+		height: $gutter/ 1.5 ;
+		right: ($gutter / 2);
+
+		@media screen and (min-width: 720px) {
+			width: ($gutter * 1.5);
+			height: ($gutter * 1.5);
+			right: $gutter;
+		}
+		
 		-moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
@@ -821,13 +841,51 @@ div.home_slideshow {
 	 border-top: 1px solid #ccc;
 	 margin: 0 $gutter;
 	 @include clearfix;
-	 p.copyright {
-	 	width: $sidebar-column;
+	 
+	 a {
+	 	//color: #ccc;
+	 	//border-color: #ccc;
+	 }
+	 p.contact {
+	 	padding: 0;
+	 	
+	 	@include box-sizing(border-box);
+	 	
+	 	font-size: 12px;
+	 	@media screen and (min-width: 400px) {
+	 		font-size: 14px;
+	 	}
+	 	@media screen and (min-width: 720px) {
+	 		font-size: $font-size;
+	 		width: $content-column;
+	 		float: right;
+	 		text-align: right;
+	 	}
+	 	color: #aaa;
 
-	 	float: left;
+	 	a {
+	 		padding: 0 3px;
+	 	}
+
+	 	span {
+	 		display: none;
+	 		@media screen and (min-width: 769px) {
+		 		display: inline;
+		 	}
+	 	}
+	 }
+
+	 p.copyright {
+	 	
 	 	font-size: 13px;
 	 	line-height: 19px;
-
+	 	padding: 0;
+	 	display: none;
+	 	@media screen and (min-width: 720px) {
+	 		width: $sidebar-column;
+	 		float: left;
+	 		display: block;
+	 	}
 	 	a {
 	 
 	 		text-decoration: none;
@@ -838,21 +896,4 @@ div.home_slideshow {
 	 	}
 	 }
 
-	 a {
-	 	//color: #ccc;
-	 	//border-color: #ccc;
-	 }
-	 p.contact {
-	 	padding: 0;
-	 	width: $content-column;
-	 	@include box-sizing(border-box);
-	 	float: left;
-	 	text-align: right;
-	 	font-size: $font-size;
-	 	color: #aaa;
-
-	 	a {
-	 		padding: 0 3px;
-	 	}
-	 }
 }

@@ -102,7 +102,8 @@ aside.blank table { width: 100%; }
 aside.blank table th { width: 50%; }
 
 #top { padding: 2.4em; overflow: hidden; *zoom: 1; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; overflow: auto; }
-#top h1 { margin: 0; padding: 0; margin-bottom: 0.6em; font-size: 16px; }
+#top h1 { margin: 0; padding: 0; font-size: 16px; margin-bottom: 0.96em; }
+@media screen and (min-width: 720px) { #top h1 { margin-bottom: 0; } }
 #top h1 a { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; display: block; padding: 0px 2.4em 0 1.56em; position: relative; font-size: 40px; height: 1.32em; color: #737373; font-weight: 100; text-shadow: -1px -1px 1px white; text-decoration: none; line-height: 1.344em; text-align: left; border: none; padding-left: 1.56em; background: url("/assets/images/clearbar.svg") 0px 0px no-repeat; background-size: auto 100%; -moz-transition-property: all; -webkit-transition-property: all; -o-transition-property: all; transition-property: all; -moz-transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; -moz-transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 0.9); -webkit-transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 0.9); -o-transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 0.9); transition-timing-function: cubic-bezier(0.1, 0.1, 0.25, 0.9); }
 @media screen and (min-width: 720px) { #top h1 a { font-size: 40px; width: 35%; float: left; margin-bottom: 0; } }
 @media screen and (min-width: 1024px) { #top h1 a { font-size: 50px; } }
@@ -203,18 +204,26 @@ aside.vcard { width: 35%; float: left; padding-right: 2.4em; -moz-box-sizing: bo
 aside.vcard div.hcard { border-right: 1px solid #ccc; }
 aside.vcard div.hcard h2 { padding-top: 0; }
 
-div.home_slideshow { background: url("/assets/images/wings.svg") 5% 0px no-repeat; background-size: 25% auto; padding-left: 35%; position: relative; }
-div.home_slideshow div { padding: 2.4em 2.4em 3.6em 2.4em; }
-div.home_slideshow h1 { padding: 0; margin: 0; line-height: 1.5em; }
+div.home_slideshow { padding-left: 0; position: relative; }
+@media screen and (min-width: 720px) { div.home_slideshow { padding-left: 35%; background: url("/assets/images/wings.svg") 5% 0px no-repeat; background-size: 25% auto; } }
+div.home_slideshow div { padding-bottom: 0.8em; }
+@media screen and (min-width: 720px) { div.home_slideshow div { padding: 2.4em 2.4em 3.6em 2.4em; } }
+div.home_slideshow h1 { padding: 0; margin: 0; line-height: 1.5em; font-size: 18.4px; }
 @media screen and (min-width: 768px) { div.home_slideshow h1 { font-size: 20px; } }
 @media screen and (min-width: 896px) { div.home_slideshow h1 { font-size: 25px; } }
 @media screen and (min-width: 1025px) { div.home_slideshow h1 { font-size: 30px; } }
 div.home_slideshow:after, div.home_slideshow:before { content: ""; display: none; background: url("/assets/images/wings.svg") 0px 0px no-repeat; background-size: 100% 100%; position: absolute; width: 50px; height: 50px; z-index: 102; left: 2.4em; bottom: -2.4em; }
-@media screen and (min-width: 1024px) { div.home_slideshow:after { bottom: 60px; left: -100px; width: 100px; height: 100px; display: block; } }
-div.home_slideshow:before { display: block; width: 3.6em; height: 3.6em; bottom: -2.4em; right: 2.4em; left: auto; -moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); filter: FlipH; -ms-filter: "FlipH"; }
+@media screen and (min-width: 1200px) { div.home_slideshow:after { bottom: 60px; left: -100px; width: 100px; height: 100px; display: block; } }
+div.home_slideshow:before { display: block; bottom: -2.4em; left: auto; width: 1.6em; height: 1.6em; right: 1.2em; -moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); filter: FlipH; -ms-filter: "FlipH"; }
+@media screen and (min-width: 720px) { div.home_slideshow:before { width: 3.6em; height: 3.6em; right: 2.4em; } }
 
 #bottom { padding: 2.4em 0; border-top: 1px solid #ccc; margin: 0 2.4em; overflow: hidden; *zoom: 1; }
-#bottom p.copyright { width: 35%; float: left; font-size: 13px; line-height: 19px; }
-#bottom p.copyright a { text-decoration: none; border: none; }
-#bottom p.contact { padding: 0; width: 65%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; float: left; text-align: right; font-size: 16px; color: #aaa; }
+#bottom p.contact { padding: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; font-size: 12px; color: #aaa; }
+@media screen and (min-width: 400px) { #bottom p.contact { font-size: 14px; } }
+@media screen and (min-width: 720px) { #bottom p.contact { font-size: 16px; width: 65%; float: right; text-align: right; } }
 #bottom p.contact a { padding: 0 3px; }
+#bottom p.contact span { display: none; }
+@media screen and (min-width: 769px) { #bottom p.contact span { display: inline; } }
+#bottom p.copyright { font-size: 13px; line-height: 19px; padding: 0; display: none; }
+@media screen and (min-width: 720px) { #bottom p.copyright { width: 35%; float: left; display: block; } }
+#bottom p.copyright a { text-decoration: none; border: none; }
