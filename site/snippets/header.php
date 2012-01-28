@@ -17,7 +17,7 @@
 
     <script type="text/javascript" src="http://use.typekit.com/fbd2arb.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
+ 
     <?php echo css('assets/styles/screen.css') ?>
 
 </head>

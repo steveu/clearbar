@@ -26,7 +26,7 @@ $grid-background-baseline-color: rgba(255, 0, 0, 0.4);
 
 // Typefaces
 $font-family: "dejarip-1", "dejarip-2", georgia, serif;
-$heading-font-family:"dejarip-1", "dejarip-2", museo-sans-1, museo-sans-2, "Myriad Pro", sans-serif;
+$heading-font-family:"dejarip-1", "dejarip-2", sans-serif;
 
 // Text Colors
 $text-color: #4F4F4F;
@@ -94,9 +94,7 @@ body {
 //	******************************************************************
 @import
 	"tools",
-	"typography",
-	"forms",
-	"reveal";
+	"typography";
 
 
 //	******************************************************************
@@ -208,6 +206,14 @@ aside.blank {
 			background: url('/assets/images/clearbar.svg') 0px 0px no-repeat;
 			background-size: auto 100%;
 
+			@include transition-property(color);
+  			@include transition-duration(0.3s);
+  			@include transition-timing-function(cubic-bezier(.10, .10, .25, .90));
+
+			&:hover {
+				color: #000;
+			}
+
 			&.active {
 				color: $orange;
 			}
@@ -244,11 +250,15 @@ aside.blank {
 						font-size: $desktop-font-size;
 					}
 
+					@include transition-property(all);
+  					@include transition-duration(0.3s);
+  					@include transition-timing-function(cubic-bezier(.10, .10, .25, .90));
+
 					text-transform: none;
 
 					&:hover {
+						border-color: #000;
 						color: #000;
-						border-color: #333;
 					}
 					&.active {
 						color: $orange;
@@ -380,9 +390,10 @@ section.work {
 			width: $sidebar-column;
 			float: left;
 			@include box-sizing('border-box');
-			padding: 5px $gutter 0 0px;
+			padding: 10px $gutter 0 0px;
 
 			h1 {
+
 				font-size: $font-size * 1.3;
 				@media screen and (min-width: 768px) {
 					font-size: $tablet-font-size * 1.3;
@@ -394,9 +405,19 @@ section.work {
 					font-size: $desktop-font-size * 1.3;
 				}
 
+				padding-bottom: rhythm(0.35);
+
 			}
-			p {
+			p, time {
 				@include adjust-font-size-to(($base-font-size * .9), 1);
+			}
+
+			time {
+				color: #999;
+				font-style: italic;
+			}
+			time + p {
+				@include padding-leader(0.9);
 			}
 		}
 
@@ -406,12 +427,17 @@ section.work {
 			float: right;
 			position: relative;
 
-			background: #000;
+			background: #fff;
+			border: 1px solid #999;
+			@include box-shadow(-5px 8px 12px rgba(0,0,0,0.15));
+			height: 570px;
 			iframe {
-
-				height: 450px;
+				width: 100%;
+				height: 570px;
+				
 			}
 		}
+
 
 		figure {
 			width: $content-column;
@@ -521,6 +547,10 @@ section.work {
 		padding-bottom: rhythm(0.25);
 		margin-bottom: rhythm(0.25);
 		border-bottom: 1px solid #ccc;
+
+		color: #999;
+		font-style: italic;
+		@include adjust-font-size-to(($base-font-size * .9), 1);
 	}
 
 	th {
@@ -694,8 +724,8 @@ aside.vcard {
 
 div.wings {
 	
-	background: url('/assets/images/wings.svg') 0px -60px no-repeat;
-	background-size: auto 110%;
+	background: url('/assets/images/wings.svg') 0px -30px no-repeat;
+	background-size: $sidebar-column auto;
 	height: 360px;
 	padding-left: $sidebar-column;
 	padding-right: $gutter;

@@ -30,7 +30,7 @@
 			<ol class="vcalendar">
 				<li class="education vevent">
 					<h3 class="org">The University of York</h3>
-					<p class="summary">MSc (with Distinction) in <em>Human Centred Interactive Technologies</em>, <br /><span class="date_duration"><abbr class="dtstart" title="2008-10-01">2008</abbr> &#8211; <abbr class="dtend" title="2009-09-18">2009</abbr></span></p>
+					<p class="summary">MSc (<em>with Distinction</em>) in <a href="http://www.cs.york.ac.uk/postgraduate/taught-courses/msc-hcit/">Human Centred Interactive Technologies</a>, <br /><span class="date_duration"><abbr class="dtstart" title="2008-10-01">2008</abbr> &#8211; <abbr class="dtend" title="2009-09-18">2009</abbr></span></p>
 				</li>
 				<li class="education vevent">
 					<h3 class="org">The University of Glasgow</h3>
@@ -101,9 +101,9 @@
   		<article>
 
 			<h2>Technical Skills</h2>
-			<p>Expert skills in cross-platform web development using HTML/CSS, PHP/MySQL and JavaScript.</p>
+			<p>Expert skills in cross-platform web development using HTML/CSS, Object-oriented PHP, MySQL and JavaScript.</p>
 			<p>Developing skills in NodeJS, Ruby (Rails), and iOS development.</p>
-			<p>Highly proficient in Photoshop, various text editors, and Omnigraffle. Comfortable using Mac OS, GIT and Terminal</p>
+			<p>Highly proficient in Photoshop, various text editors, and Omnigraffle. Comfortable using Mac OS, Windows <em>shudder</em>, GIT and Terminal.</p>
 			
 			<hr />
 			

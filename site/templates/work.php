@@ -10,28 +10,41 @@
 
 			<div class="meta">
 				<h1><?php echo html($item->title()) ?></h1>
+
+				<time datetime="<?php echo $item->date('c') ?>" pubdate="pubdate">
+					<?php echo $item->date('F Y') ?>
+				</time>
+
 				<?php echo markdown($item->text()) ?>
 
+				
+				<? if ($item->type() == 'Slideshare') : ?>
 
-				<table class="breakdown">
-					<caption>My involvement</caption>
-				<?php
-				foreach(c::get('breakdowns') AS $key => $title)  {
-					if ($item->$key() != '') {
-				?>
-				<tr>
-					<th><?php echo $title ?>:</th>
-					<td>
-						<span>
-							<span class="percent<?php echo $item->$key() ?>"><?php echo $item->$key() ?>%</span>
-						</span>
-					</td>
-				</tr>
-				<?php
+					<a href="/assets/documents/game_mechanics_vle.pdf">Download the PDF</a>
+
+				<? else : ?>
+
+					<table class="breakdown">
+						<caption>My Involvement</caption>
+					<?php
+					foreach(c::get('breakdowns') AS $key => $title)  {
+						if ($item->$key() != '') {
+					?>
+					<tr>
+						<th><?php echo $title ?>:</th>
+						<td>
+							<span>
+								<span class="percent<?php echo $item->$key() ?>"><?php echo $item->$key() ?>%</span>
+							</span>
+						</td>
+					</tr>
+					<?php
+						}
 					}
-				}
-				?>
-				</table>
+					?>
+					</table>
+
+				<? endif ?>
 
 			</div>
 
@@ -39,7 +52,7 @@
 					
 				<aside class="slideshow">
 
-				<iframe src="http://www.slideshare.net/slideshow/embed_code/7852875?rel=0" height="auto" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+				<iframe src="http://www.slideshare.net/slideshow/embed_code/7852875?rel=0" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">></iframe>
 
 				</aside>
 		

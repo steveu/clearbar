@@ -1,16 +1,16 @@
-Title: Beat-Herder Traders
+Title: The Beat-Herder Traders
 ----
 id: beatherder-traders
 ----
-Date: December, 2010
+Date: 05-01-2012
 ----
 Link: traders.beatherder.co.uk
 ----
 Text:
 
-I designed and developed an application form for traders (and a copy for entertainers) at The Beat-Herder festival.
+Application form for traders (plus a copy for entertainers) at the Beat-Herder festival.
 
-Built using a set of PHP form classes I developed, the mini site is clear and organised, and includes slick JavaScript file upload.
+Built using PHP form classes I developed, the form is friendly and easy to use. JavaScript file upload is a slick addition.
 
 ----
 wireframes: 100

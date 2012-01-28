@@ -4,11 +4,11 @@ Text:
 
 # Hiya, I'm Steve.
 
-I&rsquo;m a thirty-something, interactive designer and web developer from York, where I live in Acomb with my beautiful <del>fiancé</del> <ins>wife</ins> Sarah.
+I&rsquo;m a (early) thirty-something interactive designer and web developer from York, where I live in Acomb with my beautiful <del>fiancé</del> <ins>wife</ins> Sarah.
 
-I love music, particularly deep house, funk and disco (maybe a dash of techno). I occassionally DJ in my (modest) living room.
+I love my music, particularly deep house, funk &amp; disco (occasional techno). I sometimes DJ in my living room.
 
-I enjoy more than my fair share of sports, both watching and playing. I'm a season ticket holder at the mighty Bolton Wanderers.
+I enjoy sports, both watching and playing. I'm a season ticket holder at the mighty Bolton Wanderers.
 
 ## What the heck is Clearbar?
 
@@ -20,6 +20,6 @@ The website was helped by; (link: http://getkirby.com/ text: Kirby), (link: http
 
 I agree, try me at any of the following;
 
+* Email: steve @ my domain
 * Twitter: (twitter: @steveu)
 * Google Talk: stevechamp
-* Email: steve at my domain

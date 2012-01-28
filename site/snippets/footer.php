@@ -1,11 +1,12 @@
         	<footer id="bottom">
                 
                 <p class="copyright">
-                    <a class="cc" rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a>
+                    <a class="cc" rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">
+                    <img alt="Creative Commons License" src="/assets/images/cc_licence.png" width="88" height="31" /></a>
                 </p>
 
                 <p class="contact">
-                    I am <a href="http://twitter.com/#!/steveu">Twitter</a>. I also <a class="email" href="">email</a>
+                    I am <a href="http://twitter.com/#!/steveu">Twitter</a>. I read <a class="email" href="">email</a>. Grab my <a href="">vCard</a> for your address book.
                 </p>
 
 			</footer>
