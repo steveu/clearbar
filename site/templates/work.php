@@ -35,7 +35,18 @@
 
 			</div>
 
+			<? if ($item->type()) : ?>
+					
+				<aside class="slideshow">
+
+				<iframe src="http://www.slideshare.net/slideshow/embed_code/7852875?rel=0" height="auto" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+				</aside>
+		
+			<? else : ?>
+
 			<figure class="">
+				
 				<a class="chrome" href="http://<?php echo $item->link() ?>/">
 					
 					<em>Vist Site</em>
@@ -49,9 +60,12 @@
 
 					<img src="<?php echo $image->url() ?>" />
 
-
 				</a>
+
+				
 			</figure>
+
+			<? endif ?>
 
 		</article>
 

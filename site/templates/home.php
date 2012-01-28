@@ -5,10 +5,11 @@
 
 <div class="wings">
 	<h1>
-		This is <a href="">my</a> website.
-		It is not finished, but it deserves a life.
-		I make <a href="">others</a>, and have for a <a href="">while</a>.
-		I sometimes <a href="">write</a>. We can <a href="">talk</a> &hellip; if you want.
+		This is <a href="/about">my</a> website.
+		It's not finished, but it deserves a life.
+		I make <a href="/work">others</a>, and have for a <a href="/cv">while</a>.
+		I sometimes <a href="/notes">write</a>.
+		Contact me via <a class="email">email</a> &hellip; if you want.
 	</h1>
 </div>
 

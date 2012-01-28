@@ -400,6 +400,19 @@ section.work {
 			}
 		}
 
+		aside.slideshow {
+			width: $content-column;
+			@include box-sizing('border-box');
+			float: right;
+			position: relative;
+
+			background: #000;
+			iframe {
+
+				height: 450px;
+			}
+		}
+
 		figure {
 			width: $content-column;
 			@include box-sizing('border-box');
@@ -705,7 +718,7 @@ div.wings {
 		position: absolute;
 		bottom: 60px;
 		left: -100px;
-		z-index: 999999999;
+		z-index: 102;
 
 	}
 

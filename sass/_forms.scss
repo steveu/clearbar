@@ -1,6 +1,6 @@
 
 /*- Default Form Styles
-----------------------------------------------------------------------*/
+---------------------------------------------------------------------- */
 
 p + form.default {
     margin-top: 20px;
@@ -8,28 +8,18 @@ p + form.default {
 
 form.default {
 
-    //border-top: 2px dashed #ccc;
     padding: 0;
     @include pie-clearfix();
-    fieldset {
-        border-top: 1px solid #fff;
-        border-bottom: 1px solid #C9C3AB;
-        padding: $gutter 0 $gutter 0;
-        margin: 0 0 0 0;
+    padding: $gutter;
 
+    legend {
+        @extend h2;
+        padding: 0;
+    }
+
+    fieldset {
         
-        h2.legend {
-            text-align: left;
-            margin: 0 0 ($gutter / 1.5) 0;
-            padding: 0;
-            color: #709a03;
-            line-height: 36px;
-            em.hint {
-                color: #709a03;
-                font-size: 15px;
-                font-style: normal;
-            }
-        }
+        
 
         p.set_intro {
             //padding: 0;
@@ -74,8 +64,9 @@ form.default {
     label {
         @include border-box();
         display: block;
-        padding: 0 0 rhythm(0.1) 0;
+        padding: 0 0 rhythm(0.25) 0;
         color: #5e5d55;
+        font-size: 22px;
         &.cbox {
             width: auto;
             float: none;
@@ -105,7 +96,7 @@ form.default {
     input.def, textarea {
         @include border-box();
         font-family: $font-family;
-        font-size: $base-font-size;
+        font-size: $desktop-font-size;
         border: 1px solid #DAD4D6;
         border-top: 1px solid #BDB8BA;
         border-top: 1px solid #BDB8BA;

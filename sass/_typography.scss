@@ -79,7 +79,7 @@ pre {
 
 ul {
 	list-style: disc;
-	@include padding-trailer(1);
+	//@include padding-trailer(1);
 	li {
 	}
 }

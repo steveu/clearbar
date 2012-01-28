@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+html, body, div, span, applet, object, iframe, h1, h2, form.default legend, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
 body { line-height: 1; }
 
@@ -31,12 +31,12 @@ body { font-family: "dejarip-1", "dejarip-2", georgia, serif; color: #4f4f4f; ba
 
 .visuallyhidden { visibility: hidden; height: 0px; width: 0px; }
 
-h1, h2, h3, h4, h5, h6 { font-weight: normal; color: #54524e; font-family: "dejarip-1", "dejarip-2", museo-sans-1, museo-sans-2, "Myriad Pro", sans-serif; font-weight: 300; }
+h1, h2, form.default legend, h3, h4, h5, h6 { font-weight: normal; color: #54524e; font-family: "dejarip-1", "dejarip-2", museo-sans-1, museo-sans-2, "Myriad Pro", sans-serif; font-weight: 300; }
 
 h1 { font-size: 1.6em; line-height: 0.898em; padding-top: 0em; padding-bottom: 0.898em; }
 h1 i { font-style: normal; color: #4f4f4f; font-size: 17.6px; }
 
-h2 { font-size: 1.4em; line-height: 1.027em; padding-top: 1.283em; padding-bottom: 0.77em; }
+h2, form.default legend { font-size: 1.4em; line-height: 1.027em; padding-top: 1.283em; padding-bottom: 0.77em; }
 
 h3 { font-size: 1.1em; line-height: 1.307em; padding-top: 1.634em; padding-bottom: 0.98em; }
 
@@ -53,7 +53,7 @@ blockquote:before { content: '\201C'; font-size: 200px; line-height: 200px; vert
 
 pre { background: rgba(255, 255, 0, 0.1); margin-bottom: 0.719em; margin-top: 0.719em; padding: 0.719em 1.438em; border-color: rgba(0, 0, 0, 0.2); border-style: dotted; border-width: 0.063em; padding: 1.375em; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0))); background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)); background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)); background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)); background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)); background-image: linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)); }
 
-ul { list-style: disc; padding-bottom: 1.438em; }
+ul { list-style: disc; }
 
 ol { list-style: decimal; color: red; padding-bottom: 1.438em; }
 ol li { color: #4f4f4f; }
@@ -87,14 +87,13 @@ figure.full div figcaption { display: block; max-width: 35%; min-width: 35%; bac
 figure.full div figcaption a { color: #aaa; border-color: #777; }
 
 /*- Default Form Styles
-----------------------------------------------------------------------*/
+---------------------------------------------------------------------- */
 p + form.default { margin-top: 20px; }
 
-form.default { padding: 0; *zoom: 1; /* Labels ----------*/ /*- Default Input / Textarea ----------*/ /*- Select ----------*/ /*- Checkbox ----------*/ /*- Error Styles ----------*/ }
+form.default { padding: 0; *zoom: 1; padding: 2.4em; /* Labels ----------*/ /*- Default Input / Textarea ----------*/ /*- Select ----------*/ /*- Checkbox ----------*/ /*- Error Styles ----------*/ }
 form.default:after { content: ""; display: table; clear: both; }
-form.default fieldset { border-top: 1px solid #fff; border-bottom: 1px solid #C9C3AB; padding: 2.4em 0 2.4em 0; margin: 0 0 0 0; /* Honeypot field */ }
-form.default fieldset h2.legend { text-align: left; margin: 0 0 1.6em 0; padding: 0; color: #709a03; line-height: 36px; }
-form.default fieldset h2.legend em.hint { color: #709a03; font-size: 15px; font-style: normal; }
+form.default legend { padding: 0; }
+form.default fieldset { /* Honeypot field */ }
 form.default fieldset p.set_intro { margin-top: -8px; }
 form.default fieldset p { padding: 0 0 18px 0; margin: 0; *zoom: 1; position: relative; }
 form.default fieldset p:after { content: ""; display: table; clear: both; }
@@ -103,11 +102,11 @@ form.default fieldset p.float { width: 50%; float: left; -moz-box-sizing: border
 form.default fieldset p.float:nth-child(2n) { padding-right: 0; }
 form.default fieldset p.clearfix { clear: left; }
 form.default fieldset p.trap { display: none; }
-form.default label { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: block; padding: 0 0 0.144em 0; color: #5e5d55; }
+form.default label { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; display: block; padding: 0 0 0.359em 0; color: #5e5d55; font-size: 22px; }
 form.default label.cbox { width: auto; float: none; padding: 0; margin: 0; text-align: left; color: #4f4f4f; }
 form.default label.radio { width: 60px; padding-right: 0; float: left; text-align: left; color: #4f4f4f; }
 form.default label.placeholder { padding-left: 8px; color: #999; }
-form.default input.def, form.default textarea { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "dejarip-1", "dejarip-2", georgia, serif; font-size: 16px; border: 1px solid #DAD4D6; border-top: 1px solid #BDB8BA; border-top: 1px solid #BDB8BA; background: #fff; padding: 0.503em; margin: 0 0 0 0; width: 100%; background: #fff; -moz-border-radius: 1px; -webkit-border-radius: 1px; -o-border-radius: 1px; -ms-border-radius: 1px; -khtml-border-radius: 1px; border-radius: 1px; -moz-box-shadow: inset rgba(0, 0, 0, 0.1) 1px 1px 5px; -webkit-box-shadow: inset rgba(0, 0, 0, 0.1) 1px 1px 5px; -o-box-shadow: inset rgba(0, 0, 0, 0.1) 1px 1px 5px; box-shadow: inset rgba(0, 0, 0, 0.1) 1px 1px 5px; }
+form.default input.def, form.default textarea { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "dejarip-1", "dejarip-2", georgia, serif; font-size: 20px; border: 1px solid #DAD4D6; border-top: 1px solid #BDB8BA; border-top: 1px solid #BDB8BA; background: #fff; padding: 0.503em; margin: 0 0 0 0; width: 100%; background: #fff; -moz-border-radius: 1px; -webkit-border-radius: 1px; -o-border-radius: 1px; -ms-border-radius: 1px; -khtml-border-radius: 1px; border-radius: 1px; -moz-box-shadow: inset rgba(0, 0, 0, 0.1) 1px 1px 5px; -webkit-box-shadow: inset rgba(0, 0, 0, 0.1) 1px 1px 5px; -o-box-shadow: inset rgba(0, 0, 0, 0.1) 1px 1px 5px; box-shadow: inset rgba(0, 0, 0, 0.1) 1px 1px 5px; }
 form.default textarea { width: 100%; height: 10em; float: none; max-width: none; }
 form.default textarea.short { height: 6em; }
 form.default input.medium { width: 250px; }
@@ -185,9 +184,9 @@ fieldset#terms { border-bottom: none; }
 /*	--------------------------------------------------
 	Reveal Modals
 	-------------------------------------------------- */
-.reveal-modal-bg { position: fixed; height: 100%; width: 100%; background: #000; background: rgba(0, 0, 0, 0.8); z-index: 100; display: none; top: 0; left: 0; }
+.reveal-modal-bg { position: fixed; height: 100%; width: 100%; background: #000; background: rgba(0, 0, 0, 0.6); z-index: 103; display: none; top: 0; left: 0; }
 
-.reveal-modal { visibility: hidden; top: 100px; left: 50%; margin-left: -300px; width: 520px; background: #eeeeee url(modal-gloss.png) no-repeat -200px -80px; position: absolute; z-index: 101; padding: 30px 40px 34px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); -box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+.reveal-modal { visibility: hidden; top: 100px; left: 50%; margin-left: -250px; width: 500px; background: #eeeeee url(modal-gloss.png) no-repeat -200px -80px; position: absolute; z-index: 104; padding: 0; -moz-border-radius: 9px; -webkit-border-radius: 9px; -o-border-radius: 9px; -ms-border-radius: 9px; -khtml-border-radius: 9px; border-radius: 9px; -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); -o-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); }
 
 .reveal-modal.small { width: 200px; margin-left: -140px; }
 
@@ -199,22 +198,6 @@ fieldset#terms { border-bottom: none; }
 
 .reveal-modal .close-reveal-modal { font-size: 22px; line-height: .5; position: absolute; top: 8px; right: 11px; color: #aaa; text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6); font-weight: bold; cursor: pointer; }
 
-/*
-	
-NOTES
-
-Close button entity is &#215;
-
-Example markup
-
-<div id="myModal" class="reveal-modal">
-	<h2>Awesome. I have it.</h2>
-	<p class="lead">Your couch.  I it's mine.</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
-	<a class="close-reveal-modal">&#215;</a>
-</div>
-
-*/
 #wrapper { max-width: 1180px; float: right; background: #fff; border-left: 2.4em solid rgba(0, 0, 0, 0.04); border-bottom: 2.4em solid rgba(0, 0, 0, 0.04); -moz-background-clip: padding; -webkit-background-clip: padding; -o-background-clip: padding-box; -ms-background-clip: padding-box; -khtml-background-clip: padding-box; background-clip: padding-box; min-height: 100%; width: 100%; position: relative; margin-bottom: 2.4em; }
 
 #stripe { display: block; height: 3.24em; width: 50%; position: absolute; top: 2.4em; left: 0; background: #de7719; }
@@ -265,6 +248,8 @@ section.work article div.meta h1 { font-size: 20.8px; }
 @media screen and (min-width: 896px) { section.work article div.meta h1 { font-size: 27px; } }
 @media screen and (min-width: 1024px) { section.work article div.meta h1 { font-size: 26px; } }
 section.work article div.meta p { font-size: 0.9em; line-height: 1.597em; }
+section.work article aside.slideshow { width: 65%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; float: right; position: relative; background: #000; }
+section.work article aside.slideshow iframe { height: 450px; }
 section.work article figure { width: 65%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; float: right; position: relative; }
 section.work article figure a { display: block; padding: 7px 0 0 0; -moz-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); -webkit-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); -o-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); background: #eee; border: 1px solid #999; -moz-border-radius: 7px; -webkit-border-radius: 7px; -o-border-radius: 7px; -ms-border-radius: 7px; -khtml-border-radius: 7px; border-radius: 7px; background: -webkit-linear-gradient(top, #efefef 0%, #999999 15%); color: #4f4f4f; }
 section.work article figure a:hover { border-color: #777; -moz-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.2); -webkit-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.2); -o-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.2); box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.2); }
@@ -311,8 +296,8 @@ section.notes article div.post h1 a { color: #4f4f4f; border: none; }
 
 section.hresume article { width: 33.33333333%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; padding-right: 2.4em; float: left; }
 section.hresume article p, section.hresume article ul, section.hresume article ol { font-size: 18px; line-height: 26px; }
-section.hresume article h2 { font-size: 1.25em; line-height: 1.15em; padding-top: 1.438em; padding-bottom: 0.863em; padding-top: 0; padding-bottom: 1.078em; }
-section.hresume article hr + h2 { padding-top: 0.719em; }
+section.hresume article h2, section.hresume article form.default legend, form.default section.hresume article legend { font-size: 1.25em; line-height: 1.15em; padding-top: 1.438em; padding-bottom: 0.863em; padding-top: 0; padding-bottom: 1.078em; }
+section.hresume article hr + h2, section.hresume article hr + form.default legend, form.default section.hresume article hr + legend { padding-top: 0.719em; }
 section.hresume article h3 { padding-top: 0; padding: 0; padding-bottom: 0.288em; font-weight: 500; font-size: 18px; font-family: "dejarip-1", "dejarip-2", georgia, serif; font-weight: 600; }
 section.hresume article ol { list-style: none; padding-bottom: 0; }
 section.hresume article ol li { padding-bottom: 1.581em; }
@@ -324,11 +309,11 @@ section.hresume article ul li + li { padding-top: 1.438em; }
 
 aside.vcard { width: 35%; float: left; padding-right: 2.4em; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
 aside.vcard div.hcard { border-right: 1px solid #ccc; }
-aside.vcard div.hcard h2 { padding-top: 0; }
+aside.vcard div.hcard h2, aside.vcard div.hcard form.default legend, form.default aside.vcard div.hcard legend { padding-top: 0; }
 
 div.wings { background: url("/assets/images/wings.svg") 0px -60px no-repeat; background-size: auto 110%; height: 360px; padding-left: 35%; padding-right: 2.4em; position: relative; }
 div.wings h1 { padding-top: 60px; line-height: 1.4em; padding-left: 48px; font-size: 32px; line-height: 48px; }
-div.wings:after, div.wings:before { content: ""; display: block; width: 150px; height: 150px; background: url("/assets/images/wings.svg") 0px 0px no-repeat; background-size: 100% 100%; position: absolute; bottom: 60px; left: -100px; z-index: 999999999; }
+div.wings:after, div.wings:before { content: ""; display: block; width: 150px; height: 150px; background: url("/assets/images/wings.svg") 0px 0px no-repeat; background-size: 100% 100%; position: absolute; bottom: 60px; left: -100px; z-index: 102; }
 div.wings:before { width: 120px; height: 120px; bottom: -66px; right: 40px; left: auto; -moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); filter: FlipH; -ms-filter: "FlipH"; }
 
 #bottom { padding: 2.4em 0; border-top: 1px solid #ccc; margin: 0 2.4em; overflow: hidden; *zoom: 1; }

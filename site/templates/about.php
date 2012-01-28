@@ -6,7 +6,7 @@
 	<img src="<?php echo $image->url() ?>" />
 	<div>
 	<figcaption>
-		Horizontal in <a href="">The Garden</a> in <a href="" class="map">Zadar, Croatia</a>
+		Horizontal in <a href="http://www.watchthegardengrow.eu/the-garden-zadar">The Garden in Zadar, Croatia</a>
 	</figcaption>
 	</div>
 </figure>

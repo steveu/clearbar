@@ -2,18 +2,24 @@ Title: About
 ----
 Text:
 
-# Hello there, I'm Steve Urmston.
+# Hiya, I'm Steve.
 
 I&rsquo;m a thirty-something, interactive designer and web developer from York, where I live in Acomb with my beautiful <del>fiancé</del> <ins>wife</ins> Sarah.
 
-I've been making websites and applications professionally for 7 years.
-		
-I&rsquo;ve got two degrees, an entertaining but irrelevant Political Science Masters from Glasgow, and a second altogether more relevant and equally entertaining MSc in (link: http://www.cs.york.ac.uk/postgraduate/taught-courses/msc-hcit/ text: Human-Centred Interactive Technologies) from York University.
+I love music, particularly deep house, funk and disco (maybe a dash of techno). I occassionally DJ in my (modest) living room.
 
-I work at (link: http://designition.co.uk/ text: Designition), where I&rsquo;m involved throughout; from meetings though design, to production code. But my expertise is in interaction design and front-end development, and I'm passionate about delightful interfaces and interactions.
+I enjoy more than my fair share of sports, both watching and playing. I'm a season ticket holder at the mighty Bolton Wanderers.
 
-## About this site
+## What the heck is Clearbar?
 
-Formally my web design business, Clearbar is now my personal website where I keep my portfolio of (link: work text: work), and sporadically post (link: notes text: notes).
+It used to be my web design business, but is now my personal website where I keep my portfolio of (link: work text: work), and sporadically post (link: notes text: notes).
 
 The website was helped by; (link: http://getkirby.com/ text: Kirby), (link: http://sass-lang.com/ text: Sass), (link: http://jquery.com/ text: jQuery), (link: http://compass-style.org/ text: Compass), (link: http://raphaeljs.com/ text: Raphaël), and was made with love.
+
+## Should we talk?
+
+I agree, try me at any of the following;
+
+* Twitter: (twitter: @steveu)
+* Google Talk: stevechamp
+* Email: steve at my domain

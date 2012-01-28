@@ -193,6 +193,12 @@
 		head = html.find('head');
 		body = html.find('body');
 
+		/*
+		$('#show_contact_form').click(function(e) {
+			e.preventDefault();
+			$('#contact_form').reveal();
+		});
+		*/
 		body.noisy({
 		    'intensity' : 0.1, 
 		    'size' : 200, 
@@ -201,7 +207,8 @@
 		    'monochrome' : false
 		}).css('background-color', '#eee');
 
-	
+
+		body.find('a.email').attr('href','mailto:steve@clearbar.org');
 		/*
 		body.find('.intro').noisy({
 		    'intensity' : 0.64, 
