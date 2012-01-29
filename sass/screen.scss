@@ -1,4 +1,3 @@
-
 //	******************************************************************
 //	Compass Framework
 //	******************************************************************
@@ -767,7 +766,7 @@ section.notes {
 			}
 			
 			@include box-sizing('border-box');
-			padding: 1px $gutter 0 0px;
+			padding: 11px $gutter 0 0px;
 
 			p {
 				@include adjust-font-size-to(($base-font-size * 1.1), 1);
@@ -1013,9 +1012,10 @@ div.home_slideshow {
 		bottom: -$gutter;
 		left: auto;
 
-		width: $gutter / 1.5;
-		height: $gutter/ 1.5 ;
-		right: ($gutter / 2);
+		width: $gutter ;
+		height: $gutter;
+		right: -($gutter / 4);
+
 
 		@media screen and (min-width: 720px) {
 			width: ($gutter * 1.5);
