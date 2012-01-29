@@ -209,7 +209,7 @@
 
 		//body.find("div.home_slideshow h1").fitText(1.9);
 
-		body.find('a.email').attr('href','mailto:steve@clearbar.org');
+		body.find('a.email').attr('href','mailto:steve@clearbar.com');
 		/*
 		body.find('.intro').noisy({
 		    'intensity' : 0.64, 
