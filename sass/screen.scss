@@ -135,19 +135,28 @@ body {
 }
 
 section.content {
-	width: $content-column;
-	padding-right: $gutter;
-	@include box-sizing(border-box);
-	float: left;
+
+	@media screen and (min-width: 720px) {
+		width: $content-column;
+		padding-right: $gutter;
+		@include box-sizing(border-box);
+		float: left;
+	}
 }
 aside.blank {
-	width: $sidebar-column;
-	float: right;
-	//border-top: 1px solid #ccc;
+
+	@media screen and (min-width: 720px) {
+		width: $sidebar-column;
+		float: right;
+	}
+
 	padding-bottom: ($gutter / 2);
 
 	h3 {
-		padding-top: rhythm(0.17);
+
+		@media screen and (min-width: 720px) {
+			padding-top: rhythm(0.17);
+		}
 
 		i {
 			font-size: 13px;

@@ -102,10 +102,11 @@ figure.full div figcaption a { color: #aaa; border-color: #777; }
 #page { padding: 0 2.4em 2.4em 2.4em; *zoom: 1; }
 #page:after { content: ""; display: table; clear: both; }
 
-section.content { width: 65%; padding-right: 2.4em; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; float: left; }
+@media screen and (min-width: 720px) { section.content { width: 65%; padding-right: 2.4em; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; float: left; } }
 
-aside.blank { width: 35%; float: right; padding-bottom: 1.2em; }
-aside.blank h3 { padding-top: 0.244em; }
+aside.blank { padding-bottom: 1.2em; }
+@media screen and (min-width: 720px) { aside.blank { width: 35%; float: right; } }
+@media screen and (min-width: 720px) { aside.blank h3 { padding-top: 0.244em; } }
 aside.blank h3 i { font-size: 13px; }
 aside.blank table { width: 100%; }
 aside.blank table th { width: 50%; }
