@@ -159,15 +159,18 @@ section.work article div.meta h1 { font-size: 20.8px; padding-bottom: 0.503em; }
 @media screen and (min-width: 896px) { section.work article div.meta h1 { font-size: 22.4px; } }
 @media screen and (min-width: 1024px) { section.work article div.meta h1 { font-size: 24px; } }
 @media screen and (min-width: 1180px) { section.work article div.meta h1 { font-size: 26px; } }
-section.work article div.meta p, section.work article div.meta time { font-size: 0.8em; line-height: 1.797em; }
-@media screen and (min-width: 768px) { section.work article div.meta p, section.work article div.meta time { font-size: 0.8em; line-height: 1.797em; } }
-@media screen and (min-width: 896px) { section.work article div.meta p, section.work article div.meta time { font-size: 0.8em; line-height: 1.797em; } }
-@media screen and (min-width: 1024px) { section.work article div.meta p, section.work article div.meta time { font-size: 0.9em; line-height: 1.597em; } }
+section.work article div.meta p, section.work article div.meta time, section.work article div.meta ul { font-size: 0.8em; line-height: 1.797em; }
+@media screen and (min-width: 768px) { section.work article div.meta p, section.work article div.meta time, section.work article div.meta ul { font-size: 0.8em; line-height: 1.797em; } }
+@media screen and (min-width: 896px) { section.work article div.meta p, section.work article div.meta time, section.work article div.meta ul { font-size: 0.8em; line-height: 1.797em; } }
+@media screen and (min-width: 1024px) { section.work article div.meta p, section.work article div.meta time, section.work article div.meta ul { font-size: 0.9em; line-height: 1.597em; } }
+section.work article div.meta ul { list-style: disc; margin-left: 1.2em; padding-bottom: 1.438em; }
 section.work article div.meta time { color: #999; font-style: italic; }
 section.work article div.meta time + p { padding-top: 1.294em; }
 section.work article aside.slideshow { width: 100%; /* Intrinsic height */ padding-bottom: 80%; height: 0px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; position: relative; background: #fff; border: 1px solid #999; -moz-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); -webkit-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); -o-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); }
 @media screen and (min-width: 769px) { section.work article aside.slideshow { width: 65%; padding-bottom: 52.6%; float: right; } }
 section.work article aside.slideshow iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+section.work article aside.gist { font-size: 14px; line-height: 20px; }
+@media screen and (min-width: 769px) { section.work article aside.gist { width: 65%; float: right; } }
 section.work article figure { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; position: relative; width: 100%; }
 @media screen and (min-width: 769px) { section.work article figure { float: right; width: 65%; } }
 section.work article figure a { display: block; padding: 7px 0 0 0; -moz-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); -webkit-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); -o-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); background: #eee; border: 1px solid #999; -moz-border-radius: 7px; -webkit-border-radius: 7px; -o-border-radius: 7px; -ms-border-radius: 7px; -khtml-border-radius: 7px; border-radius: 7px; background: -webkit-linear-gradient(top, #efefef 0%, #999999 15%); color: #4f4f4f; }

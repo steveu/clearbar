@@ -19,7 +19,7 @@
 							<?php echo $item->date('F Y') ?>
 						</time>
 
-						<?php echo markdown($item->text()) ?>
+						<?php echo kirbytext($item->text()) ?>
 					</div>
 				</div>
 
@@ -28,6 +28,9 @@
 
 					<a href="/assets/documents/game_mechanics_vle.pdf">Download the PDF</a>
 
+				<? elseif ($item->type() == 'Gist') : ?>
+
+				
 				<? else : ?>
 
 					<table class="breakdown">
@@ -54,14 +57,19 @@
 
 			</div>
 
-			<? if ($item->type()) : ?>
+			<? if ($item->type() == 'Slideshare') : ?>
 					
 				<aside class="slideshow">
 
 				<iframe src="http://www.slideshare.net/slideshow/embed_code/7852875?rel=0" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">></iframe>
 
 				</aside>
-		
+			
+			<? elseif ($item->type() == 'Gist') : ?>
+				<aside class="gist">
+					<script src="https://gist.github.com/957913.js?file=gistfile1.php"></script>
+				</aside>
+
 			<? else : ?>
 
 			<figure class="">
