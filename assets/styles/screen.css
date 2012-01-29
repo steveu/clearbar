@@ -146,17 +146,14 @@ aside.blank table th { width: 50%; }
 @media screen and (min-width: 1024px) { .intro:after { border-width: 3.192em 2.04em; } }
 
 section.work article { overflow: hidden; *zoom: 1; padding-bottom: 2.4em; }
-section.work article div.meta { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; overflow: hidden; *zoom: 1; }
+section.work article div.meta { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
 section.work article div.meta .desc, section.work article div.meta table.breakdown { display: none; }
 @media screen and (min-width: 768px) { section.work article div.meta { padding-bottom: 1.2em; }
-  section.work article div.meta .desc, section.work article div.meta table.breakdown { display: block; } }
-@media screen and (min-width: 768px) { section.work article div.meta div.details { width: 65%; float: left; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; padding-right: 2.4em; } }
-section.work article div.meta time { display: none; }
-section.work article div.meta table.breakdown { width: 35%; float: right; margin: 0; }
+  section.work article div.meta .desc { display: block; }
+  section.work article div.meta table.breakdown { display: table; width: 100%; } }
 @media screen and (min-width: 769px) { section.work article div.meta { width: 35%; float: left; padding: 0px 2.4em 0 0px; }
   section.work article div.meta div.details { width: auto; padding: 5px 0 0 0; float: none; }
-  section.work article div.meta div.details time { display: block; }
-  section.work article div.meta table.breakdown { width: 100%; float: none; margin-top: 1.438em; } }
+  section.work article div.meta div.details time { display: block; } }
 section.work article div.meta h1 { font-size: 20.8px; padding-bottom: 0.503em; }
 @media screen and (min-width: 768px) { section.work article div.meta h1 { font-size: 20.8px; } }
 @media screen and (min-width: 896px) { section.work article div.meta h1 { font-size: 22.4px; } }

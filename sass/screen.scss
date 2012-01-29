@@ -430,6 +430,7 @@ section.work {
 		div.meta {
 
 
+
 			// hide all description but title
 			.desc, table.breakdown {
 				display: none;
@@ -437,37 +438,19 @@ section.work {
 
 			@media screen and (min-width: 768px) {
 
-				.desc, table.breakdown {
+				.desc {
 					display: block;
+				}
+
+				table.breakdown {
+					display: table;
+					width: 100%;
 				}
 
 				padding-bottom: $gutter / 2;
 			}
 
 			@include box-sizing('border-box');
-
-			// 2 column description
-			@include clearfix;
-
-			div.details {
-
-				@media screen and (min-width: 768px) {
-					width: $content-column;
-					float: left;
-					@include box-sizing('border-box');
-					padding-right: $gutter;
-				}
-			}
-			time {
-				display: none;
-			}
-
-			table.breakdown {
-				width: $sidebar-column;
-				float: right;
-				margin: 0;
-			}
-
 
 			@media screen and (min-width: 769px) {
 				width: $sidebar-column;
@@ -484,11 +467,6 @@ section.work {
 					}
 				}
 
-				table.breakdown {
-					width: 100%;
-					float: none;
-					margin-top: rhythm(1);
-				}
 			}
 
 
@@ -670,15 +648,9 @@ section.work {
 						margin-top: -3px;
 						margin-right: 2px;
 					}
-
 				}
-
-	
 			}
 		}
-
-
-
 	}
 }
 
