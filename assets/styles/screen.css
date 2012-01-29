@@ -33,18 +33,24 @@ body { font-family: "dejarip-1", "dejarip-2", georgia, serif; color: #4f4f4f; ba
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; color: #54524e; font-family: "dejarip-1", "dejarip-2", sans-serif; font-weight: 300; }
 
-h1 { font-size: 1.6em; line-height: 0.898em; padding-top: 0em; padding-bottom: 0.898em; }
+h1 { font-size: 25.6px; line-height: 1.5em; padding-top: 0em; padding-bottom: 0.898em; }
+@media screen and (min-width: 768px) { h1 { font-size: 25.6px; line-height: 1.5em; padding-top: 0em; padding-bottom: 0.898em; } }
+@media screen and (min-width: 896px) { h1 { font-size: 30px; line-height: 1.5em; padding-top: 0em; padding-bottom: 0.767em; } }
+@media screen and (min-width: 1024px) { h1 { font-size: 32px; line-height: 1.5em; padding-top: 0em; padding-bottom: 0.719em; } }
 h1 i { font-style: normal; color: #4f4f4f; font-size: 17.6px; }
 
-h2 { font-size: 1.4em; line-height: 1.027em; padding-top: 1.283em; padding-bottom: 0.77em; }
+h2 { font-size: 22.4px; line-height: 1.5em; padding-top: 1.283em; padding-bottom: 0.77em; }
+@media screen and (min-width: 768px) { h2 { font-size: 22.4px; line-height: 1.5em; padding-top: 1.283em; padding-bottom: 0.77em; } }
+@media screen and (min-width: 896px) { h2 { font-size: 26px; line-height: 1.5em; padding-top: 1.106em; padding-bottom: 0.663em; } }
+@media screen and (min-width: 1024px) { h2 { font-size: 28px; line-height: 1.5em; padding-top: 1.027em; padding-bottom: 0.616em; } }
 
-h3 { font-size: 1.1em; line-height: 1.307em; padding-top: 1.634em; padding-bottom: 0.98em; }
+h3 { font-size: 17.6px; line-height: 1.5em; padding-top: 1.634em; padding-bottom: 0.98em; }
 
-h4 { font-size: 1em; line-height: 1.438em; padding-top: 1.797em; padding-bottom: 1.078em; text-transform: uppercase; }
+h4 { font-size: 16px; line-height: 1.5em; padding-top: 1.797em; padding-bottom: 1.078em; text-transform: uppercase; }
 
-h5 { font-size: 1em; line-height: 1.438em; padding-top: 1.797em; padding-bottom: 1.078em; }
+h5 { font-size: 16px; line-height: 1.5em; padding-top: 1.797em; padding-bottom: 1.078em; }
 
-h6 { font-size: 1em; line-height: 1.438em; padding-top: 1.797em; padding-bottom: 1.078em; font-variant: small-caps; }
+h6 { font-size: 16px; line-height: 1.5em; padding-top: 1.797em; padding-bottom: 1.078em; font-variant: small-caps; }
 
 hr { height: 0px; padding: 0; margin-bottom: 0.719em; margin-top: 0.719em; border: none; border-bottom-style: solid; border-bottom-width: 0.063em; padding-bottom: 1.375em; border-color: #ccc; }
 
@@ -133,29 +139,47 @@ aside.blank table th { width: 50%; }
 @media screen and (min-width: 1024px) { .intro:after { border-width: 3.192em 2.04em; } }
 
 section.work article { overflow: hidden; *zoom: 1; padding-bottom: 2.4em; }
-section.work article div.meta { width: 35%; float: left; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; padding: 10px 2.4em 0 0px; }
+section.work article div.meta { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; overflow: hidden; *zoom: 1; }
+section.work article div.meta .desc, section.work article div.meta table.breakdown { display: none; }
+@media screen and (min-width: 768px) { section.work article div.meta { padding-bottom: 1.2em; }
+  section.work article div.meta .desc, section.work article div.meta table.breakdown { display: block; } }
+@media screen and (min-width: 768px) { section.work article div.meta div.details { width: 65%; float: left; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; padding-right: 2.4em; } }
+section.work article div.meta time { display: none; }
+section.work article div.meta table.breakdown { width: 35%; float: right; margin: 0; }
+@media screen and (min-width: 769px) { section.work article div.meta { width: 35%; float: left; padding: 0px 2.4em 0 0px; }
+  section.work article div.meta div.details { width: auto; padding: 5px 0 0 0; float: none; }
+  section.work article div.meta div.details time { display: block; }
+  section.work article div.meta table.breakdown { width: 100%; float: none; margin-top: 1.438em; } }
 section.work article div.meta h1 { font-size: 20.8px; padding-bottom: 0.503em; }
 @media screen and (min-width: 768px) { section.work article div.meta h1 { font-size: 20.8px; } }
-@media screen and (min-width: 896px) { section.work article div.meta h1 { font-size: 24px; } }
-@media screen and (min-width: 1024px) { section.work article div.meta h1 { font-size: 26px; } }
-section.work article div.meta p, section.work article div.meta time { font-size: 0.9em; line-height: 1.597em; }
+@media screen and (min-width: 896px) { section.work article div.meta h1 { font-size: 22.4px; } }
+@media screen and (min-width: 1024px) { section.work article div.meta h1 { font-size: 24px; } }
+@media screen and (min-width: 1180px) { section.work article div.meta h1 { font-size: 26px; } }
+section.work article div.meta p, section.work article div.meta time { font-size: 0.8em; line-height: 1.797em; }
+@media screen and (min-width: 768px) { section.work article div.meta p, section.work article div.meta time { font-size: 0.8em; line-height: 1.797em; } }
+@media screen and (min-width: 896px) { section.work article div.meta p, section.work article div.meta time { font-size: 0.8em; line-height: 1.797em; } }
+@media screen and (min-width: 1024px) { section.work article div.meta p, section.work article div.meta time { font-size: 0.9em; line-height: 1.597em; } }
 section.work article div.meta time { color: #999; font-style: italic; }
 section.work article div.meta time + p { padding-top: 1.294em; }
-section.work article aside.slideshow { width: 65%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; float: right; position: relative; background: #fff; border: 1px solid #999; -moz-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); -webkit-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); -o-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); height: 570px; }
-section.work article aside.slideshow iframe { width: 100%; height: 570px; }
-section.work article figure { width: 65%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; float: right; position: relative; }
+section.work article aside.slideshow { width: 100%; /* Intrinsic height */ padding-bottom: 80%; height: 0px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; position: relative; background: #fff; border: 1px solid #999; -moz-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); -webkit-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); -o-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); }
+@media screen and (min-width: 769px) { section.work article aside.slideshow { width: 65%; padding-bottom: 52.6%; float: right; } }
+section.work article aside.slideshow iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+section.work article figure { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; position: relative; width: 100%; }
+@media screen and (min-width: 769px) { section.work article figure { float: right; width: 65%; } }
 section.work article figure a { display: block; padding: 7px 0 0 0; -moz-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); -webkit-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); -o-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.15); background: #eee; border: 1px solid #999; -moz-border-radius: 7px; -webkit-border-radius: 7px; -o-border-radius: 7px; -ms-border-radius: 7px; -khtml-border-radius: 7px; border-radius: 7px; background: -webkit-linear-gradient(top, #efefef 0%, #999999 15%); color: #4f4f4f; }
 section.work article figure a:hover { border-color: #777; -moz-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.2); -webkit-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.2); -o-box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.2); box-shadow: -5px 8px 12px rgba(0, 0, 0, 0.2); }
 section.work article figure a img { width: 100%; border-top: 1px solid #666; clear: left; }
-section.work article figure a em { display: block; float: right; width: 84px; margin-right: 7px; font-size: 13px; line-height: 22px; border: 1px solid #888; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #cccccc)); background-image: -webkit-linear-gradient(#ffffff, #cccccc); background-image: -moz-linear-gradient(#ffffff, #cccccc); background-image: -o-linear-gradient(#ffffff, #cccccc); background-image: -ms-linear-gradient(#ffffff, #cccccc); background-image: linear-gradient(#ffffff, #cccccc); font-style: normal; text-align: center; padding: 1px 0; }
+section.work article figure a em { display: none; float: right; width: 84px; margin-right: 7px; font-size: 13px; line-height: 22px; border: 1px solid #888; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #cccccc)); background-image: -webkit-linear-gradient(#ffffff, #cccccc); background-image: -moz-linear-gradient(#ffffff, #cccccc); background-image: -o-linear-gradient(#ffffff, #cccccc); background-image: -ms-linear-gradient(#ffffff, #cccccc); background-image: linear-gradient(#ffffff, #cccccc); font-style: normal; text-align: center; padding: 1px 0; }
+@media screen and (min-width: 360px) { section.work article figure a em { display: block; } }
 @media screen and (min-width: 768px) { section.work article figure a em { font-size: 11.2px; } }
 @media screen and (min-width: 896px) { section.work article figure a em { font-size: 11.2px; } }
 @media screen and (min-width: 1024px) { section.work article figure a em { font-size: 14px; } }
 section.work article figure a em:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #dddddd)); background-image: -webkit-linear-gradient(#eeeeee, #dddddd); background-image: -moz-linear-gradient(#eeeeee, #dddddd); background-image: -o-linear-gradient(#eeeeee, #dddddd); background-image: -ms-linear-gradient(#eeeeee, #dddddd); background-image: linear-gradient(#eeeeee, #dddddd); border-color: #555; }
-section.work article figure a figcaption { background: #fff; font-size: 9.6px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; padding: 1px 4px; line-height: 22px; border-top: 1px solid #aaa; border-right: 1px solid #aaa; border-left: 1px solid #ccc; border: 1px solid #aaa; margin: 0 100px 7px 7px; }
+section.work article figure a figcaption { background: #fff; font-size: 9.6px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; padding: 1px 4px; line-height: 22px; border-top: 1px solid #aaa; border-right: 1px solid #aaa; border-left: 1px solid #ccc; border: 1px solid #aaa; margin: 0 7px 7px 7px; }
 @media screen and (min-width: 768px) { section.work article figure a figcaption { font-size: 11.2px; } }
 @media screen and (min-width: 896px) { section.work article figure a figcaption { font-size: 11.2px; } }
 @media screen and (min-width: 1024px) { section.work article figure a figcaption { font-size: 14px; } }
+@media screen and (min-width: 360px) { section.work article figure a figcaption { margin-right: 100px; } }
 section.work article figure a figcaption img { width: 16px; height: 16px; display: -moz-inline-box; -moz-box-orient: vertical; display: inline-block; vertical-align: middle; *vertical-align: auto; border: none; margin-top: -3px; margin-right: 2px; }
 section.work article figure a figcaption img { *display: inline; }
 
@@ -189,7 +213,7 @@ section.notes article div.post h1 a { color: #4f4f4f; border: none; }
 
 section.hresume article { width: 33.33333333%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; padding-right: 2.4em; float: left; }
 section.hresume article p, section.hresume article ul, section.hresume article ol { font-size: 18px; line-height: 26px; }
-section.hresume article h2 { font-size: 1.25em; line-height: 1.15em; padding-top: 1.438em; padding-bottom: 0.863em; padding-top: 0; padding-bottom: 1.078em; }
+section.hresume article h2 { font-size: 20px; line-height: 1.5em; padding-top: 1.438em; padding-bottom: 0.863em; padding-top: 0; padding-bottom: 1.078em; }
 section.hresume article hr + h2 { padding-top: 0.719em; }
 section.hresume article h3 { padding-top: 0; padding: 0; padding-bottom: 0.288em; font-weight: 500; font-size: 16px; font-family: "dejarip-1", "dejarip-2", georgia, serif; font-weight: 600; }
 section.hresume article ol { list-style: none; padding-bottom: 0; }

@@ -9,13 +9,19 @@
 		<article>
 
 			<div class="meta">
-				<h1><?php echo html($item->title()) ?></h1>
+				
 
-				<time datetime="<?php echo $item->date('c') ?>" pubdate="pubdate">
-					<?php echo $item->date('F Y') ?>
-				</time>
+				<div class="details">
+					<h1><?php echo html($item->title()) ?></h1>
 
-				<?php echo markdown($item->text()) ?>
+					<div class="desc">
+						<time datetime="<?php echo $item->date('c') ?>" pubdate="pubdate">
+							<?php echo $item->date('F Y') ?>
+						</time>
+
+						<?php echo markdown($item->text()) ?>
+					</div>
+				</div>
 
 				
 				<? if ($item->type() == 'Slideshare') : ?>
