@@ -25,7 +25,7 @@
 
 			<aside class="meta">
 				<time datetime="<?php echo $item->date('c') ?>" pubdate="pubdate"><?php echo $item->date('l j<\s\up>S</\s\up> F, Y') ?></time>
-				<p class="comments"><a href="">0 Responses</a></p>
+				<p class="comments"><a href="<?php echo $item->url() ?>#disqus_thread">0 Responses</a></p>
 			</aside>
 
 			<div class="post">
