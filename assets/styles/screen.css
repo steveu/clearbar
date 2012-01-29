@@ -134,7 +134,7 @@ aside.blank table th { width: 50%; }
 @media screen and (min-width: 768px) { .intro h1 { font-size: 25.6px; } }
 @media screen and (min-width: 896px) { .intro h1 { font-size: 28.8px; } }
 @media screen and (min-width: 1024px) { .intro h1 { font-size: 36.4px; } }
-.intro h1 a { color: #fff; text-decoration: none; border: 1px dotted rgba(255, 255, 255, 0.6); padding: 7px 7px 2px 7px; background: rgba(255, 255, 255, 0.075); }
+.intro h1 a, .intro h1 em { color: #fff; text-decoration: none; border: 1px dotted rgba(255, 255, 255, 0.6); padding: 7px 7px 2px 7px; background: rgba(255, 255, 255, 0.075); font-style: normal; }
 .intro h1:after { display: block; content: ""; width: 14px; height: 3.432em; background: #de7719; border-left: 1px solid #b96315; position: absolute; top: 0px; left: -15px; z-index: 101; }
 .intro:after { content: ""; display: block; width: 0px; border: 76px solid; display: none; border-color: transparent #fff transparent transparent; position: absolute; top: 0px; right: 0px; -webkit-background-clip: padding-box; }
 @media screen and (min-width: 720px) { .intro:after { display: block; border-width: 3em 1.56em; } }

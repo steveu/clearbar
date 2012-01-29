@@ -351,12 +351,13 @@ aside.blank {
 		margin: 0;
 		padding: 0;
 		
-		a {
+		a, em {
 			color: #fff;
 			text-decoration: none;
 			border: 1px dotted rgba(255,255,255,0.6);
 			padding: 7px 7px 2px 7px;
 			background: rgba(255,255,255,0.075);
+			font-style: normal;
 		}
 		
 		&:after {
