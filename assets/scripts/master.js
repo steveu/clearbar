@@ -174,8 +174,14 @@
 			var width = matrix.parent().width();
 
 			//set.transform(set.transform()+"r180 200 200");
-			paper.changeSize(width,width, false, false);
-			
+			paper.changeSize(width, width, false, false);
+
+			$(window).resize(function() {
+
+				var width = matrix.parent().width();
+				paper.changeSize(width, width, false, false);
+			});
+
 		});
 	};
 		
@@ -220,6 +226,9 @@
 		}).css('background-color', '#DE7719');
 		*/
 		
+
+		
+
 		body.find('#skills_matrix').skillsMatrix();
 		
     });
