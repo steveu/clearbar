@@ -148,7 +148,7 @@ aside.blank table th { width: 50%; }
 section.work article { overflow: hidden; *zoom: 1; padding-bottom: 2.4em; }
 section.work article div.meta { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
 section.work article div.meta .desc, section.work article div.meta table.breakdown { display: none; }
-@media screen and (min-width: 768px) { section.work article div.meta { padding-bottom: 1.2em; }
+@media screen and (min-width: 769px) { section.work article div.meta { padding-bottom: 1.2em; }
   section.work article div.meta .desc { display: block; }
   section.work article div.meta table.breakdown { display: table; width: 100%; } }
 @media screen and (min-width: 769px) { section.work article div.meta { width: 35%; float: left; padding: 0px 2.4em 0 0px; }
