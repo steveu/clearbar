@@ -7,7 +7,7 @@
 	<div>
 		<h1>
 			This is <a href="/about">my</a> website.
-			It's not finished, but is here anyway.
+			It&#8217;s not finished, but is here anyway.
 			I make <a href="/work">others</a>, and have for a <a href="/cv">while</a>.
 			I sometimes <a href="/notes">write</a>.
 			Send me an <a class="email">email</a> &hellip; if you want.
