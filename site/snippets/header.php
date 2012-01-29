@@ -18,8 +18,8 @@
 
     <!-- the lengths we go to for  -->
     <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
 
     <!-- When (if) I add IE specific code, this will be useful -->
     <?php echo js('assets/scripts/libs/modernizr-2.0.6.min.js') ?>
