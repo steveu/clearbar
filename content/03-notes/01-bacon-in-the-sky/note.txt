@@ -10,7 +10,7 @@ Recently I&apos;ve begun to consider why I even want a website, and I believe th
 
 ## Learn by doing
 
-I want to experiment with the bleeding edge techniques which I love about my job. I shall also improve something I feel is a weakness; <em>my writing</em>, which whilst not a disaster, needs the polish which only consistently doing can bring.
+I want to experiment with the bleeding edge techniques which I love about my job (more to come, but (link: /responsive.html text:responsive) and SVG are go). I shall also improve something I feel is a weakness; <em>my writing</em>, which whilst not a disaster, needs the polish which only consistently doing can bring.
 
 ## Make waves
 
