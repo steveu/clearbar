@@ -203,13 +203,18 @@ section.work article figure a figcaption img { *display: inline; }
 .breakdown td span span.percent90 { width: 90%; }
 .breakdown td span span.percent100 { width: 100%; }
 
-section.notes { padding-top: 1.2em; }
+@media screen and (min-width: 720px) { section.notes { padding-top: 1.2em; } }
 section.notes article { overflow: hidden; *zoom: 1; padding-bottom: 3.6em; margin-bottom: 3.6em; border-bottom: 1px solid #ccc; }
-section.notes article aside.meta { width: 35%; float: left; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; padding: 1px 2.4em 0 0px; }
+section.notes article:last-child { padding-bottom: 0; border-bottom: 0; margin-bottom: 0; }
+section.notes article aside.meta { color: #ccc; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; padding: 1px 2.4em 0 0px; }
+@media screen and (max-width: 719px) { section.notes article aside.meta a { display: none; } }
+@media screen and (min-width: 720px) { section.notes article aside.meta { width: 35%; float: left; color: #4f4f4f; } }
 section.notes article aside.meta p { font-size: 1.1em; line-height: 1.307em; }
 section.notes article aside.meta p + p { padding-top: 5px; }
-section.notes article div.post { width: 65%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; float: right; padding-right: 20px; }
+section.notes article div.post { padding-top: 1.438em; }
+@media screen and (min-width: 720px) { section.notes article div.post { width: 65%; float: right; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; padding-right: 20px; padding-top: 0; } }
 section.notes article div.post h1 a { color: #4f4f4f; border: none; }
+section.notes article div.post h1 a:hover { text-decoration: underline; }
 
 section.hresume article { width: 33.33333333%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; padding-right: 2.4em; float: left; }
 section.hresume article p, section.hresume article ul, section.hresume article ol { font-size: 18px; line-height: 26px; }

@@ -716,15 +716,37 @@ section.work {
 //	******************************************************************
 
 section.notes {
-	padding-top: $gutter / 2;
+	@media screen and (min-width: 720px) {
+		padding-top: $gutter / 2;
+	}
 	article {
 		@include clearfix;
 		padding-bottom: $gutter * 1.5;
 		margin-bottom: $gutter * 1.5;
 		border-bottom: 1px solid #ccc;
+
+		&:last-child {
+			padding-bottom: 0;
+			border-bottom: 0;
+			margin-bottom: 0;
+		}
 		aside.meta {
-			width: $sidebar-column;
-			float: left;
+
+			color: #ccc;
+
+
+			a {
+				@media screen and (max-width: 719px) {
+					display: none;
+				}
+			}
+
+			@media screen and (min-width: 720px) {
+				width: $sidebar-column;
+				float: left;
+				color: $text-color;
+			}
+			
 			@include box-sizing('border-box');
 			padding: 1px $gutter 0 0px;
 
@@ -739,14 +761,25 @@ section.notes {
 		}
 
 		div.post {
-			width: $content-column;
-			@include box-sizing('border-box');
-			float: right;
-			padding-right: 20px;
+
+			padding-top: rhythm(1);
+			@media screen and (min-width: 720px) {
+				width: $content-column;
+				float: right;
+				@include box-sizing('border-box');
+				padding-right: 20px;
+				padding-top: 0;
+			}
+
+			
 			h1 {
 				a {
 					color: $text-color;
 					border: none;
+
+					&:hover {
+						text-decoration: underline;
+					}
 				}
 			}
 		}
