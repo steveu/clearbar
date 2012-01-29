@@ -39,7 +39,18 @@ h2 {
 	}
 }
 h3 {
-	@include heading(($base-font-size * 1.1));
+
+	@include heading(($font-size * 1.2));
+	
+	@media screen and (min-width: 768px) {
+		@include heading(($tablet-font-size * 1.2));
+	}
+	@media screen and (min-width: 896px) {
+		@include heading(($desktop-font-size * 1.1));
+	}
+	@media screen and (min-width: 1024px) {
+		@include heading(($desktop-font-size * 1.2));
+	}
 }
 h4 {
 	@include heading($base-font-size);

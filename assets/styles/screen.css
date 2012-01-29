@@ -44,7 +44,10 @@ h2 { font-size: 22.4px; line-height: 1.5em; padding-top: 1.283em; padding-bottom
 @media screen and (min-width: 896px) { h2 { font-size: 26px; line-height: 1.5em; padding-top: 1.106em; padding-bottom: 0.663em; } }
 @media screen and (min-width: 1024px) { h2 { font-size: 28px; line-height: 1.5em; padding-top: 1.027em; padding-bottom: 0.616em; } }
 
-h3 { font-size: 17.6px; line-height: 1.5em; padding-top: 1.634em; padding-bottom: 0.98em; }
+h3 { font-size: 19.2px; line-height: 1.5em; padding-top: 1.497em; padding-bottom: 0.898em; }
+@media screen and (min-width: 768px) { h3 { font-size: 19.2px; line-height: 1.5em; padding-top: 1.497em; padding-bottom: 0.898em; } }
+@media screen and (min-width: 896px) { h3 { font-size: 22px; line-height: 1.5em; padding-top: 1.307em; padding-bottom: 0.784em; } }
+@media screen and (min-width: 1024px) { h3 { font-size: 24px; line-height: 1.5em; padding-top: 1.198em; padding-bottom: 0.719em; } }
 
 h4 { font-size: 16px; line-height: 1.5em; padding-top: 1.797em; padding-bottom: 1.078em; text-transform: uppercase; }
 
