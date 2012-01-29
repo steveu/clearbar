@@ -55,8 +55,9 @@
 						<abbr class="dtstart" title="2005-06-01">November 2009</abbr>  &#8211; <abbr class="dtend" title="20012-01-01">Present</abbr>
 					</p>
   					<p class="description">
-	  					I generally take a broader role in many projects,
-	  					as well as taking unusual projects from start to finish.
+	  					I try to take a broader role in many projects, alongside filling in gaps
+	  					with visual design, and front and backend code. 
+	  					I also enjoy taking unusual projects from start to finish.
 					</p>
 				</li>
   				<li class="experience vevent">
@@ -103,7 +104,7 @@
 			<h2>Technical Skills</h2>
 			<p>Expert skills in cross-platform web development using HTML/CSS, Object-oriented PHP, MySQL and JavaScript.</p>
 			<p>Developing skills in Node.js, Ruby (Rails), and iOS development.</p>
-			<p>Highly proficient in Photoshop, various text editors, and Omnigraffle. Comfortable using Mac OS, Windows <em>shudder</em>, GIT and Terminal.</p>
+			<p>Highly proficient in Photoshop, various text editors, and Omnigraffle. Happy using Mac OS, GIT and Terminal. Comfortable using Windows.</p>
 			
 			<hr />
 			
