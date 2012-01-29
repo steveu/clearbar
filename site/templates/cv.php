@@ -3,7 +3,7 @@
 
 <section class="intro">
 	<h1>
-		<a href="">Steven Urmston</a> &#8212; Curriculum Vitae
+		<a href="">Steven Urmston</a><span> &#8212; Curriculum Vitae</span>
 	</h1>
 </section>
 
