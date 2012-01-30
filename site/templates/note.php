@@ -8,16 +8,20 @@
 		<article>
 
 			<aside class="meta">
-				<time datetime="<?php echo $page->date('c') ?>" pubdate="pubdate"><?php echo $page->date('l j<\s\up>S</\s\up> F, Y') ?></time>
+				
+				<time datetime="<?php echo $page->date('c') ?>" pubdate="pubdate">
+				<em>
+				Post written by Steve on the <?=$page->date('j<\s\up>S</\s\up> F Y')?> &#8212; a <?=$page->temp()?>, <?=$page->weather()?> <?=$page->when()?> in <?=$page->location()?>.
+				</em>
+				</time>
 			</aside>
 
 			<div class="post">
 				<h1><?php echo html($page->title()) ?></h1>
     			<?php echo kirbytext($page->text()) ?>
 
-    		
 
-    			<?php snippet('disqus', array('disqus_shortname' => 'clearbar', 'disqus_developer' => true)) ?>
+    			<?php snippet('disqus', array('disqus_shortname' => 'clearbar')) ?>
 			</div>
 			
 		</article>

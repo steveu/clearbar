@@ -765,7 +765,7 @@ section.notes {
 			}
 			
 			@include box-sizing('border-box');
-			padding: 11px $gutter 0 0px;
+			padding: 12px $gutter 0 0px;
 
 			p {
 				@include adjust-font-size-to(($base-font-size * 1.1), 1);

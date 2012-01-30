@@ -1,0 +1,89 @@
+Title: Percentages & Pixels Sitting in a Tree
+----
+Date: 30-01-2012
+----
+When: evening
+----
+Temp: cold
+----
+Weather: clear
+----
+Location: York
+----
+Text:
+
+When building a _properly_ responsive layout, gutters set in % become inappropriately sized at both large and small window sizes. _Using some simple and pretty well supported CSS (IE8+) we can damn well fix that_.
+
+Conceptually, the obvious CSS for a liquid layout is something like this;
+	
+	.sidebar {
+		width: 20%;
+		padding-left: 10%;
+		float: left;
+	}
+	.content {
+		width: 60%;
+		padding-left: 10%;
+		float: left;
+	}
+	
+The problem being; at iPad size the gap between columns is too small, and on your shiny new cinema display, it's gonna be too damn big!
+
+## Are we just gonna take this?
+
+_(Hell no)_
+
+So, what missunderstood HTML element could have pixel (or em) padding, as well as a percentage width. Did I hear you say `<table>`? Give yourself a gold plated iPhone.
+
+	.sidebar, .content {
+		display: table;
+		padding-left: 24px;
+		float: left;
+	}
+	.sidebar {
+		width: 30%;
+	}
+	.content {
+		width: 70%;
+	}
+
+_This_ is gonna to give us a liquid layout, with fixed pixel gutters.
+
+There is an alternative; `box-sizing: border-box` which switches the box model akin to IE6 in quirks mode, where padding and borders are not counted in the width of an element.
+
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+
+Judging by all those vendor prefixes, it should be obvious that `box-sizing` ((link: http://www.browsersupport.net/CSS/box-sizing text: support stats)) has inferior browser support than `display: table` ((link: http://www.browsersupport.net/CSS/display%3Atable text: support stats)).
+
+That said, if the mention of tables send shivers down your spine, it might be better for your soul.
+
+It will however also avoid inconsistencies
+
+## Can we do better than pixels?
+
+We could use alternative pixel padding values within a series of media queries, so we could make use of the space afforded by larger screens with appropriate padding.
+
+My personal preference however is to set gutters in ems, and control the gutter widths using the base font size.
+
+	body {
+		font-size: 16px;
+	}
+	@media screen and (min-width: 768px) {
+		body {
+			font-size: 18px;
+		}
+	}
+	/* and onwards */
+
+	.sidebar, .content {
+		display: table;
+		padding-left: 2em; /* either 32px, or 36px */
+		float: left;
+	}
+
+Boom. Go forth and build.
+
+----

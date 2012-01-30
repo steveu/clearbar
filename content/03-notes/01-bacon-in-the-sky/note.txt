@@ -1,6 +1,14 @@
 Title: Bacon In The Sky ... With Diamonds.
 ----
-Date: 15-01-12
+Date: 15-01-2012
+----
+When: afternoon
+----
+Temp: cold
+----
+Weather: clear
+----
+Location: York
 ----
 Text:
 
