@@ -191,8 +191,7 @@
 
     root.ready(function () {
 
-		/*  Cache the godforsaken <html>, <head> & <body> elements, if you're
-		    in to that kind of thing...
+		/*  Cache <html>, <head> & <body>
 		 */
 
 		html = root.find('html');
@@ -216,6 +215,7 @@
 		//body.find("div.home_slideshow h1").fitText(1.9);
 
 		body.find('a.email').attr('href','mailto:steve@clearbar.com');
+
 		/*
 		body.find('.intro').noisy({
 		    'intensity' : 0.64, 
@@ -226,9 +226,6 @@
 		}).css('background-color', '#DE7719');
 		*/
 		
-
-		
-
 		body.find('#skills_matrix').skillsMatrix();
 		
     });

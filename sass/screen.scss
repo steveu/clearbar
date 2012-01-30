@@ -32,9 +32,8 @@ $text-color: #4F4F4F;
 $heading-color: #54524E;
 
 // Colors
-
 $orange: #DE7719;
-//$orange: #E0523C; // redy
+//$orange: #E0523C; // alternative red
 $light-blue: #E7F3FF;
 
 // Grid
@@ -916,6 +915,75 @@ section.hresume {
 	}
 }
 
+
+// DISQUS, hate this thing, messy as fuck and all feels hacky
+#disqus_thread {
+
+	font-size: 15px;
+	@media screen and (min-width: 768px) {
+		font-size: 16px;
+	}
+	@media screen and (min-width: 896px) {
+		font-size: 17px;
+	}
+	@media screen and (min-width: 1024px) {
+		font-size: 18px;
+	}
+
+
+	#dsq-content {
+
+		h3 {
+			margin: 0;
+			@include heading(($font-size * 1.1));
+		
+			@media screen and (min-width: 768px) {
+				@include heading(($tablet-font-size * 1.1));
+			}
+			@media screen and (min-width: 896px) {
+				@include heading(($desktop-font-size));
+			}
+			@media screen and (min-width: 1024px) {
+				@include heading(($desktop-font-size * 1.1));
+			}
+		}
+	}
+
+	#dsq-reply {
+		margin-top: 0;
+		#dsq-account-dropdown {
+			width: 25%;
+			position: absolute;
+			top: 20px;
+			right: 0px;
+			text-align: right;
+		}
+
+	}
+
+	a {
+		text-decoration: none;
+	}
+	.dsq-avatar {
+		a {
+			border: none;
+		}
+	}
+
+	.dsq-comment-footer {
+		font-size: 14px;
+	}
+
+	#dsq-footer {
+		font-size: 14px;
+
+		li {
+			a, em {
+				text-decoration: none;
+			}
+		}
+	}
+}
 
 //	******************************************************************
 //	Contact
