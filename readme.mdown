@@ -1,3 +1,5 @@
 # Clearbar
 
-It's my personal website portfolio presense thing. With bells
+It's my personal website portfolio presense thing. With bells.
+
+If you're interested it's online at http://clearbar.com
