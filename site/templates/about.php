@@ -3,7 +3,7 @@
 <?php $image = $page->images()->find('steve_urmston.jpg') ?>
 
 <figure class="full">
-	<img src="<?php echo $image->url() ?>" />
+	<img rel="<?php echo $image->url() ?>" src="/assets/images/preload.gif" />
 	<div>
 	<figcaption>
 		Horizontal in <a href="http://www.watchthegardengrow.eu/the-garden-zadar">The Garden</a> in Zadar

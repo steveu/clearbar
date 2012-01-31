@@ -216,6 +216,23 @@
 
 		body.find('a.email').attr('href','mailto:steve@clearbar.com');
 
+		body.find('figure.full img').each(function() {
+			var file_src = $(this).attr('rel');
+			var figure = $(this).parent();
+
+			var image = document.createElement('img');
+
+	        $(image).load(function() {
+
+	        	$(this)
+	        		.hide()
+	        		.appendTo(figure)
+	        		.fadeIn('medium')
+	        	;
+
+	        }).attr('src', file_src);
+	        
+		});
 		/*
 		body.find('.intro').noisy({
 		    'intensity' : 0.64, 
