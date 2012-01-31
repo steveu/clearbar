@@ -6,7 +6,7 @@ When: evening
 ----
 Temp: cold
 ----
-Weather: clear
+Weather: overcast
 ----
 Location: York
 ----
@@ -90,5 +90,5 @@ My personal preference however is to set gutters in ems, and control the gutter 
 
 <a href="/content/03-notes/02-percentages-and-pixels/demo3.html" class="button demo">View demo</a>
 
-Boom. Go forth and build.
+Boom. Go build.
 ----

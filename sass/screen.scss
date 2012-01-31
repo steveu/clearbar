@@ -427,8 +427,6 @@ section.work {
 
 		div.meta {
 
-
-
 			// hide all description but title
 			.desc, table.breakdown {
 				display: none;
@@ -464,7 +462,6 @@ section.work {
 						display: block;
 					}
 				}
-
 			}
 
 
@@ -485,8 +482,8 @@ section.work {
 				}
 
 				padding-bottom: rhythm(0.35);
-
 			}
+
 			p, time, ul {
 
 				@include adjust-font-size-to(($font-size * .8), 1);
@@ -500,7 +497,6 @@ section.work {
 				@media screen and (min-width: 1024px) {
 					@include adjust-font-size-to(($tablet-font-size * .9), 1);
 				}
-
 			}
 
 			ul {
@@ -560,7 +556,6 @@ section.work {
 				font-size: 14px;
 				line-height: 20px;
 			}
-			
 		}
 
 
@@ -741,11 +736,13 @@ section.notes {
 		padding-bottom: $gutter * 1.5;
 		margin-bottom: $gutter * 1.5;
 		border-bottom: 1px solid #ccc;
+		@include box-shadow(0px 15px 0px rgba(0,0,0,0.05));
 
 		&:last-child {
-			padding-bottom: 0;
+			padding-bottom: $gutter / 2;
 			border-bottom: 0;
 			margin-bottom: 0;
+			@include box-shadow(none);
 		}
 		aside.meta {
 
