@@ -14,7 +14,7 @@ Text:
 
 When building a _properly_ responsive layout, gutters set in % become inappropriately sized at both large and small window sizes. _Using some simple and pretty well supported CSS (IE8+) we can damn well fix that_.
 
-Conceptually, the obvious CSS for a liquid layout is something like this;
+The obvious CSS for a liquid layout might be something like this;
 	
 	.sidebar {
 		width: 20%;
@@ -53,18 +53,16 @@ So, what missunderstood HTML element could have pixel (or em) padding, as well a
 
 _This_ is gonna to give us a liquid layout, with fixed pixel gutters.
 
-There is an alternative; `box-sizing: border-box` which switches the box model akin to IE6 in quirks mode, where padding and borders are not counted in the width of an element.
+There is an alternative; `box-sizing: border-box` which switches the box model akin to IE6 in quirks mode, where padding and borders are not counted toward the width of an element.
 
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 
-Judging by all those vendor prefixes, it should be obvious that `box-sizing` ((link: http://www.browsersupport.net/CSS/box-sizing text: support stats)) has inferior browser support than `display: table` ((link: http://www.browsersupport.net/CSS/display%3Atable text: support stats)).
+Judging by all those prefixes, it should be obvious that `box-sizing` ((link: http://www.browsersupport.net/CSS/box-sizing text: browser support)) has inferior browser support than `display: table` ((link: http://www.browsersupport.net/CSS/display%3Atable text: browser support)).
 
 That said, if the mention of tables send shivers down your spine, it might be better for your soul.
-
-It will however also avoid inconsistencies
 
 ## Can we do better than pixels?
 
