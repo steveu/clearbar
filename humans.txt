@@ -1,0 +1,13 @@
+/* TEAM */
+
+    Name: Steve Urmston
+    Contact: steve [at] clearbar [dot] com
+    Twitter: @steveu
+    From: York, UK
+
+/* SITE */
+
+    Last update: 2012
+    Language: English
+    Doctype: HTML5 with CSS3
+    Tools: PHP
