@@ -14,6 +14,7 @@
     <!-- I can scale myself -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
+    <!-- look nice in a browser tab -->
     <link rel="icon shortcut" href="/favicon.ico" type="image/vnd.microsoft.com" />
 
     <!-- the lengths we go to for  -->
@@ -24,7 +25,7 @@
     <!-- When (if) I add IE specific code, this will be useful -->
     <?php echo js('assets/scripts/libs/modernizr-2.0.6.min.js') ?>
 
-    <!-- Beautify that text -->
+    <!-- Make text pretty -->
     <script type="text/javascript" src="http://use.typekit.com/fbd2arb.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     
