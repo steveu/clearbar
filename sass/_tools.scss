@@ -1,8 +1,9 @@
 // Allows width to not include padding, useful for percentage width + pixel padding
 @mixin border-box() {
+  	-moz-box-sizing: border-box;
   	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  	-ms-box-sizing: border-box;
+  	box-sizing: border-box;
 }
 
 // Helper mixin for headings

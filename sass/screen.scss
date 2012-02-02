@@ -137,8 +137,8 @@ section.content {
 	@media screen and (min-width: 720px) {
 		width: $content-column;
 		padding-right: $gutter;
-		@include box-sizing(border-box);
-		-moz-box-sizing: border-box;
+		@include border-box;
+		
 		float: left;
 	}
 }
@@ -179,9 +179,7 @@ aside.blank {
 
 	padding: $gutter;
 	@include clearfix;
-	@include box-sizing(border-box);
-	-moz-box-sizing: border-box;
-
+	@include border-box;
 
 	overflow: auto;
 	h1 {
@@ -194,9 +192,7 @@ aside.blank {
 		}
 
 		a {
-			@include box-sizing(border-box);
-			-moz-box-sizing: border-box;
-
+			@include border-box;
 			display: block;
 			padding: 0px $gutter 0 ($gutter * 0.65);
 			position: relative;
@@ -452,8 +448,7 @@ section.work {
 				padding-bottom: $gutter / 2;
 			}
 
-			@include box-sizing('border-box');
-			-moz-box-sizing: border-box;
+			@include border-box;
 
 			@media screen and (min-width: 769px) {
 				width: $sidebar-column;
@@ -534,8 +529,7 @@ section.work {
 				float: right;
 			}
 			
-			@include box-sizing('border-box');
-			-moz-box-sizing: border-box;
+			@include border-box;
 			
 			position: relative;
 
@@ -569,8 +563,7 @@ section.work {
 
 		figure {
 			
-			@include box-sizing('border-box');
-			-moz-box-sizing: border-box;
+			@include border-box;
 			
 			position: relative;
 			width: 100%;
@@ -638,8 +631,7 @@ section.work {
 				figcaption {
 					background: #fff;
 					font-size: $font-size * 0.6;
-					@include box-sizing(border-box);
-					-moz-box-sizing: border-box;
+					@include border-box;
 
 					@media screen and (min-width: 768px) {
 						font-size: $tablet-font-size * 0.7;
@@ -771,8 +763,7 @@ section.notes {
 				color: $text-color;
 			}
 			
-			@include box-sizing('border-box');
-			-moz-box-sizing: border-box;
+			@include border-box;
 			padding: 12px $gutter 0 0px;
 
 			p {
@@ -791,8 +782,7 @@ section.notes {
 			@media screen and (min-width: 720px) {
 				width: $content-column;
 				float: right;
-				@include box-sizing('border-box');
-				-moz-box-sizing: border-box;
+				@include border-box;
 				padding-right: 20px;
 				padding-top: 0;
 			}
@@ -832,8 +822,7 @@ section.hresume {
 
 		@media screen and (min-width: 720px) {
 			width: 33.33333333%;
-			@include box-sizing(border-box);
-			-moz-box-sizing: border-box;
+			@include border-box;
 			padding-right: $gutter;
 			float: left;
 			padding-bottom: 0;
@@ -1002,8 +991,7 @@ aside.vcard {
 	width: $sidebar-column;
 	float: left;
 	padding-right: $gutter;
-	@include box-sizing(border-box);
-	-moz-box-sizing: border-box;
+	@include border-box;
 	div.hcard {
 		
 		h2 {
@@ -1128,8 +1116,7 @@ div.home_slideshow {
 	 p.contact {
 	 	padding: 0;
 	 	
-	 	@include box-sizing(border-box);
-	 	-moz-box-sizing: border-box;
+	 	@include border-box;
 	 	
 	 	font-size: 12px;
 	 	@media screen and (min-width: 400px) {
