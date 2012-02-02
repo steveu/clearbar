@@ -1032,11 +1032,18 @@ div.home_slideshow {
 		letter-spacing: -1px;
 		font-size: $font-size * 3;
 		font-weight: 600;
-		color: #aaa;
+		color: #ccc;
+		//text-shadow: 1px 1px 1px #ccc, 2px 2px 1px #ccc, 3px 3px 1px #ccc, 4px 4px 1px #ccc, 5px 5px 1px #ccc;
 		@media screen and (min-width: 768px) {
+			font-size: $tablet-font-size * 4;
+		}
+		@media screen and (min-width: 896px) {
 			font-size: $tablet-font-size * 5;
 		}
 		@media screen and (min-width: 1024px) {
+			font-size: $desktop-font-size * 5;
+		}
+		@media screen and (min-width: 1180px) {
 			font-size: $desktop-font-size * 6;
 			
 		}
