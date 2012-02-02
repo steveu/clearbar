@@ -1030,7 +1030,9 @@ div.home_slideshow {
 		margin: 0;
 		line-height: 1.5em;
 		letter-spacing: -1px;
-		font-size: $font-size * 3.5;
+		font-size: $font-size * 3;
+		font-weight: 600;
+		color: #aaa;
 		@media screen and (min-width: 768px) {
 			font-size: $tablet-font-size * 5;
 		}

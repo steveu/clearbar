@@ -5,7 +5,20 @@
 
 <div class="home_slideshow">
 	<div>
-		<h1>welcome</h1>
+
+		<?php
+		$words = array(
+			'welcome',
+			'cliché',
+			'websites',
+			'hello there',
+			'@steveu'
+		);
+
+		?>
+	
+
+		<h1>hello there</h1>
 
 	<!--
 		<h1>
