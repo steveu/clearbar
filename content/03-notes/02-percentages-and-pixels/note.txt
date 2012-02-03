@@ -35,10 +35,10 @@ The problem being; at iPad size the gap between columns is too small, and on you
 
 _(Hell no)_
 
-So, what missunderstood HTML element could have pixel (or em) padding, as well as a percentage width. Did I hear you say `<table>`? Give yourself a gold plated iPhone.
+What we actually need is the IE6 box model in (link: http://www.quirksmode.org/css/quirksmode.html text: Quirks mode), and _(here's one I prepared earlier!)_ CSS has that very option!
 
 	.sidebar, .content {
-		display: table;
+		box-sizing: border-box;
 		padding-left: 24px;
 		float: left;
 	}
@@ -53,16 +53,18 @@ So, what missunderstood HTML element could have pixel (or em) padding, as well a
 
 _This_ is gonna to give us a liquid layout, with fixed pixel gutters.
 
-There is an alternative; `box-sizing: border-box` which switches the box model akin to IE6 in quirks mode, where padding and borders are not counted toward the width of an element.
+To be fair this isn't perfectly supported. It requires the following prefixes;
 
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 
-Judging by all those prefixes, it should be obvious that `box-sizing` ((link: http://www.browsersupport.net/CSS/box-sizing text: browser support)) has inferior browser support than `display: table` ((link: http://www.browsersupport.net/CSS/display%3Atable text: browser support)).
+and doesn't work in IE7 (although there is a (link: http://ie7-js.googlecode.com/svn/test/box-sizing.html text: polyfil for that)).
 
-That said, if the mention of tables send shivers down your spine, it might be better for your soul.
+Only you can decide how much of a problem this is, although I would say is that if you are using this technique for fluid responsive websites, serve it up inside a media query and the poor little devil gets fat nothing.
+
+There is an alternative; using `display: table` which does actually emulate this behaviour, but although this property is slightly better supported, I've found it to be a little unhelful due to additional effects; (link: http://www.456bereastreet.com/archive/201110/using_displaytable_has_semantic_effects_in_some_screen_readers/ text: accessibility problems) and (link: http://bugs.jquery.com/ticket/8301 text: jQuery issues).
 
 ## Can we do better than pixels?
 
