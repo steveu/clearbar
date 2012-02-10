@@ -1173,3 +1173,129 @@ div.home_slideshow {
 	 }
 
 }
+
+
+
+#view_process {
+	position: absolute;
+	top: $gutter * 3;
+	right: $gutter;
+
+	label {
+		color: #fff;
+		font-size: 16px;
+		display: inline-block;
+		display: none;
+		padding-right: 8px;
+	}
+
+	input[type="range"]{
+	   -webkit-appearance:none !important;
+
+	   background: #0074A6;
+	   height: 6px;
+	   border: 1px solid;
+	   border-color: rgba(0,0,0,0.35) rgba(255,255,255,0.5) rgba(255,255,255,0.5) rgba(0,0,0,0.3);
+	   width: 180px;
+	 }
+
+	 input[type="range"]::-webkit-slider-thumb{
+	   -webkit-appearance:none !important;
+
+	   background: #fff;
+	   @include border-radius(5px);
+	   @include box-shadow(3px 3px 0px rgba(0,0,0,0.2));
+	   height: 20px;
+	   width: 30px;
+	 }
+
+}
+
+.fuse8 {
+	
+	#stripe {
+		background: #0074A6;
+	}
+
+
+	h1, h2 {
+		//color: #000;
+		color: rgba(0,0,0,0.8);
+		@include text-shadow(1px 1px 0px rgba(255,255,255,0.3));
+	}
+
+	h1 {
+		font-weight: 300;
+	}
+
+	@include linear-gradient(#F2FBFF 30%, #0088C2);
+
+	#top {
+		h1 {
+			a {
+				color: rgba(255,255,255,0.6);
+				@include text-shadow(none);
+				@include text-shadow(-2px -2px 0px rgba(0,0,0,0.15));
+
+				background-image: url('/assets/images/clearbar_blue.svg');
+			}
+
+			
+		}
+		ul {
+				li {
+					a {
+						color: rgba(255,255,255,0.8);
+						@include text-shadow(-1px -1px 0px rgba(0,0,0,0.15));
+						border-bottom-color: rgba(255,255,255,0.5);
+					}
+				}
+			}
+	}
+	#wrapper {
+		@include linear-gradient(#F2FBFF 30%, #0088C2);
+	}
+	#page {
+		
+		
+
+		h1.hello {
+			width: $sidebar-column;
+			float: left;
+			padding-right: $gutter;
+			margin-top: $gutter / 4;
+			@include border-box;
+			span {
+				display: block;
+				//width: 100%;
+				//height: $gutter * 2;
+				//@include border-radius(50%);
+				background: #FFD540;
+				color: #000;
+				position: relative;
+				padding: $gutter;
+				height: 300px;
+				text-indent: -99999px;
+				//border: 2px solid #fff;
+				//@include box-shadow(10px 10px 0px #000);
+
+				background: url('/assets/images/balloon.svg') 0px 0px no-repeat;
+				background-size: 100% auto;
+			}
+
+		}
+
+		.text {
+			@include border-box;
+			width: $content-column;
+			float: right;
+			padding-top: $gutter * 1.5;
+			padding-right: $gutter;
+			h1 {
+				font-size:42px;
+			}
+			position: relative;
+		}
+	}	
+}
+
