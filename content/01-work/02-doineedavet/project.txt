@@ -8,7 +8,7 @@ Link: doineedavet.co.uk
 ----
 Text:
 
-Redesign of my own work for this vet advice site. Included fine tuning the question search, and admin baked into the front-end.
+Redesign of my own work for this vet advice site. Included fine tuning the question search, administration baked directly into the front-end.
 
 Dramatically increased the volume of posts, and encouraged micro payments and donations.
 

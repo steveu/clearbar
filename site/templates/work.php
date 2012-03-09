@@ -6,7 +6,7 @@
 
 		<?php foreach($page->children()->visible() as $item): ?>
 
-		<article>
+		<article id="<?php echo $item->id(); ?>">
 
 			<div class="meta">
 				

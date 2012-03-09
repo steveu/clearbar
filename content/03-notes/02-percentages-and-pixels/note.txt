@@ -83,7 +83,10 @@ My personal preference however is to set gutters in ems, and control the gutter 
 	/* and onwards */
 
 	.sidebar, .content {
-		display: table;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
 		padding-left: 2em; /* either 32px, or 36px */
 		float: left;
 	}

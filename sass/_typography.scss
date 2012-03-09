@@ -123,6 +123,10 @@ ol {
 		color: $text-color;
 	}
 }
+
+ol + h2 {
+	padding-top: 0;
+}
 	
 p + p {
 	@include padding-leader(1);
