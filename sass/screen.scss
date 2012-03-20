@@ -609,7 +609,7 @@ section.work {
 					line-height: 22px;
 					border: 1px solid #888;
 					@include border-radius(5px);
-					@include linear-gradient(#ccc, #fff);
+					@include background-image(linear-gradient(#ccc, #fff));
 					font-style: normal;
 					text-align: center;
 					padding: 1px 0;
@@ -624,7 +624,7 @@ section.work {
 					}
 
 					&:hover {
-						@include linear-gradient(#ddd, #eee);
+						@include background-image(linear-gradient(#ddd, #eee));
 						border-color: #555;
 					}
 				}
@@ -1228,7 +1228,7 @@ div.home_slideshow {
 		font-weight: 300;
 	}
 
-	@include linear-gradient(#F2FBFF 30%, #0088C2);
+	@include background-image(linear-gradient(#F2FBFF 30%, #0088C2));
 
 	#top {
 		h1 {
@@ -1253,7 +1253,7 @@ div.home_slideshow {
 			}
 	}
 	#wrapper {
-		@include linear-gradient(#F2FBFF 30%, #0088C2);
+		@include background-image(linear-gradient(#F2FBFF 30%, #0088C2));
 	}
 	#page {
 		
