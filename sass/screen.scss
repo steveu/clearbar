@@ -1228,7 +1228,9 @@ div.home_slideshow {
 		font-weight: 300;
 	}
 
-	@include background-image(linear-gradient(#F2FBFF 30%, #0088C2));
+	@include background-image(
+		linear-gradient(#0088C2, #F2FBFF 30%)
+	);
 
 	#top {
 		h1 {
@@ -1253,7 +1255,9 @@ div.home_slideshow {
 			}
 	}
 	#wrapper {
-		@include background-image(linear-gradient(#F2FBFF 30%, #0088C2));
+		@include background-image(
+			linear-gradient(#0088C2, #F2FBFF 30%)
+		);
 	}
 	#page {
 		

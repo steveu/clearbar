@@ -1,7 +1,7 @@
         	<footer id="bottom">
                 
                 <p class="contact">
-                    I am <a href="http://twitter.com/#!/steveu">Twitter</a>. I also read <a class="email" href="">email</a>.
+                    I am <a href="http://twitter.com/#!/steveu">Twitter</a>. I also <a class="email" href="">email</a>.
                 </p>
 
                 <p class="copyright">
