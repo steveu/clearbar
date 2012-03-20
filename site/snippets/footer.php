@@ -1,7 +1,7 @@
         	<footer id="bottom">
                 
                 <p class="contact">
-                    I am <a href="http://twitter.com/#!/steveu">Twitter</a>. I also <a class="email" href="">email</a>.
+                    I am <a href="http://twitter.com/#!/steveu">Twitter</a>. I also <a href="mailto:&#115;&#x74;&#101;&#118;&#x65;&#x40;&#x63;&#x6c;&#101;&#97;&#114;&#98;&#x61;&#x72;&#46;&#x63;&#111;&#x6d;">&#x65;&#109;&#x61;&#105;&#x6c;</a>.
                 </p>
 
                 <p class="copyright">
