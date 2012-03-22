@@ -4,7 +4,7 @@
 
 	<section class="work">
 
-		<?php foreach($page->children()->visible() as $item): ?>
+		<?php foreach($page->children()->visible()->flip() as $item): ?>
 
 		<article id="<?php echo $item->id(); ?>">
 

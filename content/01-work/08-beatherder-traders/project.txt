@@ -10,7 +10,7 @@ Text:
 
 Application form for traders (plus a copy for entertainers) at the Beat-Herder festival.
 
-Built using PHP form classes I developed, the form is friendly and easy to use.
+Built using PHP form classes I developed, special attention was paid to making the form friendly and easy to use.
 
 ----
 wireframes: 100

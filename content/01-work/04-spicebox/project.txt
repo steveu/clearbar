@@ -10,7 +10,7 @@ Text:
 
 As well as initial wireframing, I designed the basket &amp; checkout systems and integrated the payment gateway.
 
-I also developed a trade-only version with highly optimised ordering. Sales have been great.
+I also developed a trade-only version with highly optimised ordering. Sales have been fantastic and the client delighted.
 
 ----
 wireframes: 80

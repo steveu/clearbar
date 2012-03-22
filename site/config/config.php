@@ -307,6 +307,7 @@ c::set('yourproject.yourvar', 'yourvalue');
 $breakdowns = array(
     'wireframes' => 'Wireframes / <abbr title="User Experience">UX</abbr>',
     'graphics' => 'Graphic Design',
+    'interaction' => 'Interaction design',
     'html' => 'HTML / CSS',
     'script' => 'JavaScript',
     'php' => 'PHP',
