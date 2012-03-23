@@ -1,0 +1,25 @@
+Title: You're Such a Clever Cat.
+----
+Date: 23-03-2012
+----
+When: morning
+----
+Temp: mild
+----
+Weather: sunny
+----
+Location: York
+----
+Text:
+
+Our brains are hardwired to attribute human characteristics to many things we know to lack them. From pets (they really aren't clever), to abstract things like countries, and even simple things like plug sockets, to the UI of digital products. 
+
+Despite being able to rationally detach these human characteristics, we can't help but see them anyway. We see human behaviour and features everywhere we look.
+
+<figure>(image: plug_faces.jpg)</figure>
+
+## Making anthropomorphism work for us
+
+This phenomenon (notice how even the phenomenon of anthropomophism can take on human characteristics) can be put to good use by designers, giving inanimate objects personality and guiding a positive user experience around the use of digital products and services which we come to see as allies, and in many cases; *as friends*.
+
+----

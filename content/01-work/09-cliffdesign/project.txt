@@ -8,11 +8,9 @@ Link: cliffdesign.co.uk
 ----
 Text:
 
-I developed a single page site featuring tidy interactions from a flat designer comp (some adjustments!).
+Single page site featuring tidy interactions, developed from a flat designer comp. Includes humanised touches such as behaviour on portfolio items, and contact form chat-back.
 
-Includes humanised touches such as behaviour on portfolio items, and contact form chat-back.
-
-Designed and developed in the browser. Uses the excellent (link: http://getkirby.com/ text: Kirby) as a backend (big fan!).
+Built in the browser. Uses the excellent (link: http://getkirby.com/ text: Kirby) as a backend (big fan!).
 
 ----
 interaction: 100
