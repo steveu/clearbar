@@ -18,8 +18,27 @@ Despite being able to rationally detach these human characteristics, we can't he
 
 <figure>(image: plug_faces.jpg)</figure>
 
-## Making anthropomorphism work for us
+## Putting it to work for us
 
-This phenomenon (notice how even the phenomenon of anthropomophism can take on human characteristics) can be put to good use by designers, giving inanimate objects personality and guiding a positive user experience around the use of digital products and services which we come to see as allies, and in many cases; *as friends*.
+This phenomenon (anthropomorphism for those who like to sound clever) can be put to use by designers, giving inanimate objects personality and guiding a positive user experience around digital products and services, which we not only come to see as allies, but in many cases *as friends*.
+
+Can you really imagine treating this little dude as you might treat your desktop printer (which im my case is a toxic combination of disdain and rage), or throwing a cup this cute in a non recycling bin?
+
+<figure class="left">(image: little_print.jpg)</figure>
+<figure class="right">(image: coffee_jacket.jpg)</figure>
+
+Nope though not. These designs can strongly infulence our reactions and behavious to the objects around us.
+
+## So, should I draw a face on my next website?
+
+*Yes this is a rhetorical question*. Clearly there are levels, and no verything needs a face.
+
+I actually been making use of this in my own work, most recently on (link: http://cliffdesign.co.uk/ text: Cliff Design), where the open/close functionality uses subtle animation, turning a 50 pixel green square into a little character who fetches content at your call (well hopefully).
+
+I did experiment with a little face instead of the text and arrow combination, but I found it was actually unecessary as the character all came from the movement, as well as making the functionality less ovbious.
+
+On the same site, I added a few nods to a digital assistant in the contact form.
+
+Wish Siri worked properly.
 
 ----
