@@ -38,7 +38,7 @@ Nope though not. These designs can strongly infulence our reactions and behaviou
 
 I&#8217;ve made use of this in my own work in more subtly ways, recently on a website for (link: http://cliffdesign.co.uk/ text: Cliff Design) where the open/close functionality uses animation to tuen a 50 pixel green square into a little character who fetches content at your call.
 
-<figure class="right">(image: cliff-screenshot.png)</figure>
+<figure class="right"><a href="http://cliffdesign.co.uk/">(image: cliff-screenshot.png)</a></figure>
 
 I did experiment using an face instead of the text and arrow combination, but found it wasn't required as all the character came from the animation (as well as making the functionality less obvious).
 
