@@ -1,4 +1,4 @@
-Title: You're Such a Clever Cat.
+Title: You Are Such a Clever Cat.
 ----
 Date: 23-03-2012
 ----
@@ -12,33 +12,40 @@ Location: York
 ----
 Text:
 
-Our brains are hardwired to attribute human characteristics to many things we know to lack them. From pets (they really aren't clever), to abstract things like countries, and even simple things like plug sockets, to the UI of digital products. 
+Our brains are hardwired to attribute human features and behaviour to many things we know don't have them. From pets (they really aren't clever), to abstract things like countries, simple things like plug sockets, and the UI of digital products. 
 
-Despite being able to rationally detach these human characteristics, we can't help but see them anyway. We see human behaviour and features everywhere we look.
+Despite being able to rationally detach these human characteristics, we can't help but see them anyway. *We see faces everywhere we look*.
 
 <figure>(image: plug_faces.jpg)</figure>
 
-## Putting it to work for us
+## Working for us
 
-This phenomenon (anthropomorphism for those who like to sound clever) can be put to use by designers, giving inanimate objects personality and guiding a positive user experience around digital products and services, which we not only come to see as allies, but in many cases *as friends*.
+This phenomenon ((link: http://en.wikipedia.org/wiki/Anthropomorphism text: anthropomorphism) for those who like to sound clever) can be used by designers to give inanimate objects personality and to guide a positive user experience around digital products and services, *which we not only come to see as allies, but in many cases as friends*.
 
-Can you really imagine treating this little dude as you might treat your desktop printer (which im my case is a toxic combination of disdain and rage), or throwing a cup this cute in a non recycling bin?
+Can you imagine treating this little dude as you might treat your desktop printer? (which im my case is a toxic combination of disdain and rage)
 
 <figure class="left">(image: little_print.jpg)</figure>
+
+Or throwing a cup this cute in a non-recycling bin?
+
 <figure class="right">(image: coffee_jacket.jpg)</figure>
 
-Nope though not. These designs can strongly infulence our reactions and behavious to the objects around us.
+Nope though not. These designs can strongly infulence our reactions and behaviour toward the objects around us.
 
 ## So, should I draw a face on my next website?
 
-*Yes this is a rhetorical question*. Clearly there are levels, and no verything needs a face.
+*Yes this is a rhetorical question*. Clearly there are levels, and not everything needs a face.
 
-I actually been making use of this in my own work, most recently on (link: http://cliffdesign.co.uk/ text: Cliff Design), where the open/close functionality uses subtle animation, turning a 50 pixel green square into a little character who fetches content at your call (well hopefully).
+I&#8217;ve made use of this in my own work in more subtly ways, recently on a website for (link: http://cliffdesign.co.uk/ text: Cliff Design) where the open/close functionality uses animation to tuen a 50 pixel green square into a little character who fetches content at your call.
 
-I did experiment with a little face instead of the text and arrow combination, but I found it was actually unecessary as the character all came from the movement, as well as making the functionality less ovbious.
+<figure class="right">(image: cliff-screenshot.png)</figure>
 
-On the same site, I added a few nods to a digital assistant in the contact form.
+I did experiment using an face instead of the text and arrow combination, but found it wasn't required as all the character came from the animation (as well as making the functionality less obvious).
 
-Wish Siri worked properly.
+## What am I taking home here?
+
+This is a powerful technique to infulence people's behaviour. It can be used subtly, or overtly, but should be used carefully as it could easily become a turn-off if used cack-handedly. It could also just be an unecessary distraction.
+
+What is certain is that we are going to see a lot more of this, and (like any overused technique) we could find ourselves in the middle of a backlash.
 
 ----
