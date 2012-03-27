@@ -12,7 +12,7 @@ Location: York
 ----
 Text:
 
-Our brains are hardwired to attribute human features and behaviour to many things we know don't have them. From pets (they really aren't clever), to abstract things like countries, simple things like plug sockets, and the UI of digital products. 
+Our brains are hardwired to attribute human features and behaviour to many things we know not to have them. From pets (they really aren't clever), to abstract things like countries, simple things like plug sockets, and the UI of digital products. 
 
 Despite being able to rationally detach these human characteristics, we can't help but see them anyway. *We see faces everywhere we look*.
 
@@ -36,15 +36,15 @@ Nope though not. These designs can strongly infulence our reactions and behaviou
 
 *Yes this is a rhetorical question*. Clearly there are levels, and not everything needs a face.
 
-I&#8217;ve made use of this in my own work in more subtly ways, recently on a website for (link: http://cliffdesign.co.uk/ text: Cliff Design) where the open/close functionality uses animation to tuen a 50 pixel green square into a little character who fetches content at your call.
+I&#8217;ve made use of this in my own work in more subtly ways, recently on a website for (link: http://cliffdesign.co.uk/ text: Cliff Design) where the open/close functionality uses animation to transform a 50 pixel green square into a little character who fetches content at your call.
 
 <figure class="right"><a href="http://cliffdesign.co.uk/">(image: cliff-screenshot.png)</a></figure>
 
-I did experiment using an face instead of the text and arrow combination, but found it wasn't required as all the character came from the animation (as well as making the functionality less obvious).
+I did experiment using an face instead of the text and arrow combination, but found it wasn't required, the character coming from the animation (as well as making the functionality less obvious).
 
 ## What am I taking home here?
 
-This is a powerful technique to infulence people's behaviour. It can be used subtly, or overtly, but should be used carefully as it could easily become a turn-off if used cack-handedly. It could also just be an unecessary distraction.
+This is a powerful technique to infulence people's behaviour. It can be used subtly, or overtly, but should be used carefully as it could easily become a turn-off. It could also just be an unecessary distraction.
 
 What is certain is that we are going to see a lot more of this, and (like any overused technique) we could find ourselves in the middle of a backlash.
 
