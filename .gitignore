@@ -2,3 +2,5 @@
 .DS_Store
 /site/config/
 /site/cache/
+/content/fuse8/
+/content/temp/
