@@ -2,4 +2,4 @@ Title: clearbar - Steven Urmston
 ----
 Author: Steven Urmston
 ----
-Description: The personal website of interaction designer and web developer Steven Urmston
+Description: Website of York based interaction designer and web developer Steven Urmston
